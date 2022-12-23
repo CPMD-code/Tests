@@ -1,0 +1,8 @@
+h0_dt_k.1m20.in (C4H6 MD) : Memory needed   ~ 54MB
+                             Time needed     ~ 2h 45'   (1p NEC-SX5)
+                             2 CV: 1 C-C distance and 1 torsion angle
+                                   the 2 CV have different masses 
+                                            and scaling factors
+                                   extended Lagrangian
+                                   obj: tuning masses and k's 
+                                   no hills

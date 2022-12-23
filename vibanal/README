@@ -1,0 +1,39 @@
+Vibrational Analysis Tests
+
+Methane. tests without molecular symmetry (POINT GROUP)
+a) methan-opt-nosymm.inp
+b) methan-in-nosymm.inp
+c) methan-fd-nosymm.inp
+d) methan-fd-sphere.inp (using only a spherical selection of atoms.
+   does not make a lot of sense here, besides testing the feature)
+e) methan-pt-nosymm.inp (using tuckerman/martyna instead of hockney) 
+f) methan-lr-nosymm.inp (using tuckerman/martyna instead of hockney)
+                        (SYMMETRY 0, experimental)
+
+Methane. tests with molecular symmetry (POINT GROUP AUTO)
+f) methan-opt.inp
+g) methan-in.inp
+h) methan-fd.inp
+i) methan-pt.inp  (note. as of CPMD v3.9, not yet supported)
+k) methan-lr.inp  (using tuckerman/martyna instead of hockney)
+
+tests a) and b) as well as f) and g) have to be run in sequence.
+
+last check: CPMD v3.9.2 (20041223-cvs), Axel Kohlmeyer 
+methan-lr-nosymm.inp: failed, wavefuntion 'corrupt' after first perturbation
+methan-opt.inp:       when running in parallel, first step takes excessively long.
+methan-lr.inp:        broken, same symptoms as in nosymm case.
+
+Memory Requirements: ~750MB (~1 GB for 'lr' runs)
+
+Timings: Athlon64 3200+
+
+methan-opt.out:          CPU TIME :    0 HOURS 17 MINUTES 19.10 SECONDS     
+methan-in.out:           CPU TIME :    0 HOURS  0 MINUTES 10.51 SECONDS     
+methan-fd.out:           CPU TIME :    1 HOURS 13 MINUTES 14.66 SECONDS     
+methan-lr.out:            stopped
+methan-opt-nosymm.out:   CPU TIME :    0 HOURS 15 MINUTES  8.94 SECONDS     
+methan-in-nosymm.out:    CPU TIME :    0 HOURS  0 MINUTES 10.48 SECONDS     
+methan-fd-nosymm.out:    CPU TIME :    2 HOURS 56 MINUTES 48.56 SECONDS     
+methan-lr-nosymm.out:     stopped
+methan-pt-nosymm.out:     stopped

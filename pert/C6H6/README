@@ -1,0 +1,8 @@
+inp-1 (C6H6 NMR-OV) : Memory needed   ~ 800 MB
+                      Time needed     ~   2'   (1 Regatta)
+
+inp-2 (C6H6 NMR-FL) : Memory needed   ~ 1.2 GB
+                      Time needed     ~   3'   (1 Regatta)
+
+inp-3 (C6H6 RAMAN)  : Memory needed   ~ 600 MB
+                      Time needed     ~  10"   (1 Regatta)

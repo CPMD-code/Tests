@@ -1,0 +1,9 @@
+# total energy in hartree
+annealing.out:               -30.94102205
+davidson.out:                -30.94102202
+default.out:                 -30.94102205
+lanczos.out:                 -30.94102216
+odiis-5.out:                 -30.94102205
+pcg-minimize.out:            -30.94102205
+pcg.out:                     -30.94102205
+steepest-descend.out:        -30.94102205

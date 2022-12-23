@@ -1,0 +1,8 @@
+test inputs for the k-points code comparing
+primitive and conventional cell geometries,
+different cell sizes, k-point meshes, and 
+wavefunction optimization options.
+
+memory requirements: 5MB - 350MB
+time: 3 seconds to 22 minutes on a 2GHz Athlon 64.
+

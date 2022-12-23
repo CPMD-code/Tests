@@ -1,0 +1,13 @@
+h_3d_k.1m60.in (C4H6 MTD) :  Memory needed   ~ 54MB
+                              Time needed    ~ 11h  (1p NEC-SX5)
+                              3 CV: 3 C-C distances
+                                    extended Lagragian
+                                   obj: induce rearrangements
+                                   hills: shifted gaussians 
+                                           height tuned
+                                           scaling factors fixed
+                                           boundaries for the CV
+
+h_3d_k.1m60_r.in (C4H6 MTD) : Memory needed  ~ 54MB
+                              Time needed    ~ 11 h   (1p NEC-SX5)
+                              restart from the previous run

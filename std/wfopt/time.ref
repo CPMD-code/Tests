@@ -1,0 +1,9 @@
+# wall time in seconds
+annealing.out:                       3387
+davidson.out:                         377
+default.out:                          130
+lanczos.out:                          905
+odiis-5.out:                          165
+pcg-minimize.out:                     292
+pcg.out:                              541
+steepest-descend.out:                2953

@@ -1,0 +1,16 @@
+# total squared force per atom
+si2-prim-k2x2x2.out:        0.0000556803
+si2-prim-k3x3x3.out:        0.0000339587
+si2-prim-k4x4x4.out:        0.0000058278
+si2-prim.out:               0.0000072354
+si16-prim.out:              0.0000000000
+si8-k2x2x2-auto.out:        0.0000141397
+si8-k2x2x2-full.out:        0.0000000000
+si8-k2x2x2-symm.out:        0.0000008426
+si8-k8x8x8-auto.out:        0.0000017835
+si8-k8x8x8-lanczos.out:     0.0000017835
+si8-k8x8x8-nogo.out:        0.0000000000
+si8-k8x8x8-pcg.out:         0.0000017835
+si8-k8x8x8-swap.out:        0.0000017835
+si8.out:                    0.0000000000
+si64.out:                   0.0000000000

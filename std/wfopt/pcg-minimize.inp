@@ -1,0 +1,53 @@
+&INFO
+ethanol no-equilibrium structure.
+single point calculation using 
+preconditioned conjugate gradient with line search.
+&END
+
+&CPMD
+ OPTIMIZE WAVEFUNCTION
+ PCG MINIMIZE
+ CONVERGENCE ORBITALS
+  1.0d-7
+
+ CENTER MOLECULE ON
+ PRINT FORCES ON
+&END
+  
+&SYSTEM
+ SYMMETRY
+  0
+ ANGSTROM
+ CELL
+ 10.000 1.0 1.0  0.0  0.0  0.0
+ CUTOFF
+  85.0
+&END 
+
+&DFT
+ FUNCTIONAL PBE
+&END  
+
+&ATOMS
+*C_MT_PBE.psp KLEINMAN-BYLANDER
+ LMAX=P
+  2
+  2.710   1.889   2.572
+  2.027   3.073   2.089
+
+*O_MT_PBE.psp KLEINMAN-BYLANDER
+ LMAX=P
+  1
+  2.687   4.216   2.556
+
+*H_MT_PBE.psp
+ LMAX=S
+  6
+  2.710   1.889   3.661
+  3.737   1.889   2.209
+  2.197   1.000   2.209
+  2.027   3.073   1.000
+  1.000   3.073   2.452
+  2.240   4.989   2.240
+&END  
+

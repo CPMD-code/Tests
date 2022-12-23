@@ -1,0 +1,32 @@
+In this test case, we study the conformational rearrangements of 
+a very simple molecule, C4H6, which can transform 
+from its CYCLE state, first to   
+the CIS configuration, and finally
+to the most stable TRANS configuration.
+
+In the directory ANALYSIS, a preliminary run is shown, where the behaviour 
+of some possible CV is studied, in the initial equilibrium conditions.
+The chosen CV are 3 C-C distances and one torsion angle. 
+During this run, we look at the typical fluctuations of the variables,
+in order to be albe to set up the parameters for the metadynamics.
+
+In the directories called H0...., more preliminary runs are shown, 
+where the metadynamics is performed without introducing the hills (the
+height of the hills is set to zero). The runs are performed with 
+different set of variables (3D: 3 C-C distances, DT: torsion angle 
+and one C-C distance) and  the effects of different masses and force 
+constants are considered. 
+It is interesting to notice that when one uses the 3D distances, masses, 
+force constants and scaling factors for the 3 CV are all the same, 
+because they have very similar fluctuations in the initial state.
+This is not the case, when a distance and a torsion angle are chosen. 
+Therefore the parameters have to be modified accordingly.
+
+In the H... directories, the results of complete metadynamics are presented, 
+for the two sub-sets of CV and for different parameters.
+
+
+For all the examples,  most of the standard output file  has been omitted,
+and only the initial and final parts are reported.
+To save space only some of the *_mtd files have been included.
+ 

@@ -1,0 +1,12 @@
+h_dt_k.1m20.in (C4H6 MTD) :  Memory needed   ~ 54MB
+                              Time needed    ~ 3h  (1p NEC-SX5)
+                              2 CV: 1 C-C distance and 1 torsion angle
+                                          the 2 CV have different masses
+                                            and scaling factors
+                                    extended Lagragian
+                                   obj: induce rearrangements
+                                   hills: shifted gaussians 
+                                           height tuned
+                                           scaling factors tuned
+                                           boundaries for the 1 CV
+

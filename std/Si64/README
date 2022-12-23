@@ -1,0 +1,6 @@
+inp-1 (Si64) :        Memory needed   ~ 300MB
+                      Time needed     ~  10"   (1 Regatta)
+
+inp-2 (Si64 GEO) :    Memory needed   ~ 300MB
+                      Time needed     ~  13"   (1 Regatta)
+

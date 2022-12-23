@@ -1,0 +1,54 @@
+&CPMD
+OPTIMIZE WAVEFUNCTION
+SPLINE-POINTS
+1501
+&END
+
+
+&SYSTEM
+SYMMETRY
+0
+CELL
+13.0  1.  1.    0. 0. 0.
+CUTOFF
+25.
+POISSON TUCKERMAN
+ANGSTROM
+&END
+
+&DFT
+FUNCTIONAL BLYP
+GC-CUTOFF
+1.E-05
+&END
+
+
+&ATOMS
+Carbon
+*C_VDB.psp FORMATTED
+LMAX=P
+6
+     .000  -1.271   -.675 
+     .000  -1.271    .675 
+     .000    .000   1.450 
+     .000   1.271    .675 
+     .000   1.271   -.675 
+     .000    .000  -1.450 
+
+Hydrogen
+*H_VDB.psp FORMATTED
+LMAX=S
+4
+     .000  -2.191  -1.264 
+     .000   2.191   1.264 
+     .000  -2.191   1.264 
+     .000   2.191  -1.264 
+
+Oxygen
+*O_VDB.psp  FORMATTED
+LMAX=P
+2 
+     .000    .000   2.700 
+     .000    .000  -2.700 
+
+&END

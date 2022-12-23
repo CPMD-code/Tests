@@ -1,0 +1,1133 @@
+ PROGRAM CPMD STARTED AT: Sat Jul 26 16:05:01 2003
+ 
+
+
+               ******  ******    ****  ****  ******   
+              *******  *******   **********  *******  
+             ***       **   ***  ** **** **  **   *** 
+             **        **   ***  **  **  **  **    ** 
+             **        *******   **      **  **    ** 
+             ***       ******    **      **  **   *** 
+              *******  **        **      **  *******  
+               ******  **        **      **  ******   
+
+                          VERSION 3.7.1
+
+                            COPYRIGHT               
+                      IBM RESEARCH DIVISION         
+                MPI FESTKOERPERFORSCHUNG STUTTGART  
+
+                       The CPMD consortium      
+                    WWW:   http://www.cpmd.org
+                 Mailinglist:   cpmd-list@cpmd.org
+                     E-mail:   cpmd@cpmd.org
+
+
+                  ***  Jul 18 2003 -- 11:48:39  ***
+
+ THE INPUT FILE IS:                                         inp-1
+ THIS JOB RUNS ON:              flying-dutchman-02.zurich.ibm.com
+ THE CURRENT DIRECTORY IS: 
+                                  /tmpfd02/cur/cpmd-test/path-int
+ THE TEMPORARY DIRECTORY IS: 
+                                  /tmpfd02/cur/cpmd-test/path-int
+ THE PROCESS ID IS:                                       1818760
+ THE JOB WAS SUBMITTED BY:                                    cur
+ 
+
+ PATH INTEGRAL CALCULATION 
+
+
+ SINGLE POINT DENSITY OPTIMIZATION
+
+ PATH TO THE RESTART FILES:                                    ./
+ GRAM-SCHMIDT ORTHOGONALIZATION
+ MAXIMUM NUMBER OF STEPS:                               500 STEPS
+ PRINT INTERMEDIATE RESULTS EVERY                     10001 STEPS
+ STORE INTERMEDIATE RESULTS EVERY                     10001 STEPS
+ NUMBER OF DISTINCT RESTART FILES:                              1
+ TEMPERATURE IS CALCULATED ASSUMING EXTENDED BULK BEHAVIOR 
+ FICTITIOUS ELECTRON MASS:                               400.0000
+ TIME STEP FOR ELECTRONS:                                  1.0000
+ TIME STEP FOR IONS:                                       1.0000
+ CONVERGENCE CRITERIA FOR WAVEFUNCTION OPTIMIZATION:   1.0000E-06
+ WAVEFUNCTION OPTIMIZATION BY PRECONDITIONED DIIS
+ THRESHOLD FOR THE WF-HESSIAN IS                            .5000
+ MAXIMUM NUMBER OF VECTORS RETAINED FOR DIIS:                   5
+ STEPS UNTIL DIIS RESET ON POOR PROGRESS:                       5
+ FULL ELECTRONIC GRADIENT IS USED 
+ SPLINE INTERPOLATION IN G-SPACE FOR PSEUDOPOTENTIAL FUNCTIONS
+    NUMBER OF SPLINE POINTS:                                 5000
+ 
+ EXCHANGE CORRELATION FUNCTIONALS 
+    LDA EXCHANGE:                        SLATER (ALPHA =  .66667)
+    LDA CORRELATION:                              PERDEW & ZUNGER
+       [J.P. PERDEW AND A ZUNGER, PRB 23 5048 (1981)]
+    GRADIENT CORRECTED FUNCTIONAL
+    DENSITY THRESHOLD:                                5.00000E-05
+    EXCHANGE ENERGY
+       [A.D. BECKE, PHYS. REV. A 38, 3098 (1988)]
+       PARAMETER BETA:                                    .004200
+ 
+ ***     DETSP| THE NEW SIZE OF THE PROGRAM IS  3428 KBytes ***
+
+ >>>>>>>> CENTER OF MASS HAS BEEN MOVED TO CENTER OF BOX <<<<<<<<
+
+
+ ***************************** ATOMS ****************************
+   NR   TYPE        X(bohr)        Y(bohr)        Z(bohr)     MBL
+    1      H       7.507088       9.621047       7.501467       3
+    2      H       9.180188       8.820147       7.524567       3
+    3      H       5.424388       7.869847       7.506167       3
+    4      H       7.901788       6.429247       5.705967       3
+    5      H       7.896288       6.409447       9.282467       3
+    6      C       7.465588       7.361447       7.498267       3
+ ****************************************************************
+
+ NUMBER OF STATES:                                              4
+ NUMBER OF ELECTRONS:                                     8.00000
+ CHARGE:                                                  1.00000
+ ELECTRON TEMPERATURE(KELVIN):                             .00000
+ OCCUPATION
+  2.0  2.0  2.0  2.0
+ 
+Hydrogen  1s1  B-Only rc=0.94                                     
+ 
+Carbon  MT 2s2 2p2  B-only rc =1.23 1.23                          
+ 
+ ****************************************************************
+ *   ATOM       MASS   RAGGIO NLCC              PSEUDOPOTENTIAL *
+ *      H     1.0078    .8000   NO                  S     LOCAL *
+ *      C    12.0000    .8000   NO    KLEINMAN      S  NONLOCAL *
+ *                                                  P     LOCAL *
+ ****************************************************************
+ 
+ TABLE FOR EXCHANGE-CORRELATION ENERGY
+    RMAX:                                              2.0000E+00
+    NARRAY:                                                 30000
+
+ ***     GENXC| THE NEW SIZE OF THE PROGRAM IS  5132 KBytes ***
+ 
+ >>>>>>>>>>>>>>>>>>> PATH-INTEGRAL PARAMETERS <<<<<<<<<<<<<<<<<<<
+ >>>> TROTTER DIMENSION :   8
+ >>>> INITIALIZATION RUN        
+ >>>> GENERATE QUANTUM FREE PARTICLE REPLICA COORDINATES 
+ >>>> USING THE CLASSICAL POSITIONS AS CENTROIDS
+ >>>> AT A TEMPERATURE OF :       500.00K
+ >>>> USE NORMAL MODE VARIABLES 
+ >>>> SCALING FACTOR FACMASS :  1.00000    
+ >>>> MASS DISPARITY FACSTAGE:  1.00000    
+ >>>> PRINT LEVEL       :   1
+ >>>>
+ >>>>       PC_GROUP        PROCESSORS        TROTTER INDICES
+ >>>>           1             0 -   31              1 -   8
+ >>>>
+ 
+ ****************** FINAL MASS SETTINGS IN AMU ******************
+ PRIMITIVE MASSES 
+  TYPE       REAL MASS        FICTITIOUS MASS
+   H          1.0078           1.0078
+   C         12.0000          12.0000
+ MODE TRANSFORMED MASSES 
+  TYPE       REAL MASS        FICTITIOUS MASS FOR IP
+   H          1.0078           1.0078              1
+   H          4.7230           4.7230              2
+   H          4.7230           4.7230              3
+   H         16.1252          16.1252              4
+   H         16.1252          16.1252              5
+   H         27.5274          27.5274              6
+   H         27.5274          27.5274              7
+   H         32.2504          32.2504              8
+ MODE TRANSFORMED MASSES 
+  TYPE       REAL MASS        FICTITIOUS MASS FOR IP
+   C         12.0000          12.0000              1
+   C         56.2355          56.2355              2
+   C         56.2355          56.2355              3
+   C        192.0000         192.0000              4
+   C        192.0000         192.0000              5
+   C        327.7645         327.7645              6
+   C        327.7645         327.7645              7
+   C        384.0000         384.0000              8
+ FICTITIOUS ELECTRON MASS:    .2194
+ ****************************************************************
+
+ PARAPARAPARAPARAPARAPARAPARAPARAPARAPARAPARAPARAPARAPARAPARAPARA
+  NCPU     NGW     NHG  PLANES  GXRAYS  HXRAYS ORBITALS Z-PLANES
+     0     177    1469       2      18      78       0       4
+     1     179    1473       2      18      78       0       3
+     2     179    1475       2      18      78       0       4
+     3     179    1475       1      18      78       0       4
+     4     177    1473       2      18      78       1       4
+     5     177    1471       2      18      78       0       3
+     6     179    1475       2      18      78       0       4
+     7     179    1471       2      18      78       0       4
+     8     181    1471       2      18      78       0       4
+     9     184    1471       2      20      78       0       3
+    10     184    1469       2      20      78       0       4
+    11     184    1471       1      20      78       0       4
+    12     184    1469       2      20      78       1       4
+    13     184    1471       2      20      78       0       3
+    14     184    1473       2      20      78       0       4
+    15     188    1471       2      20      78       0       4
+    16     190    1471       2      20      78       0       4
+    17     190    1473       2      20      78       0       3
+    18     188    1477       2      20      78       0       4
+    19     188    1477       1      20      78       0       4
+    20     188    1477       2      20      78       1       4
+    21     186    1481       2      20      78       0       3
+    22     186    1479       2      20      78       0       4
+    23     188    1475       2      20      78       0       4
+    24     184    1475       2      20      78       0       4
+    25     184    1482       2      20      80       0       3
+    26     184    1480       2      20      80       0       4
+    27     184    1482       1      20      80       0       4
+    28     184    1482       2      20      80       1       4
+    29     184    1458       2      19      79       0       3
+    30     184    1478       2      20      80       0       4
+    31     186    1476       2      20      80       0       4
+                G=0 COMPONENT ON PROCESSOR :    29
+ PARAPARAPARAPARAPARAPARAPARAPARAPARAPARAPARAPARAPARAPARAPARAPARA
+
+ ***    LOADPA| THE NEW SIZE OF THE PROGRAM IS  5292 KBytes ***
+ ***     RGGEN| THE NEW SIZE OF THE PROGRAM IS  5328 KBytes ***
+
+ ************************** SUPERCELL ***************************
+ THIS IS AN ISOLATED SYSTEM CALCULATION 
+ POISSON EQUATION SOLVER  :                               HOCKNEY
+ COULOMB SMOOTHING RADIUS :                                  .060
+ SYMMETRY:                                           SIMPLE CUBIC
+ LATTICE CONSTANT(a.u.):                                 15.00000
+ CELL DIMENSION:  15.0000  1.0000  1.0000   .0000   .0000   .0000
+ VOLUME(OMEGA IN BOHR^3):                              3375.00000
+ LATTICE VECTOR A1(BOHR):           15.0000      .0000      .0000
+ LATTICE VECTOR A2(BOHR):             .0000    15.0000      .0000
+ LATTICE VECTOR A3(BOHR):             .0000      .0000    15.0000
+ RECIP. LAT. VEC. B1(2Pi/BOHR):       .0667      .0000      .0000
+ RECIP. LAT. VEC. B2(2Pi/BOHR):       .0000      .0667      .0000
+ RECIP. LAT. VEC. B3(2Pi/BOHR):       .0000      .0000      .0667
+ REAL SPACE MESH:                    60           60           60
+ WAVEFUNCTION CUTOFF(RYDBERG):                           35.00000
+ DENSITY CUTOFF(RYDBERG):          (DUAL= 4.00)         140.00000
+ NUMBER OF PLANE WAVES FOR WAVEFUNCTION CUTOFF:              5877
+ NUMBER OF PLANE WAVES FOR DENSITY CUTOFF:                  47171
+ NUMBER OF PLANE WAVES FOR BROYDEN MIXING:                   1469
+ ****************************************************************
+ 
+ ***  RINFORCE| THE NEW SIZE OF THE PROGRAM IS  5824 KBytes ***
+ ***    FFTPRP| THE NEW SIZE OF THE PROGRAM IS  5828 KBytes ***
+ ***   CLUSTER| THE NEW SIZE OF THE PROGRAM IS  6512 KBytes ***
+ ***  NOSALLOC| THE NEW SIZE OF THE PROGRAM IS  6516 KBytes ***
+
+ GENERATE ATOMIC BASIS SET
+      H        SLATER ORBITALS
+        1S        ALPHA=   1.0000      OCCUPATION= 1.00
+      C        SLATER ORBITALS
+        2S        ALPHA=   1.6083      OCCUPATION= 2.00
+        2P        ALPHA=   1.5679      OCCUPATION= 2.00
+ 
+
+ INITIALIZATION TIME:                                1.47 SECONDS
+
+
+ ***************************************************************
+ *                                                             *
+ *                        R OF GYRATION                        *
+ *                                                             *
+ ***************************************************************
+
+  CLASSICAL CONFIGURATION READ IN AS CENTROIDS
+  NORMAL MODES SAMPLED DIRECTLY
+   
+   ATOM   R OF GYRATION  FREE PARTICLE  MAXDIS  MINDIS (ANGSTROM)
+   1   H     .13571         .15513      .23710   .11213
+   2   H     .18683         .15513      .28304   .08633
+   3   H     .20994         .15513      .24876   .13064
+   4   H     .20594         .15513      .29611   .02905
+   5   H     .14382         .15513      .23951   .09807
+   6   C     .04408         .04496      .10038   .02297
+   
+
+ ***************************************************************
+ *                                                             *
+ *                        REPLICA :    1                       *
+ *                                                             *
+ ***************************************************************
+
+ ***    WFOPTS| THE NEW SIZE OF THE PROGRAM IS  8188 KBytes ***
+ ***     PHFAC| THE NEW SIZE OF THE PROGRAM IS  8204 KBytes ***
+ ***    ATOMWF| THE NEW SIZE OF THE PROGRAM IS  8204 KBytes ***
+  ATRHO| CHARGE(R-SPACE):    9.000000      (G-SPACE):    9.000000
+
+ ****************************************************************
+ *                      ATOMIC COORDINATES                      *
+ ****************************************************************
+       1       H           7.783727       9.556683       7.400445
+       2       H           9.233090       9.143755       7.374759
+       3       H           5.552020       7.816904       7.452640
+       4       H           7.891662       6.116226       5.678242
+       5       H           7.667223       6.163810       9.190444
+       6       C           7.500034       7.375586       7.449772
+ ****************************************************************
+
+ CPU TIME FOR WAVEFUNCTION INITIALIZATION:           2.37 SECONDS
+ ***    RWFOPT| THE NEW SIZE OF THE PROGRAM IS  9284 KBytes ***
+ EWALD SUM IN REAL SPACE OVER  1* 1* 1 CELLS
+
+ TOTAL INTEGRATED ELECTRONIC DENSITY
+    IN G-SPACE =                                         8.000000
+    IN R-SPACE =                                         8.000000
+
+ (K+E1+L+N+X)           TOTAL ENERGY =           -8.01894511 A.U.
+ (K)                  KINETIC ENERGY =            5.25102808 A.U.
+ (E1=A-S+R)     ELECTROSTATIC ENERGY =           -8.32959869 A.U.
+ (S)                           ESELF =           10.47223486 A.U.
+ (R)                             ESR =             .10395367 A.U.
+ (L)    LOCAL PSEUDOPOTENTIAL ENERGY =           -2.63341739 A.U.
+ (N)      N-L PSEUDOPOTENTIAL ENERGY =             .79181759 A.U.
+ (X)     EXCHANGE-CORRELATION ENERGY =           -3.09877470 A.U.
+          GRADIENT CORRECTION ENERGY =            -.21308642 A.U.
+ 
+ NFI      GEMAX       CNORM           ETOT        DETOT      TCPU
+   1  1.058E-01   7.930E-03      -8.018945    0.000E+00       .10
+   2  7.308E-02   3.546E-03      -8.254938   -2.360E-01       .10
+   3  8.512E-03   1.740E-03      -8.310391   -5.545E-02       .10
+   4  7.387E-03   7.677E-04      -8.317571   -7.180E-03       .10
+   5  2.937E-03   2.745E-04      -8.319376   -1.805E-03       .09
+   6  1.477E-03   1.391E-04      -8.319619   -2.432E-04       .09
+   7  4.521E-04   8.425E-05      -8.319680   -6.132E-05       .07
+   8  2.806E-04   5.286E-05      -8.319705   -2.459E-05       .06
+   9  1.595E-04   2.784E-05      -8.319717   -1.210E-05       .06
+  10  1.139E-04   1.412E-05      -8.319720   -3.701E-06       .06
+  11  7.088E-05   7.943E-06      -8.319721   -9.925E-07       .06
+  12  4.078E-05   4.973E-06      -8.319722   -2.759E-07       .06
+  13  2.045E-05   3.162E-06      -8.319722   -8.241E-08       .06
+  14  9.288E-06   2.029E-06      -8.319722   -4.757E-08       .06
+  15  8.062E-06   1.349E-06      -8.319722   -2.621E-08       .06
+  16  4.291E-06   9.171E-07      -8.319722   -3.541E-09       .06
+  17  3.977E-06   6.298E-07      -8.319722   -4.019E-09       .06
+  18  3.213E-06   4.317E-07      -8.319722   -2.209E-09       .06
+  19  1.557E-06   2.965E-07      -8.319722   -7.121E-10       .06
+  20  8.690E-07   2.024E-07      -8.319722   -1.576E-10       .06
+
+ RESTART INFORMATION WRITTEN ON FILE                ./RESTART_1.1
+ ***    RWFOPT| THE NEW SIZE OF THE PROGRAM IS  9416 KBytes ***
+
+ ****************************************************************
+ *                                                              *
+ *                        FINAL RESULTS                         *
+ *                                                              *
+ ****************************************************************
+
+   ATOM          COORDINATES            GRADIENTS (-FORCES)
+   1  H  7.7837  9.5567  7.4004   -.421E-01   .328E-01   .241E-02
+   2  H  9.2331  9.1438  7.3748    .332E-01  -.372E-01   .327E-02
+   3  H  5.5520  7.8169  7.4526   -.300E-01   .174E-01  -.645E-02
+   4  H  7.8917  6.1162  5.6782    .621E-03   .387E-01   .292E-01
+   5  H  7.6672  6.1638  9.1904    .174E-01   .295E-01  -.103E-01
+   6  C  7.5000  7.3756  7.4498    .211E-01  -.813E-01  -.186E-01
+ 
+ ****************************************************************
+
+ 
+ ELECTRONIC GRADIENT:
+    MAX. COMPONENT =    4.55637E-07         NORM =    1.34537E-07
+ NUCLEAR GRADIENT: 
+    MAX. COMPONENT =    8.13214E-02         NORM =    3.12966E-02
+ 
+
+ TOTAL INTEGRATED ELECTRONIC DENSITY
+    IN G-SPACE =                                         8.000000
+    IN R-SPACE =                                         8.000000
+
+ (K+E1+L+N+X)           TOTAL ENERGY =           -8.31972191 A.U.
+ (K)                  KINETIC ENERGY =            6.63061718 A.U.
+ (E1=A-S+R)     ELECTROSTATIC ENERGY =           -8.83411028 A.U.
+ (S)                           ESELF =           10.47223486 A.U.
+ (R)                             ESR =             .10395367 A.U.
+ (L)    LOCAL PSEUDOPOTENTIAL ENERGY =           -3.34082367 A.U.
+ (N)      N-L PSEUDOPOTENTIAL ENERGY =             .63202250 A.U.
+ (X)     EXCHANGE-CORRELATION ENERGY =           -3.40742765 A.U.
+          GRADIENT CORRECTION ENERGY =            -.26171712 A.U.
+ 
+ ****************************************************************
+
+
+ ***************************************************************
+ *                                                             *
+ *                        REPLICA :    2                       *
+ *                                                             *
+ ***************************************************************
+
+ ***    WFOPTS| THE NEW SIZE OF THE PROGRAM IS  9420 KBytes ***
+ ***    ATOMWF| THE NEW SIZE OF THE PROGRAM IS  9420 KBytes ***
+  ATRHO| CHARGE(R-SPACE):    9.000000      (G-SPACE):    9.000000
+
+ ****************************************************************
+ *                      ATOMIC COORDINATES                      *
+ ****************************************************************
+       1       H           7.656101       9.715024       7.273265
+       2       H           9.086419       8.925669       7.110766
+       3       H           5.525580       7.523148       7.385728
+       4       H           8.137354       6.165031       5.732880
+       5       H           8.068954       6.299344       9.213046
+       6       C           7.428334       7.315725       7.492832
+ ****************************************************************
+
+ CPU TIME FOR WAVEFUNCTION INITIALIZATION:           2.35 SECONDS
+ ***    RWFOPT| THE NEW SIZE OF THE PROGRAM IS  9420 KBytes ***
+
+ TOTAL INTEGRATED ELECTRONIC DENSITY
+    IN G-SPACE =                                         8.000000
+    IN R-SPACE =                                         8.000000
+
+ (K+E1+L+N+X)           TOTAL ENERGY =           -8.04038780 A.U.
+ (K)                  KINETIC ENERGY =            5.26634884 A.U.
+ (E1=A-S+R)     ELECTROSTATIC ENERGY =           -8.36573151 A.U.
+ (S)                           ESELF =           10.47223486 A.U.
+ (R)                             ESR =             .09564467 A.U.
+ (L)    LOCAL PSEUDOPOTENTIAL ENERGY =           -2.64088123 A.U.
+ (N)      N-L PSEUDOPOTENTIAL ENERGY =             .80376677 A.U.
+ (X)     EXCHANGE-CORRELATION ENERGY =           -3.10389066 A.U.
+          GRADIENT CORRECTION ENERGY =            -.21278626 A.U.
+ 
+ NFI      GEMAX       CNORM           ETOT        DETOT      TCPU
+   1  1.027E-01   7.842E-03      -8.040388    0.000E+00       .07
+   2  6.947E-02   3.442E-03      -8.268845   -2.285E-01       .06
+   3  7.829E-03   1.693E-03      -8.320298   -5.145E-02       .06
+   4  7.156E-03   7.387E-04      -8.327283   -6.986E-03       .06
+   5  2.960E-03   2.592E-04      -8.328981   -1.698E-03       .06
+   6  1.306E-03   1.340E-04      -8.329201   -2.192E-04       .06
+   7  3.969E-04   8.117E-05      -8.329256   -5.534E-05       .06
+   8  2.566E-04   5.136E-05      -8.329278   -2.247E-05       .06
+   9  1.494E-04   2.683E-05      -8.329290   -1.150E-05       .06
+  10  1.090E-04   1.350E-05      -8.329293   -3.353E-06       .06
+  11  6.839E-05   7.591E-06      -8.329294   -8.813E-07       .06
+  12  3.582E-05   4.779E-06      -8.329294   -2.177E-07       .06
+  13  1.552E-05   3.123E-06      -8.329294   -5.326E-08       .06
+  14  8.601E-06   1.940E-06      -8.329294   -3.656E-08       .06
+  15  5.470E-06   1.269E-06      -8.329294   -1.004E-08       .06
+  16  3.758E-06   8.440E-07      -8.329294    4.447E-09       .06
+  17  2.289E-06   5.681E-07      -8.329294   -3.379E-09       .06
+  18  2.126E-06   3.755E-07      -8.329294   -1.315E-09       .06
+  19  1.487E-06   2.432E-07      -8.329294    1.689E-10       .06
+  20  6.327E-07   1.582E-07      -8.329294   -4.396E-10       .06
+
+ RESTART INFORMATION WRITTEN ON FILE                ./RESTART_2.1
+ ***    RWFOPT| THE NEW SIZE OF THE PROGRAM IS  9420 KBytes ***
+
+ ****************************************************************
+ *                                                              *
+ *                        FINAL RESULTS                         *
+ *                                                              *
+ ****************************************************************
+
+   ATOM          COORDINATES            GRADIENTS (-FORCES)
+   1  H  7.6561  9.7150  7.2733   -.130E-01  -.636E-02   .968E-02
+   2  H  9.0864  8.9257  7.1108    .705E-02  -.988E-02   .130E-02
+   3  H  5.5256  7.5231  7.3857   -.671E-01   .153E-01  -.547E-02
+   4  H  8.1374  6.1650  5.7329   -.162E-01   .269E-01   .291E-01
+   5  H  8.0690  6.2993  9.2130   -.199E-02   .231E-01  -.484E-02
+   6  C  7.4283  7.3157  7.4928    .908E-01  -.490E-01  -.299E-01
+ 
+ ****************************************************************
+
+ 
+ ELECTRONIC GRADIENT:
+    MAX. COMPONENT =    3.87772E-07         NORM =    1.06927E-07
+ NUCLEAR GRADIENT: 
+    MAX. COMPONENT =    9.07835E-02         NORM =    3.26067E-02
+ 
+
+ TOTAL INTEGRATED ELECTRONIC DENSITY
+    IN G-SPACE =                                         8.000000
+    IN R-SPACE =                                         8.000000
+
+ (K+E1+L+N+X)           TOTAL ENERGY =           -8.32929439 A.U.
+ (K)                  KINETIC ENERGY =            6.61930721 A.U.
+ (E1=A-S+R)     ELECTROSTATIC ENERGY =           -8.85112860 A.U.
+ (S)                           ESELF =           10.47223486 A.U.
+ (R)                             ESR =             .09564467 A.U.
+ (L)    LOCAL PSEUDOPOTENTIAL ENERGY =           -3.33486803 A.U.
+ (N)      N-L PSEUDOPOTENTIAL ENERGY =             .64445010 A.U.
+ (X)     EXCHANGE-CORRELATION ENERGY =           -3.40705508 A.U.
+          GRADIENT CORRECTION ENERGY =            -.26132341 A.U.
+ 
+ ****************************************************************
+
+
+ ***************************************************************
+ *                                                             *
+ *                        REPLICA :    3                       *
+ *                                                             *
+ ***************************************************************
+
+ ***    WFOPTS| THE NEW SIZE OF THE PROGRAM IS  9420 KBytes ***
+ ***    ATOMWF| THE NEW SIZE OF THE PROGRAM IS  9420 KBytes ***
+  ATRHO| CHARGE(R-SPACE):    9.000000      (G-SPACE):    9.000000
+
+ ****************************************************************
+ *                      ATOMIC COORDINATES                      *
+ ****************************************************************
+       1       H           7.442712       9.675023       7.309395
+       2       H           9.124336       8.878864       7.576062
+       3       H           5.515683       7.760080       7.051797
+       4       H           8.168231       6.120447       5.724404
+       5       H           8.121200       6.542538       9.170640
+       6       C           7.456565       7.350159       7.441117
+ ****************************************************************
+
+ CPU TIME FOR WAVEFUNCTION INITIALIZATION:           2.24 SECONDS
+ ***    RWFOPT| THE NEW SIZE OF THE PROGRAM IS  9420 KBytes ***
+
+ TOTAL INTEGRATED ELECTRONIC DENSITY
+    IN G-SPACE =                                         8.000000
+    IN R-SPACE =                                         8.000000
+
+ (K+E1+L+N+X)           TOTAL ENERGY =           -8.06027574 A.U.
+ (K)                  KINETIC ENERGY =            5.34067807 A.U.
+ (E1=A-S+R)     ELECTROSTATIC ENERGY =           -8.44010317 A.U.
+ (S)                           ESELF =           10.47223486 A.U.
+ (R)                             ESR =             .07980883 A.U.
+ (L)    LOCAL PSEUDOPOTENTIAL ENERGY =           -2.65125209 A.U.
+ (N)      N-L PSEUDOPOTENTIAL ENERGY =             .81145553 A.U.
+ (X)     EXCHANGE-CORRELATION ENERGY =           -3.12105407 A.U.
+          GRADIENT CORRECTION ENERGY =            -.21105349 A.U.
+ 
+ NFI      GEMAX       CNORM           ETOT        DETOT      TCPU
+   1  9.637E-02   7.759E-03      -8.060276    0.000E+00       .06
+   2  6.491E-02   3.292E-03      -8.277991   -2.177E-01       .06
+   3  8.184E-03   1.634E-03      -8.323674   -4.568E-02       .06
+   4  6.856E-03   7.075E-04      -8.330265   -6.591E-03       .06
+   5  2.878E-03   2.376E-04      -8.331836   -1.571E-03       .06
+   6  1.216E-03   1.133E-04      -8.332025   -1.891E-04       .06
+   7  3.783E-04   6.528E-05      -8.332065   -3.926E-05       .06
+   8  2.270E-04   4.056E-05      -8.332079   -1.413E-05       .06
+   9  1.400E-04   2.135E-05      -8.332085   -6.440E-06       .06
+  10  9.513E-05   1.069E-05      -8.332087   -2.085E-06       .06
+  11  5.704E-05   5.886E-06      -8.332088   -5.649E-07       .06
+  12  3.425E-05   3.595E-06      -8.332088   -1.592E-07       .06
+  13  1.531E-05   2.287E-06      -8.332088   -3.742E-08       .06
+  14  7.337E-06   1.413E-06      -8.332088   -2.894E-08       .06
+  15  5.664E-06   9.376E-07      -8.332088   -1.524E-08       .06
+  16  3.628E-06   6.117E-07      -8.332088    7.384E-10       .06
+  17  3.804E-06   4.011E-07      -8.332088   -2.495E-09       .06
+  18  2.531E-06   2.613E-07      -8.332088   -1.477E-09       .06
+  19  1.231E-06   1.705E-07      -8.332088   -3.186E-10       .06
+  20  6.705E-07   1.123E-07      -8.332088    4.755E-10       .06
+
+ RESTART INFORMATION WRITTEN ON FILE                ./RESTART_3.1
+ ***    RWFOPT| THE NEW SIZE OF THE PROGRAM IS  9420 KBytes ***
+
+ ****************************************************************
+ *                                                              *
+ *                        FINAL RESULTS                         *
+ *                                                              *
+ ****************************************************************
+
+   ATOM          COORDINATES            GRADIENTS (-FORCES)
+   1  H  7.4427  9.6750  7.3094    .112E-01  -.140E-01  -.642E-03
+   2  H  9.1243  8.8789  7.5761   -.725E-02   .402E-02  -.111E-01
+   3  H  5.5157  7.7601  7.0518   -.257E-01  -.167E-02   .900E-02
+   4  H  8.1682  6.1204  5.7244   -.113E-01   .355E-01   .294E-01
+   5  H  8.1212  6.5425  9.1706   -.166E-01  -.598E-02   .214E-01
+   6  C  7.4566  7.3502  7.4411    .495E-01  -.180E-01  -.486E-01
+ 
+ ****************************************************************
+
+ 
+ ELECTRONIC GRADIENT:
+    MAX. COMPONENT =    3.08329E-07         NORM =    7.35593E-08
+ NUCLEAR GRADIENT: 
+    MAX. COMPONENT =    4.94907E-02         NORM =    2.28763E-02
+ 
+
+ TOTAL INTEGRATED ELECTRONIC DENSITY
+    IN G-SPACE =                                         8.000000
+    IN R-SPACE =                                         8.000000
+
+ (K+E1+L+N+X)           TOTAL ENERGY =           -8.33208803 A.U.
+ (K)                  KINETIC ENERGY =            6.60853058 A.U.
+ (E1=A-S+R)     ELECTROSTATIC ENERGY =           -8.88058424 A.U.
+ (S)                           ESELF =           10.47223486 A.U.
+ (R)                             ESR =             .07980883 A.U.
+ (L)    LOCAL PSEUDOPOTENTIAL ENERGY =           -3.29963844 A.U.
+ (N)      N-L PSEUDOPOTENTIAL ENERGY =             .63870190 A.U.
+ (X)     EXCHANGE-CORRELATION ENERGY =           -3.39909783 A.U.
+          GRADIENT CORRECTION ENERGY =            -.25647001 A.U.
+ 
+ ****************************************************************
+
+
+ ***************************************************************
+ *                                                             *
+ *                        REPLICA :    4                       *
+ *                                                             *
+ ***************************************************************
+
+ ***    WFOPTS| THE NEW SIZE OF THE PROGRAM IS  9420 KBytes ***
+ ***    ATOMWF| THE NEW SIZE OF THE PROGRAM IS  9420 KBytes ***
+  ATRHO| CHARGE(R-SPACE):    9.000000      (G-SPACE):    9.000000
+
+ ****************************************************************
+ *                      ATOMIC COORDINATES                      *
+ ****************************************************************
+       1       H           7.280819       9.661505       7.445426
+       2       H           8.949608       8.413606       7.479466
+       3       H           5.197749       7.646220       7.145655
+       4       H           8.025567       6.620632       5.773776
+       5       H           8.071756       6.405751       9.285503
+       6       C           7.392763       7.378094       7.481458
+ ****************************************************************
+
+ CPU TIME FOR WAVEFUNCTION INITIALIZATION:           2.23 SECONDS
+ ***    RWFOPT| THE NEW SIZE OF THE PROGRAM IS  9420 KBytes ***
+
+ TOTAL INTEGRATED ELECTRONIC DENSITY
+    IN G-SPACE =                                         8.000000
+    IN R-SPACE =                                         8.000000
+
+ (K+E1+L+N+X)           TOTAL ENERGY =           -8.04153037 A.U.
+ (K)                  KINETIC ENERGY =            5.56009379 A.U.
+ (E1=A-S+R)     ELECTROSTATIC ENERGY =           -8.50157776 A.U.
+ (S)                           ESELF =           10.47223486 A.U.
+ (R)                             ESR =             .10393892 A.U.
+ (L)    LOCAL PSEUDOPOTENTIAL ENERGY =           -2.75914535 A.U.
+ (N)      N-L PSEUDOPOTENTIAL ENERGY =             .83581163 A.U.
+ (X)     EXCHANGE-CORRELATION ENERGY =           -3.17671268 A.U.
+          GRADIENT CORRECTION ENERGY =            -.21076462 A.U.
+ 
+ NFI      GEMAX       CNORM           ETOT        DETOT      TCPU
+   1  8.245E-02   8.003E-03      -8.041530    0.000E+00       .06
+   2  5.669E-02   3.195E-03      -8.263164   -2.216E-01       .06
+   3  9.695E-03   1.633E-03      -8.302986   -3.982E-02       .06
+   4  8.071E-03   6.713E-04      -8.309884   -6.898E-03       .06
+   5  3.369E-03   2.221E-04      -8.311384   -1.500E-03       .06
+   6  1.178E-03   1.011E-04      -8.311559   -1.753E-04       .06
+   7  3.856E-04   5.437E-05      -8.311590   -3.097E-05       .06
+   8  1.924E-04   3.210E-05      -8.311600   -1.000E-05       .06
+   9  1.393E-04   1.667E-05      -8.311604   -3.744E-06       .06
+  10  8.626E-05   8.413E-06      -8.311605   -1.231E-06       .06
+  11  5.206E-05   4.614E-06      -8.311606   -3.365E-07       .06
+  12  3.784E-05   2.830E-06      -8.311606   -9.660E-08       .06
+  13  1.662E-05   1.764E-06      -8.311606   -1.953E-08       .06
+  14  7.382E-06   1.125E-06      -8.311606   -1.441E-08       .06
+  15  6.509E-06   7.326E-07      -8.311606   -1.119E-08       .06
+  16  4.153E-06   4.824E-07      -8.311606    2.574E-10       .06
+  17  4.253E-06   2.853E-07      -8.311606   -1.219E-09       .06
+  18  2.437E-06   1.751E-07      -8.311606   -6.522E-10       .06
+  19  1.700E-06   1.165E-07      -8.311606   -1.164E-09       .06
+  20  5.499E-07   6.890E-08      -8.311606   -2.348E-11       .06
+
+ RESTART INFORMATION WRITTEN ON FILE                ./RESTART_4.1
+ ***    RWFOPT| THE NEW SIZE OF THE PROGRAM IS  9420 KBytes ***
+
+ ****************************************************************
+ *                                                              *
+ *                        FINAL RESULTS                         *
+ *                                                              *
+ ****************************************************************
+
+   ATOM          COORDINATES            GRADIENTS (-FORCES)
+   1  H  7.2808  9.6615  7.4454   -.163E-02  -.233E-01   .570E-02
+   2  H  8.9496  8.4136  7.4795    .104E+00   .851E-01  -.119E-02
+   3  H  5.1977  7.6462  7.1457    .405E-01  -.536E-02   .135E-01
+   4  H  8.0256  6.6206  5.7738    .491E-02  -.261E-01  -.378E-01
+   5  H  8.0718  6.4058  9.2855   -.265E-01   .917E-02  -.201E-01
+   6  C  7.3928  7.3781  7.4815   -.121E+00  -.395E-01   .397E-01
+ 
+ ****************************************************************
+
+ 
+ ELECTRONIC GRADIENT:
+    MAX. COMPONENT =    4.88496E-07         NORM =    4.49879E-08
+ NUCLEAR GRADIENT: 
+    MAX. COMPONENT =    1.21026E-01         NORM =    4.80351E-02
+ 
+
+ TOTAL INTEGRATED ELECTRONIC DENSITY
+    IN G-SPACE =                                         8.000000
+    IN R-SPACE =                                         8.000000
+
+ (K+E1+L+N+X)           TOTAL ENERGY =           -8.31160569 A.U.
+ (K)                  KINETIC ENERGY =            6.78358991 A.U.
+ (E1=A-S+R)     ELECTROSTATIC ENERGY =           -8.89215273 A.U.
+ (S)                           ESELF =           10.47223486 A.U.
+ (R)                             ESR =             .10393892 A.U.
+ (L)    LOCAL PSEUDOPOTENTIAL ENERGY =           -3.39837192 A.U.
+ (N)      N-L PSEUDOPOTENTIAL ENERGY =             .62961524 A.U.
+ (X)     EXCHANGE-CORRELATION ENERGY =           -3.43428619 A.U.
+          GRADIENT CORRECTION ENERGY =            -.25487041 A.U.
+ 
+ ****************************************************************
+
+
+ ***************************************************************
+ *                                                             *
+ *                        REPLICA :    5                       *
+ *                                                             *
+ ***************************************************************
+
+ ***    WFOPTS| THE NEW SIZE OF THE PROGRAM IS  9420 KBytes ***
+ ***    ATOMWF| THE NEW SIZE OF THE PROGRAM IS  9420 KBytes ***
+  ATRHO| CHARGE(R-SPACE):    9.000000      (G-SPACE):    9.000000
+
+ ****************************************************************
+ *                      ATOMIC COORDINATES                      *
+ ****************************************************************
+       1       H           7.495560       9.712013       7.645095
+       2       H           9.095150       8.464711       7.662680
+       3       H           5.325052       7.956202       7.475331
+       4       H           7.835724       6.803646       5.345217
+       5       H           7.878677       6.134361       9.375564
+       6       C           7.363770       7.345894       7.483936
+ ****************************************************************
+
+ CPU TIME FOR WAVEFUNCTION INITIALIZATION:           2.23 SECONDS
+ ***    RWFOPT| THE NEW SIZE OF THE PROGRAM IS  9420 KBytes ***
+
+ TOTAL INTEGRATED ELECTRONIC DENSITY
+    IN G-SPACE =                                         8.000000
+    IN R-SPACE =                                         8.000000
+
+ (K+E1+L+N+X)           TOTAL ENERGY =           -8.07928308 A.U.
+ (K)                  KINETIC ENERGY =            5.24597154 A.U.
+ (E1=A-S+R)     ELECTROSTATIC ENERGY =           -8.47166328 A.U.
+ (S)                           ESELF =           10.47223486 A.U.
+ (R)                             ESR =             .05961510 A.U.
+ (L)    LOCAL PSEUDOPOTENTIAL ENERGY =           -2.57144233 A.U.
+ (N)      N-L PSEUDOPOTENTIAL ENERGY =             .80606943 A.U.
+ (X)     EXCHANGE-CORRELATION ENERGY =           -3.08821844 A.U.
+          GRADIENT CORRECTION ENERGY =            -.20985709 A.U.
+ 
+ NFI      GEMAX       CNORM           ETOT        DETOT      TCPU
+   1  8.977E-02   7.418E-03      -8.079283    0.000E+00       .06
+   2  5.946E-02   3.077E-03      -8.274882   -1.956E-01       .06
+   3  7.964E-03   1.550E-03      -8.314038   -3.916E-02       .06
+   4  6.496E-03   6.789E-04      -8.319926   -5.888E-03       .06
+   5  2.701E-03   2.273E-04      -8.321350   -1.423E-03       .06
+   6  1.184E-03   1.049E-04      -8.321522   -1.722E-04       .09
+   7  3.485E-04   5.929E-05      -8.321555   -3.362E-05       .06
+   8  1.844E-04   3.548E-05      -8.321567   -1.180E-05       .06
+   9  1.283E-04   1.799E-05      -8.321572   -4.988E-06       .06
+  10  1.010E-04   8.578E-06      -8.321574   -1.666E-06       .06
+  11  5.666E-05   4.529E-06      -8.321574   -2.826E-07       .06
+  12  2.957E-05   2.702E-06      -8.321574   -8.202E-08       .06
+  13  1.182E-05   1.697E-06      -8.321574   -7.690E-09       .06
+  14  5.405E-06   1.027E-06      -8.321574    2.164E-09       .06
+  15  4.396E-06   6.700E-07      -8.321574    5.614E-10       .06
+  16  2.343E-06   4.377E-07      -8.321574    5.660E-09       .06
+  17  3.220E-06   2.743E-07      -8.321574    2.017E-09       .06
+  18  2.086E-06   1.717E-07      -8.321574    1.244E-09       .06
+  19  9.286E-07   1.065E-07      -8.321574    5.598E-10       .06
+
+ RESTART INFORMATION WRITTEN ON FILE                ./RESTART_5.1
+ ***    RWFOPT| THE NEW SIZE OF THE PROGRAM IS  9420 KBytes ***
+
+ ****************************************************************
+ *                                                              *
+ *                        FINAL RESULTS                         *
+ *                                                              *
+ ****************************************************************
+
+   ATOM          COORDINATES            GRADIENTS (-FORCES)
+   1  H  7.4956  9.7120  7.6451    .982E-03  -.266E-01   .454E-02
+   2  H  9.0952  8.4647  7.6627    .273E-01   .281E-01   .467E-02
+   3  H  5.3251  7.9562  7.4753    .127E-01  -.611E-02   .439E-02
+   4  H  7.8357  6.8036  5.3452   -.126E-01  -.207E-02   .512E-01
+   5  H  7.8787  6.1344  9.3756   -.183E-01   .253E-01  -.510E-01
+   6  C  7.3638  7.3459  7.4839   -.101E-01  -.186E-01  -.139E-01
+ 
+ ****************************************************************
+
+ 
+ ELECTRONIC GRADIENT:
+    MAX. COMPONENT =    5.06873E-07         NORM =    6.48539E-08
+ NUCLEAR GRADIENT: 
+    MAX. COMPONENT =    5.11631E-02         NORM =    2.29648E-02
+ 
+
+ TOTAL INTEGRATED ELECTRONIC DENSITY
+    IN G-SPACE =                                         8.000000
+    IN R-SPACE =                                         8.000000
+
+ (K+E1+L+N+X)           TOTAL ENERGY =           -8.32157415 A.U.
+ (K)                  KINETIC ENERGY =            6.43538165 A.U.
+ (E1=A-S+R)     ELECTROSTATIC ENERGY =           -8.88147573 A.U.
+ (S)                           ESELF =           10.47223486 A.U.
+ (R)                             ESR =             .05961510 A.U.
+ (L)    LOCAL PSEUDOPOTENTIAL ENERGY =           -3.16446490 A.U.
+ (N)      N-L PSEUDOPOTENTIAL ENERGY =             .63217794 A.U.
+ (X)     EXCHANGE-CORRELATION ENERGY =           -3.34319311 A.U.
+          GRADIENT CORRECTION ENERGY =            -.25153350 A.U.
+ 
+ ****************************************************************
+
+
+ ***************************************************************
+ *                                                             *
+ *                        REPLICA :    6                       *
+ *                                                             *
+ ***************************************************************
+
+ ***    WFOPTS| THE NEW SIZE OF THE PROGRAM IS  9420 KBytes ***
+ ***    ATOMWF| THE NEW SIZE OF THE PROGRAM IS  9420 KBytes ***
+  ATRHO| CHARGE(R-SPACE):    9.000000      (G-SPACE):    9.000000
+
+ ****************************************************************
+ *                      ATOMIC COORDINATES                      *
+ ****************************************************************
+       1       H           7.265385       9.602744       7.486716
+       2       H           9.466767       8.819641       7.811051
+       3       H           5.485044       8.209309       7.725492
+       4       H           7.996625       6.799811       5.881138
+       5       H           7.849485       6.373487       9.346922
+       6       C           7.527566       7.393994       7.566622
+ ****************************************************************
+
+ CPU TIME FOR WAVEFUNCTION INITIALIZATION:           2.21 SECONDS
+ ***    RWFOPT| THE NEW SIZE OF THE PROGRAM IS  9420 KBytes ***
+
+ TOTAL INTEGRATED ELECTRONIC DENSITY
+    IN G-SPACE =                                         8.000000
+    IN R-SPACE =                                         8.000000
+
+ (K+E1+L+N+X)           TOTAL ENERGY =           -8.05867591 A.U.
+ (K)                  KINETIC ENERGY =            5.42257270 A.U.
+ (E1=A-S+R)     ELECTROSTATIC ENERGY =           -8.47424163 A.U.
+ (S)                           ESELF =           10.47223486 A.U.
+ (R)                             ESR =             .09123466 A.U.
+ (L)    LOCAL PSEUDOPOTENTIAL ENERGY =           -2.69272745 A.U.
+ (N)      N-L PSEUDOPOTENTIAL ENERGY =             .82552051 A.U.
+ (X)     EXCHANGE-CORRELATION ENERGY =           -3.13980004 A.U.
+          GRADIENT CORRECTION ENERGY =            -.21015375 A.U.
+ 
+ NFI      GEMAX       CNORM           ETOT        DETOT      TCPU
+   1  9.107E-02   7.770E-03      -8.058676    0.000E+00       .06
+   2  6.036E-02   3.168E-03      -8.272721   -2.140E-01       .06
+   3  8.709E-03   1.589E-03      -8.313554   -4.083E-02       .06
+   4  7.180E-03   6.550E-04      -8.320192   -6.638E-03       .06
+   5  3.108E-03   2.190E-04      -8.321632   -1.440E-03       .06
+   6  1.147E-03   1.096E-04      -8.321796   -1.644E-04       .06
+   7  3.676E-04   6.177E-05      -8.321830   -3.417E-05       .06
+   8  2.336E-04   3.867E-05      -8.321843   -1.221E-05       .06
+   9  1.391E-04   1.992E-05      -8.321849   -5.919E-06       .06
+  10  8.908E-05   9.602E-06      -8.321850   -1.908E-06       .06
+  11  5.640E-05   5.202E-06      -8.321851   -4.839E-07       .06
+  12  3.263E-05   3.167E-06      -8.321851   -1.223E-07       .06
+  13  1.396E-05   2.045E-06      -8.321851   -2.614E-08       .06
+  14  6.986E-06   1.229E-06      -8.321851   -2.566E-08       .06
+  15  4.951E-06   7.889E-07      -8.321851   -1.025E-08       .06
+  16  3.309E-06   4.904E-07      -8.321851    7.724E-10       .06
+  17  3.252E-06   3.030E-07      -8.321851   -2.604E-09       .06
+  18  1.851E-06   1.880E-07      -8.321851   -6.125E-10       .06
+  19  7.792E-07   1.177E-07      -8.321851   -6.964E-10       .06
+
+ RESTART INFORMATION WRITTEN ON FILE                ./RESTART_6.1
+ ***    RWFOPT| THE NEW SIZE OF THE PROGRAM IS  9420 KBytes ***
+
+ ****************************************************************
+ *                                                              *
+ *                        FINAL RESULTS                         *
+ *                                                              *
+ ****************************************************************
+
+   ATOM          COORDINATES            GRADIENTS (-FORCES)
+   1  H  7.2654  9.6027  7.4867    .124E-01  -.139E-02   .821E-02
+   2  H  9.4668  8.8196  7.8111   -.391E-01  -.142E-01   .932E-03
+   3  H  5.4850  8.2093  7.7255    .128E-01  -.146E-01  -.427E-02
+   4  H  7.9966  6.7998  5.8811    .127E-01  -.499E-01  -.969E-01
+   5  H  7.8495  6.3735  9.3469   -.529E-02   .171E-02  -.787E-02
+   6  C  7.5276  7.3940  7.5666    .659E-02   .782E-01   .101E+00
+ 
+ ****************************************************************
+
+ 
+ ELECTRONIC GRADIENT:
+    MAX. COMPONENT =    5.32154E-07         NORM =    7.37265E-08
+ NUCLEAR GRADIENT: 
+    MAX. COMPONENT =    1.00541E-01         NORM =    4.13422E-02
+ 
+
+ TOTAL INTEGRATED ELECTRONIC DENSITY
+    IN G-SPACE =                                         8.000000
+    IN R-SPACE =                                         8.000000
+
+ (K+E1+L+N+X)           TOTAL ENERGY =           -8.32185117 A.U.
+ (K)                  KINETIC ENERGY =            6.66341146 A.U.
+ (E1=A-S+R)     ELECTROSTATIC ENERGY =           -8.88431170 A.U.
+ (S)                           ESELF =           10.47223486 A.U.
+ (R)                             ESR =             .09123466 A.U.
+ (L)    LOCAL PSEUDOPOTENTIAL ENERGY =           -3.33861176 A.U.
+ (N)      N-L PSEUDOPOTENTIAL ENERGY =             .64765200 A.U.
+ (X)     EXCHANGE-CORRELATION ENERGY =           -3.40999117 A.U.
+          GRADIENT CORRECTION ENERGY =            -.25554127 A.U.
+ 
+ ****************************************************************
+
+
+ ***************************************************************
+ *                                                             *
+ *                        REPLICA :    7                       *
+ *                                                             *
+ ***************************************************************
+
+ ***    WFOPTS| THE NEW SIZE OF THE PROGRAM IS  9420 KBytes ***
+ ***    ATOMWF| THE NEW SIZE OF THE PROGRAM IS  9420 KBytes ***
+  ATRHO| CHARGE(R-SPACE):    9.000000      (G-SPACE):    9.000000
+
+ ****************************************************************
+ *                      ATOMIC COORDINATES                      *
+ ****************************************************************
+       1       H           7.558681       9.615948       7.825171
+       2       H           9.351736       8.833854       7.693205
+       3       H           5.318394       8.207032       7.907612
+       4       H           7.720732       6.573479       5.773651
+       5       H           7.730236       6.759419       9.424195
+       6       C           7.521390       7.345413       7.594663
+ ****************************************************************
+
+ CPU TIME FOR WAVEFUNCTION INITIALIZATION:           2.22 SECONDS
+ ***    RWFOPT| THE NEW SIZE OF THE PROGRAM IS  9420 KBytes ***
+
+ TOTAL INTEGRATED ELECTRONIC DENSITY
+    IN G-SPACE =                                         8.000000
+    IN R-SPACE =                                         8.000000
+
+ (K+E1+L+N+X)           TOTAL ENERGY =           -8.05832880 A.U.
+ (K)                  KINETIC ENERGY =            5.33340174 A.U.
+ (E1=A-S+R)     ELECTROSTATIC ENERGY =           -8.44273585 A.U.
+ (S)                           ESELF =           10.47223486 A.U.
+ (R)                             ESR =             .08403097 A.U.
+ (L)    LOCAL PSEUDOPOTENTIAL ENERGY =           -2.65343913 A.U.
+ (N)      N-L PSEUDOPOTENTIAL ENERGY =             .81933938 A.U.
+ (X)     EXCHANGE-CORRELATION ENERGY =           -3.11489494 A.U.
+          GRADIENT CORRECTION ENERGY =            -.21061018 A.U.
+ 
+ NFI      GEMAX       CNORM           ETOT        DETOT      TCPU
+   1  9.534E-02   7.706E-03      -8.058329    0.000E+00       .07
+   2  6.450E-02   3.209E-03      -8.269326   -2.110E-01       .06
+   3  9.428E-03   1.604E-03      -8.312723   -4.340E-02       .06
+   4  7.735E-03   6.881E-04      -8.319189   -6.466E-03       .06
+   5  3.311E-03   2.344E-04      -8.320715   -1.526E-03       .06
+   6  1.175E-03   1.181E-04      -8.320895   -1.796E-04       .06
+   7  3.787E-04   6.862E-05      -8.320936   -4.097E-05       .06
+   8  2.403E-04   4.360E-05      -8.320951   -1.529E-05       .06
+   9  1.453E-04   2.247E-05      -8.320959   -8.019E-06       .06
+  10  8.850E-05   1.121E-05      -8.320962   -2.653E-06       .06
+  11  5.886E-05   6.385E-06      -8.320962   -6.994E-07       .06
+  12  3.701E-05   4.211E-06      -8.320962   -1.947E-07       .06
+  13  1.550E-05   2.954E-06      -8.320962   -5.672E-08       .06
+  14  9.079E-06   1.910E-06      -8.320963   -5.245E-08       .06
+  15  4.832E-06   1.241E-06      -8.320963   -1.995E-08       .06
+  16  4.308E-06   7.715E-07      -8.320963   -3.130E-09       .06
+  17  2.209E-06   4.810E-07      -8.320963   -4.523E-09       .06
+  18  1.783E-06   2.963E-07      -8.320963   -8.479E-10       .06
+  19  1.168E-06   1.828E-07      -8.320963    3.313E-10       .06
+  20  4.546E-07   1.174E-07      -8.320963   -6.747E-11       .06
+
+ RESTART INFORMATION WRITTEN ON FILE                ./RESTART_7.1
+ ***    RWFOPT| THE NEW SIZE OF THE PROGRAM IS  9420 KBytes ***
+
+ ****************************************************************
+ *                                                              *
+ *                        FINAL RESULTS                         *
+ *                                                              *
+ ****************************************************************
+
+   ATOM          COORDINATES            GRADIENTS (-FORCES)
+   1  H  7.5587  9.6159  7.8252   -.419E-03  -.306E-02  -.132E-01
+   2  H  9.3517  8.8339  7.6932   -.193E-01  -.109E-01  -.329E-02
+   3  H  5.3184  8.2070  7.9076    .459E-01  -.150E-01  -.153E-01
+   4  H  7.7207  6.5735  5.7737    .253E-02  -.174E-01  -.183E-01
+   5  H  7.7302  6.7594  9.4242    .139E-01  -.467E-01   .442E-01
+   6  C  7.5214  7.3454  7.5947   -.425E-01   .930E-01   .627E-02
+ 
+ ****************************************************************
+
+ 
+ ELECTRONIC GRADIENT:
+    MAX. COMPONENT =    2.78876E-07         NORM =    8.31064E-08
+ NUCLEAR GRADIENT: 
+    MAX. COMPONENT =    9.30155E-02         NORM =    3.22515E-02
+ 
+
+ TOTAL INTEGRATED ELECTRONIC DENSITY
+    IN G-SPACE =                                         8.000000
+    IN R-SPACE =                                         8.000000
+
+ (K+E1+L+N+X)           TOTAL ENERGY =           -8.32096255 A.U.
+ (K)                  KINETIC ENERGY =            6.58865462 A.U.
+ (E1=A-S+R)     ELECTROSTATIC ENERGY =           -8.87187279 A.U.
+ (S)                           ESELF =           10.47223486 A.U.
+ (R)                             ESR =             .08403097 A.U.
+ (L)    LOCAL PSEUDOPOTENTIAL ENERGY =           -3.29838370 A.U.
+ (N)      N-L PSEUDOPOTENTIAL ENERGY =             .65418641 A.U.
+ (X)     EXCHANGE-CORRELATION ENERGY =           -3.39354710 A.U.
+          GRADIENT CORRECTION ENERGY =            -.25595451 A.U.
+ 
+ ****************************************************************
+
+
+ ***************************************************************
+ *                                                             *
+ *                        REPLICA :    8                       *
+ *                                                             *
+ ***************************************************************
+
+ ***    WFOPTS| THE NEW SIZE OF THE PROGRAM IS  9420 KBytes ***
+ ***    ATOMWF| THE NEW SIZE OF THE PROGRAM IS  9420 KBytes ***
+  ATRHO| CHARGE(R-SPACE):    9.000000      (G-SPACE):    9.000000
+
+ ****************************************************************
+ *                      ATOMIC COORDINATES                      *
+ ****************************************************************
+       1       H           7.573718       9.429432       7.626221
+       2       H           9.134397       9.081073       7.488547
+       3       H           5.475581       7.839878       7.905081
+       4       H           7.438408       6.234700       5.738427
+       5       H           7.782773       6.596862       9.253421
+       6       C           7.534281       7.386707       7.475737
+ ****************************************************************
+
+ CPU TIME FOR WAVEFUNCTION INITIALIZATION:           2.20 SECONDS
+ ***    RWFOPT| THE NEW SIZE OF THE PROGRAM IS  9420 KBytes ***
+
+ TOTAL INTEGRATED ELECTRONIC DENSITY
+    IN G-SPACE =                                         8.000000
+    IN R-SPACE =                                         8.000000
+
+ (K+E1+L+N+X)           TOTAL ENERGY =           -8.01217043 A.U.
+ (K)                  KINETIC ENERGY =            5.45191490 A.U.
+ (E1=A-S+R)     ELECTROSTATIC ENERGY =           -8.38874045 A.U.
+ (S)                           ESELF =           10.47223486 A.U.
+ (R)                             ESR =             .11471815 A.U.
+ (L)    LOCAL PSEUDOPOTENTIAL ENERGY =           -2.73859293 A.U.
+ (N)      N-L PSEUDOPOTENTIAL ENERGY =             .81716470 A.U.
+ (X)     EXCHANGE-CORRELATION ENERGY =           -3.15391665 A.U.
+          GRADIENT CORRECTION ENERGY =            -.21165086 A.U.
+ 
+ NFI      GEMAX       CNORM           ETOT        DETOT      TCPU
+   1  9.894E-02   8.216E-03      -8.012170    0.000E+00       .06
+   2  7.110E-02   3.518E-03      -8.257800   -2.456E-01       .06
+   3  1.078E-02   1.754E-03      -8.310843   -5.304E-02       .06
+   4  9.305E-03   7.568E-04      -8.318317   -7.474E-03       .06
+   5  3.990E-03   2.629E-04      -8.320113   -1.796E-03       .06
+   6  1.385E-03   1.258E-04      -8.320340   -2.273E-04       .06
+   7  5.130E-04   7.300E-05      -8.320389   -4.817E-05       .06
+   8  2.773E-04   4.595E-05      -8.320406   -1.732E-05       .06
+   9  1.574E-04   2.540E-05      -8.320414   -8.380E-06       .06
+  10  1.018E-04   1.399E-05      -8.320417   -2.957E-06       .06
+  11  6.855E-05   7.892E-06      -8.320418   -1.019E-06       .06
+  12  5.853E-05   4.938E-06      -8.320419   -3.028E-07       .06
+  13  2.488E-05   3.183E-06      -8.320419   -8.748E-08       .06
+  14  1.253E-05   2.054E-06      -8.320419   -4.453E-08       .06
+  15  9.822E-06   1.366E-06      -8.320419   -2.810E-08       .06
+  16  5.733E-06   8.989E-07      -8.320419   -1.714E-09       .06
+  17  6.065E-06   5.756E-07      -8.320419   -3.899E-09       .06
+  18  3.262E-06   3.823E-07      -8.320419   -2.064E-09       .06
+  19  2.772E-06   2.601E-07      -8.320419   -1.560E-09       .06
+  20  1.299E-06   1.717E-07      -8.320419    9.264E-10       .06
+  21  8.644E-07   1.120E-07      -8.320419   -6.022E-11       .06
+
+ RESTART INFORMATION WRITTEN ON FILE                ./RESTART_8.1
+ ***    RWFOPT| THE NEW SIZE OF THE PROGRAM IS  9420 KBytes ***
+
+ ****************************************************************
+ *                                                              *
+ *                        FINAL RESULTS                         *
+ *                                                              *
+ ****************************************************************
+
+   ATOM          COORDINATES            GRADIENTS (-FORCES)
+   1  H  7.5737  9.4294  7.6262   -.397E-01   .651E-01  -.550E-02
+   2  H  9.1344  9.0811  7.4885    .262E-01  -.309E-01  -.853E-02
+   3  H  5.4756  7.8399  7.9051    .118E-01   .790E-02  -.117E-01
+   4  H  7.4384  6.2347  5.7384    .162E-01   .170E-01   .686E-02
+   5  H  7.7828  6.5969  9.2534    .266E-01  -.270E-01   .326E-01
+   6  C  7.5343  7.3867  7.4757   -.408E-01  -.322E-01  -.140E-01
+ 
+ ****************************************************************
+
+ 
+ ELECTRONIC GRADIENT:
+    MAX. COMPONENT =    6.21288E-07         NORM =    7.61588E-08
+ NUCLEAR GRADIENT: 
+    MAX. COMPONENT =    6.51241E-02         NORM =    2.77880E-02
+ 
+
+ TOTAL INTEGRATED ELECTRONIC DENSITY
+    IN G-SPACE =                                         8.000000
+    IN R-SPACE =                                         8.000000
+
+ (K+E1+L+N+X)           TOTAL ENERGY =           -8.32041875 A.U.
+ (K)                  KINETIC ENERGY =            6.80344562 A.U.
+ (E1=A-S+R)     ELECTROSTATIC ENERGY =           -8.85939453 A.U.
+ (S)                           ESELF =           10.47223486 A.U.
+ (R)                             ESR =             .11471815 A.U.
+ (L)    LOCAL PSEUDOPOTENTIAL ENERGY =           -3.44498480 A.U.
+ (N)      N-L PSEUDOPOTENTIAL ENERGY =             .63321931 A.U.
+ (X)     EXCHANGE-CORRELATION ENERGY =           -3.45270436 A.U.
+          GRADIENT CORRECTION ENERGY =            -.25961781 A.U.
+ 
+ ****************************************************************
+
+
+ ================================================================
+                      BIG MEMORY ALLOCATIONS 
+ ATWFR             200800                SCR               127010
+ SCR               127010                SCR               127010
+ SCR               127010                SCR               127010
+ SCR               127010                SCR               127010
+ SCR               127010                WORK              100400
+ ----------------------------------------------------------------
+ [PEAK NUMBER  107]      PEAK MEMORY       734628 =    5.9 MBytes
+ ================================================================
+
+
+ ****************************************************************
+ *                                                              *
+ *                            TIMING                            *
+ *                                                              *
+ ****************************************************************
+ SUBROUTINE            CALLS         CPU TIME        ELAPSED TIME
+      ATRHO                8            16.69               16.69
+     FFTCOM             3047             3.31                3.31
+        HIP              175             2.79                2.79
+    FFT-G/S             7208              .88                 .88
+      FWFFT             1050              .80                 .80
+     INVFFT              883              .76                 .76
+   S_INVFFT              724              .39                 .39
+     ATOMWF                8              .39                 .39
+     GRADEN              175              .25                 .25
+     GCENER              175              .25                 .25
+    HOCKNEY                1              .21                 .21
+      PHASE             1933              .20                 .20
+     FORMFN                2              .19                 .19
+     LOADPA                1              .19                 .19
+    S_FWFFT              390              .17                 .17
+       NLIN                2              .17                 .17
+ ----------------------------------------------------------------
+ TOTAL TIME                             27.63               27.63
+ ****************************************************************
+
+       CPU TIME :    0 HOURS  0 MINUTES 30.83 SECONDS     
+   ELAPSED TIME :    0 HOURS  0 MINUTES 30.83 SECONDS     
+
+ PROGRAM CPMD ENDED AT:   Sat Jul 26 16:05:32 2003
+ 
+
+ ================================================================
+ = COMMUNICATION TASK  AVERAGE MESSAGE LENGTH  NUMBER OF CALLS  =
+ = SEND/RECEIVE                1839. BYTES               1984.  =
+ = BROADCAST                   7384. BYTES                405.  =
+ = GLOBAL SUMMATION              40. BYTES               2379.  =
+ = GLOBAL MULTIPLICATION          0. BYTES                  1.  =
+ = ALL TO ALL COMM            78652. BYTES               3397.  =
+ =                             PERFORMANCE          TOTAL TIME  =
+ = SEND/RECEIVE              158.483  MB/S            .023 SEC  =
+ = BROADCAST                  35.321  MB/S            .085 SEC  =
+ = GLOBAL SUMMATION            2.862  MB/S            .166 SEC  =
+ = GLOBAL MULTIPLICATION        .000  MB/S            .001 SEC  =
+ = ALL TO ALL COMM            63.800  MB/S           4.188 SEC  =
+ = SYNCHRONISATION                                    .005 SEC  =
+ ================================================================

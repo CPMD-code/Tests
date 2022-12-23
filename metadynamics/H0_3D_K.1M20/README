@@ -1,0 +1,6 @@
+h0_3d_k.1m20.in (C4H6 MD) :  Memory needed   ~ 54MB
+                             Time needed     ~ 2h 45'   (1p NEC-SX5)
+                             3 CV: 3 C-C distances
+                                   extended Lagrangian
+                                   obj: tuning masses and k's 
+                                   no hills

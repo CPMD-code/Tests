@@ -1,0 +1,71 @@
+!
+! TS search test job (Diels-Alder)
+!
+ &CPMD
+   OPTIMIZE GEOMETRY
+   CONVERGENCE ORBITAL
+     1.0E-5
+   CONVERGENCE ADAPT
+     0.02
+   CONVERGENCE ENERGY
+     0.05
+   PRFO NVAR
+     12
+   PRFO MODE
+     1
+   PRFO TOLENV
+     0.0005
+   MAXSTEP
+     10000
+   COMPRESS WRITE32
+   PRINT LSCAL ON
+   SPLINE POINTS
+    501
+ &END
+!
+! Becke88-Perdew86
+!
+ &DFT
+   FUNCTIONAL BP
+   GC CUTOFF 1.0E-5
+ &END
+!
+! Cell size not optimized
+!
+ &SYSTEM
+   ANGSTROM
+   SYMMETRY
+      0
+   CELL
+      15.0 1.0 1.0 0.0 0.0 0.0
+   CUTOFF
+      40.0
+ &END
+!
+! Reaction core is formed by the first four carbons
+!
+ &ATOMS
+*C_MT_GIA_BP KLEINMANN-BYLANDER RAGGIO=1.0
+   1 1 9
+   6
+   8.0013  6.1636  6.9027 1
+   6.6573  8.6527  6.9027 1
+   7.2113  6.5587  8.8297 1
+   6.5543  7.7747  8.8297 1
+   8.7135  7.3664  6.5834 1
+   8.0516  8.5919  6.5853 1
+
+*H_GIA_BP KLEINMANN-BYLANDER RAGGIO=1.0
+    0 0 9
+   10
+   9.8059  7.3447  6.5469 1
+   8.6332  9.5169  6.5485 1
+   8.5686  5.2349  7.0062 1
+   7.0008  6.0216  6.4887 1
+   6.1871  9.6337  7.0067 1
+   5.9927  7.8918  6.4894 1
+   7.0047  8.6173  9.3573 1
+   5.4621  7.7763  8.8784 1
+   6.6138  5.6443  8.8784 1
+   8.1632  6.4731  9.3568 1
+ &END

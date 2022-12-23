@@ -1,0 +1,84 @@
+#!/usr/local/bin/vmd
+# VMD script written by save_state $Revision: 1.1 $
+# VMD version: 1.8.2
+set viewplist {}
+set fixedlist {}
+display projection   Orthographic
+display nearclip set 0.000000
+display farclip  set 10.000000
+display depthcue   off
+mol new {h2o-dens-diff.cube} type cube waitfor all
+mol addfile {h2o-dens-extpot.cube} type cube waitfor all
+mol addfile {h2o-dens-nopot.cube} type cube waitfor all
+mol delrep 0 top
+mol representation CPK 0.600000 0.200000 25.000000 20.000000
+mol color Name
+mol selection {all}
+mol material Opaque
+mol addrep top
+mol selupdate 0 top 0
+mol colupdate 0 top 0
+mol scaleminmax top 0 0.000000 0.000000
+mol smoothrep top 0 0
+mol drawframes top 0 {now}
+mol representation Isosurface 0.002000 0.000000 0.000000 0.000000
+mol color ColorID 12
+mol selection {all}
+mol material Opaque
+mol addrep top
+mol selupdate 1 top 0
+mol colupdate 1 top 0
+mol scaleminmax top 1 0.000000 0.000000
+mol smoothrep top 1 0
+mol drawframes top 1 {now}
+mol representation Isosurface -0.002000 0.000000 0.000000 0.000000
+mol color ColorID 13
+mol selection {all}
+mol material Opaque
+mol addrep top
+mol selupdate 2 top 0
+mol colupdate 2 top 0
+mol scaleminmax top 2 0.000000 0.000000
+mol smoothrep top 2 0
+mol drawframes top 2 {now}
+mol representation Isosurface 0.100000 1.000000 0.000000 0.000000
+mol color ColorID 7
+mol selection {all}
+mol material Opaque
+mol addrep top
+mol selupdate 3 top 0
+mol colupdate 3 top 0
+mol scaleminmax top 3 0.000000 0.000000
+mol smoothrep top 3 0
+mol drawframes top 3 {now}
+mol showrep top 3 0
+mol representation Isosurface 0.100000 2.000000 0.000000 0.000000
+mol color ColorID 3
+mol selection {all}
+mol material Opaque
+mol addrep top
+mol selupdate 4 top 0
+mol colupdate 4 top 0
+mol scaleminmax top 4 0.000000 0.000000
+mol smoothrep top 4 0
+mol drawframes top 4 {now}
+mol showrep top 4 0
+mol rename top {h2o-dens-diff.cube}
+set viewpoints([molinfo top]) {{{1.000000 0.000000 0.000000 -4.227511} {0.000000 1.000000 0.000000 -4.167324} {0.000000 0.000000 1.000000 -3.968829} {0.000000 0.000000 0.000000 1.000000}} {{0.490640 0.868967 -0.064525 0.000000} {-0.377160 0.278545 0.883271 0.000000} {0.785507 -0.409043 0.464405 0.000000} {0.000000 0.000000 0.000000 1.000000}} {{1.053002 0.000000 0.000000 0.000000} {0.000000 1.053002 0.000000 0.000000} {0.000000 0.000000 1.053002 0.000000} {0.000000 0.000000 0.000000 1.000000}} {{1.000000 0.000000 0.000000 0.120000} {0.000000 1.000000 0.000000 -0.010000} {0.000000 0.000000 1.000000 0.000000} {0.000000 0.000000 0.000000 1.000000}}}
+lappend viewplist [molinfo top]
+set topmol [molinfo top]
+# done with molecule 0
+foreach v $viewplist {
+  molinfo $v set {center_matrix rotate_matrix scale_matrix global_matrix} $viewpoints($v)
+}
+foreach v $fixedlist {
+  molinfo $v set fixed 1
+}
+unset viewplist
+unset fixedlist
+mol top $topmol
+unset topmol
+proc vmdrestoremycolors {} {
+  color Display {Background} silver
+}
+vmdrestoremycolors

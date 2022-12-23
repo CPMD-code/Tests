@@ -1,0 +1,15 @@
+# total energy per atom in hartree
+si2-prim-k2x2x2.out:        -3.9502392150
+si2-prim-k3x3x3.out:        -3.9417865950
+si2-prim-k4x4x4.out:        -3.9548324950
+si2-prim.out:               -3.6174710000
+si16-prim.out:              -3.9046167663
+si8-k2x2x2-auto.out:        -3.9494759175
+si8-k2x2x2-full.out:        -3.9497985163
+si8-k2x2x2-symm.out:        -3.9525254637
+si8-k8x8x8-auto.out:        -3.9526957875
+si8-k8x8x8-lanczos.out:     -3.9526957875
+si8-k8x8x8-pcg.out:         -3.9526957875
+si8-k8x8x8-swap.out:        -3.9526957875
+si8.out:                    -3.9035228263
+si64.out:                   -3.9488017633

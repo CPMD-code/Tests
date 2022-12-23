@@ -1,0 +1,31 @@
+This directory contains some tests of the distributed memory parallelization features, especially important to scale out the computations on several hundreds of processors.
+The test case taken in consideration is  32 water molecules in the liquid phase at 100 Ry and MT pseudopotentials; 2 sets of runs were performed :1 - simple wavefunction optimization 2- 50 steps of CP dynamics.
+The runs were all made on 1 midplane of IBM BG/L (512 nodes - 1024 processors) 
+with diverse setups:
+
+1)  no taskgroups
+2)  4 taskgroups
+3)  4 taskgroups + keep wfn in real space
+4)  4 taskgroups + keep wfn in real space + single precision in the alltoall
+5)  4 taskgroups + keep wfn in real space + single precision in the alltoall + distributed linear algebbra
+6)  8 taskgroups + + keep wfn in real space + single precision in the alltoall 
+
+
+Inputs:
+32-wat-opt-TG1-NOKEEP-NOSINGLE.inp
+32-wat-opt-TG4-KEEP-NOSINGLE.inp
+32-wat-opt-TG4-KEEP-SINGLE-DIST.inp
+32-wat-opt-TG4-KEEP-SINGLE.inp
+32-wat-opt-TG4-NOKEEP-NOSINGLE.inp
+32-wat-opt-TG8-KEEP-SINGLE.inp
+32-wat-md-TG1-NOKEEP-NOSINGLE.inp
+32-wat-md-TG4-KEEP-NOSINGLE.inp
+32-wat-md-TG4-KEEP-SINGLE-DIST.inp
+32-wat-md-TG4-KEEP-SINGLE.inp
+32-wat-md-TG4-NOKEEP-NOSINGLE.inp
+32-wat-md-TG8-KEEP-SINGLE.inp
+32-wat-md-TG16-KEEP-SINGLE.inp
+
+
+Run time on BG/L - less than 1' in all cases.
+

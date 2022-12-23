@@ -1,0 +1,1066 @@
+ PROGRAM CPMD STARTED AT: Fri Jul 18 16:39:57 2003
+ 
+
+
+               ******  ******    ****  ****  ******   
+              *******  *******   **********  *******  
+             ***       **   ***  ** **** **  **   *** 
+             **        **   ***  **  **  **  **    ** 
+             **        *******   **      **  **    ** 
+             ***       ******    **      **  **   *** 
+              *******  **        **      **  *******  
+               ******  **        **      **  ******   
+
+                          VERSION 3.7.1
+
+                            COPYRIGHT               
+                      IBM RESEARCH DIVISION         
+                MPI FESTKOERPERFORSCHUNG STUTTGART  
+
+                       The CPMD consortium      
+                    WWW:   http://www.cpmd.org
+                 Mailinglist:   cpmd-list@cpmd.org
+                     E-mail:   cpmd@cpmd.org
+
+
+                  ***  Jul 18 2003 -- 11:48:39  ***
+
+ THE INPUT FILE IS:                                         inp-2
+ THIS JOB RUNS ON:              flying-dutchman-02.zurich.ibm.com
+ THE CURRENT DIRECTORY IS: 
+                                     /tmpfd02/cur/cpmd-test/tddft
+ THE TEMPORARY DIRECTORY IS: 
+                                     /tmpfd02/cur/cpmd-test/tddft
+ THE PROCESS ID IS:                                       1032404
+ THE JOB WAS SUBMITTED BY:                                    cur
+ 
+
+ BORN-OPPENHEIMER MOLECULAR DYNAMICS
+
+
+ LINEAR RESPONSE TO TIME-DEPENDENT DFT
+ PATH TO THE RESTART FILES:                                    ./
+ RESTART WITH OLD ORBITALS
+ RESTART WITH OLD ION POSITIONS
+ RESTART WITH LATEST RESTART FILE
+ RESTART WITH OLD LINEAR RESPONSE VECTORS
+ GRAM-SCHMIDT ORTHOGONALIZATION
+ MAXIMUM NUMBER OF STEPS:                                10 STEPS
+ MAXIMUM NUMBER OF ITERATIONS FOR SC:                 10000 STEPS
+ WRITE WAVEFUNCTIONS IN COMPRESSED FORM TO FILE
+   COMPRESSION FACTOR IS   2
+ PRINT INTERMEDIATE RESULTS EVERY                     10001 STEPS
+ STORE INTERMEDIATE RESULTS EVERY                     10001 STEPS
+ STORE INTERMEDIATE RESULTS EVERY        11 SELF-CONSISTENT STEPS
+ NUMBER OF DISTINCT RESTART FILES:                              1
+ TEMPERATURE IS CALCULATED ASSUMING EXTENDED BULK BEHAVIOR 
+ FICTITIOUS ELECTRON MASS:                               400.0000
+ TIME STEP FOR ELECTRONS:                                 20.0000
+ TIME STEP FOR IONS:                                      20.0000
+ TRAJECTORIES ARE SAVED ON FILE
+ ELECTRON DYNAMICS: THE TEMPERATURE IS NOT CONTROLLED
+ ION DYNAMICS:      THE TEMPERATURE IS NOT CONTROLLED
+ SPLINE INTERPOLATION IN G-SPACE FOR PSEUDOPOTENTIAL FUNCTIONS
+    NUMBER OF SPLINE POINTS:                                 5000
+ 
+ EXCHANGE CORRELATION FUNCTIONALS 
+    LDA EXCHANGE:                                            NONE
+    LDA XC THROUGH PADE APPROXIMATION
+    S.GOEDECKER, J.HUTTER, M.TETER PRB 54 1703 (1996)
+    GRADIENT CORRECTED FUNCTIONAL
+    DENSITY THRESHOLD:                                1.00000E-08
+    EXCHANGE ENERGY
+       [PBE: J.P. PERDEW ET AL. PRL 77, 3865 (1996)]
+    CORRELATION ENERGY 
+       [PBE: J.P. PERDEW ET AL. PRL 77, 3865 (1996)]
+ 
+ ***     DETSP| THE NEW SIZE OF THE PROGRAM IS  3508 KBytes ***
+
+ !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+ WARNING! XC FUNCTIONALS INCONSISTENT FOR H_MT_PBE
+ !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+
+ ***************************** ATOMS ****************************
+   NR   TYPE        X(bohr)        Y(bohr)        Z(bohr)     MBL
+    1      O        .000000        .000000       2.298400       3
+    2      C        .000000        .000000        .001800       3
+    3      H        .000000       1.794600      -1.119200       3
+    4      H        .000000      -1.794600      -1.119200       3
+ ****************************************************************
+
+ NUMBER OF STATES:                                              6
+ NUMBER OF ELECTRONS:                                    12.00000
+ CHARGE:                                                   .00000
+ ELECTRON TEMPERATURE(KELVIN):                             .00000
+ OCCUPATION
+  2.0  2.0  2.0  2.0  2.0  2.0
+ 
+    ============================================================  
+    |    Pseudopotential Report     Tue Nov 12 09:58:06 1996   |  
+    ------------------------------------------------------------  
+    |  Atomic Symbol                   :   O                   |  
+    |  Atomic Number                   :   8                   |  
+    |  Number of core states           :   1                   |  
+    |  Number of valence states        :   2                   |  
+    |  Exchange-Correlation Functional :                       |  
+    |     Slater exchange :   .6667                            |  
+    |     LDA correlation : Ceperley-Alder                     |  
+    |     Exchange GC     : Perdew-Burke-Ernzerhof             |  
+    |     Correlation GC  : Perdew-Burke-Ernzerhof             |  
+    |  Electron Configuration :   N   L  Occupation            |  
+    |                             1   S    2.0000              |  
+    |                             2   S    2.0000              |  
+    |                             2   P    4.0000              |  
+    |  Full Potential Total Energy   -74.943856                |  
+    |  Trouiller-Martins normconserving PP                     |  
+    |     n    l        rc       energy                        |  
+    |     2    S    1.0500      -.87882                        |  
+    |     2    P    1.0500      -.33215                        |  
+    |     3    D    1.0500      -.33215                        |  
+    |  Number of Mesh Points :   631                           |  
+    |  Pseudoatom Total Energy  -15.773631                     |  
+    ============================================================  
+ 
+    ============================================================  
+    |    Pseudopotential Report     Sat Nov 21 13:36:12 1998   |  
+    |                   Martins-Trouiller Type                 |  
+    ------------------------------------------------------------  
+    |  Atomic Symbol                   :   C                   |  
+    |  Atomic Number                   :   6                   |  
+    |  Valence Charge                  :   4                   |  
+    |  Number of valence states        :   2                   |  
+    |  Exchange-Correlation Functional :                       |  
+    |     Slater exchange :   .6667                            |  
+    |     LDA correlation : Ceperley-Alder                     |  
+    |     Exchange GC     : Perdew-Burke-Ernzerhof             |  
+    |     Correlation GC  : Perdew-Burke-Ernzerhof             |  
+    |      n     l        Rc        occ       energy           |  
+    |      2     S     1.200     2.0000      -.50506           |  
+    |      2     P     1.200      .6667      -.19451           |  
+    |  Radial Functions Stored on Logarithmic Grids            |  
+    ============================================================  
+ 
+    ============================================================  
+    |    Pseudopotential Report     Tue Nov 12 10:00:32 1996   |  
+    ------------------------------------------------------------  
+    |  Atomic Symbol                   :   H                   |  
+    |  Atomic Number                   :   1                   |  
+    |  Number of core states           :   0                   |  
+    |  Number of valence states        :   1                   |  
+    |  Exchange-Correlation Functional :                       |  
+    |     Slater exchange :   .6667                            |  
+    |     LDA correlation : Ceperley-Alder                     |  
+    |  Electron Configuration :   N   L  Occupation            |  
+    |                             1   S    1.0000              |  
+    |  Full Potential Total Energy     -.445894                |  
+    |  Trouiller-Martins normconserving PP                     |  
+    |     n    l        rc       energy                        |  
+    |     1    S     .5000      -.23366                        |  
+    |     2    P     .4174      -.23366                        |  
+    |  Number of Mesh Points :   511                           |  
+    |  Pseudoatom Total Energy    -.445889                     |  
+    ============================================================  
+ 
+ ****************************************************************
+ *   ATOM       MASS   RAGGIO NLCC              PSEUDOPOTENTIAL *
+ *      O    15.9994   1.2000   NO    KLEINMAN      S  NONLOCAL *
+ *                                                  P     LOCAL *
+ *      C    12.0112   1.2000   NO    KLEINMAN      S  NONLOCAL *
+ *                                                  P     LOCAL *
+ *      H     1.0080   1.2000   NO                  S     LOCAL *
+ ****************************************************************
+ 
+
+ PARAPARAPARAPARAPARAPARAPARAPARAPARAPARAPARAPARAPARAPARAPARAPARA
+  NCPU     NGW     NHG  PLANES  GXRAYS  HXRAYS ORBITALS Z-PLANES
+     0    1239    9891       3      70     278       0       1
+     1    1239    9897       4      70     278       0       1
+     2    1237    9887       3      70     278       1       1
+     3    1237    9893       4      70     278       0       1
+     4    1237    9893       3      70     278       0       1
+     5    1237    9850       4      69     277       0       1
+     6    1237    9895       3      70     278       0       1
+     7    1237    9887       3      70     278       0       1
+     8    1237    9889       4      70     278       1       1
+     9    1239    9883       3      70     278       0       1
+    10    1241    9889       4      70     278       0       1
+    11    1243    9881       3      70     278       0       1
+    12    1241    9885       4      70     278       0       1
+    13    1241    9883       3      70     278       1       1
+    14    1243    9893       4      70     278       0       1
+    15    1241    9882       3      70     280       0       1
+    16    1239    9886       3      70     280       0       1
+    17    1237    9888       4      70     280       0       1
+    18    1235    9886       3      70     280       1       1
+    19    1235    9882       4      70     280       0       1
+    20    1235    9886       3      70     280       0       1
+    21    1233    9890       4      70     280       0       1
+    22    1233    9892       3      70     280       0       1
+    23    1233    9884       3      70     280       0       1
+    24    1231    9890       4      70     280       1       1
+    25    1229    9888       3      70     280       0       1
+    26    1233    9892       4      70     280       0       1
+    27    1231    9888       3      70     280       0       1
+    28    1231    9892       4      70     280       0       1
+    29    1230    9900       3      68     280       1       1
+    30    1234    9900       4      68     280       0       1
+    31    1234    9904       3      68     280       0       1
+                G=0 COMPONENT ON PROCESSOR :     5
+ PARAPARAPARAPARAPARAPARAPARAPARAPARAPARAPARAPARAPARAPARAPARAPARA
+
+ ***    LOADPA| THE NEW SIZE OF THE PROGRAM IS  5836 KBytes ***
+ ***     RGGEN| THE NEW SIZE OF THE PROGRAM IS  5988 KBytes ***
+
+ ************************** SUPERCELL ***************************
+ SYMMETRY:                                           SIMPLE CUBIC
+ LATTICE CONSTANT(a.u.):                                 20.00000
+ CELL DIMENSION:  20.0000  1.0000  1.0000   .0000   .0000   .0000
+ VOLUME(OMEGA IN BOHR^3):                              8000.00000
+ LATTICE VECTOR A1(BOHR):           20.0000      .0000      .0000
+ LATTICE VECTOR A2(BOHR):             .0000    20.0000      .0000
+ LATTICE VECTOR A3(BOHR):             .0000      .0000    20.0000
+ RECIP. LAT. VEC. B1(2Pi/BOHR):       .0500      .0000      .0000
+ RECIP. LAT. VEC. B2(2Pi/BOHR):       .0000      .0500      .0000
+ RECIP. LAT. VEC. B3(2Pi/BOHR):       .0000      .0000      .0500
+ REAL SPACE MESH:                   110          110          110
+ WAVEFUNCTION CUTOFF(RYDBERG):                           70.00000
+ DENSITY CUTOFF(RYDBERG):          (DUAL= 4.00)         280.00000
+ NUMBER OF PLANE WAVES FOR WAVEFUNCTION CUTOFF:             39559
+ NUMBER OF PLANE WAVES FOR DENSITY CUTOFF:                 316426
+ NUMBER OF PLANE WAVES FOR BROYDEN MIXING:                   9891
+ ****************************************************************
+ 
+ ***  RINFORCE| THE NEW SIZE OF THE PROGRAM IS  7184 KBytes ***
+ ***    FFTPRP| THE NEW SIZE OF THE PROGRAM IS  9112 KBytes ***
+
+ GENERATE ATOMIC BASIS SET
+      O        SLATER ORBITALS
+        2S        ALPHA=   2.2458      OCCUPATION= 2.00
+        2P        ALPHA=   2.2266      OCCUPATION= 4.00
+      C        SLATER ORBITALS
+        2S        ALPHA=   1.6083      OCCUPATION= 2.00
+        2P        ALPHA=   1.5679      OCCUPATION= 2.00
+      H        SLATER ORBITALS
+        1S        ALPHA=   1.0000      OCCUPATION= 1.00
+ 
+
+ INITIALIZATION TIME:                                3.68 SECONDS
+
+
+ *********************** LINEAR RESPONSE ************************
+ Step size for numeric dmu/dn :                          .500E-02
+ Number of calculations for dmu/dn :                            2
+ Maximum number of optimisation steps:                       1000
+ Threshold for Hessian (Preconditioner)                     .5000
+ Optimizer for LR equations                             AUTOMATIC
+                    Switch from PCG to ODIIS at         .1000E-01
+ Step length                                                .1000
+ Convergence criteria                                   .1000E-04
+ ****************************************************************
+
+ ***************************  TDDFT  ****************************
+ Step size for numeric dmu/dn :                          .500E-02
+ Number of calculations for dmu/dn :                            2
+ Tamm-Dancoff Approximation 
+ Diagonalization Method                                  DAVIDSON
+          Max. number of iterations                           200
+          Convergence criteria                           .100E-06
+          Max. size of Davidson matrix                         50
+ Number of Singlet States                                       1
+ Forces calculated for state                                    1
+ ****************************************************************
+ ***      MDPT| THE NEW SIZE OF THE PROGRAM IS 11560 KBytes ***
+ RV30! NUMBER OF STATES   HAS CHANGED                      9    6
+
+ RESTART INFORMATION READ ON FILE                     ./RESTART.1
+ ***     PHFAC| THE NEW SIZE OF THE PROGRAM IS 13424 KBytes ***
+
+ ****************************************************************
+ *                      ATOMIC COORDINATES                      *
+ ****************************************************************
+       1       O            .000000        .000000       2.298400
+       2       C            .000000        .000000        .001800
+       3       H            .000000       1.794600      -1.119200
+       4       H            .000000      -1.794600      -1.119200
+ ****************************************************************
+
+
+ DEGREES OF FREEDOM FOR SYSTEM:                                 9
+ 
+ ================================================================
+ ==                     FORCES INITIALIZATION                  ==
+ ================================================================
+ EWALD SUM IN REAL SPACE OVER  1* 1* 1 CELLS
+
+ TOTAL INTEGRATED ELECTRONIC DENSITY
+    IN G-SPACE =                                        12.000000
+    IN R-SPACE =                                        12.000000
+
+ (K+E1+L+N+X)           TOTAL ENERGY =          -22.80390228 A.U.
+ (K)                  KINETIC ENERGY =           16.75533032 A.U.
+ (E1=A-S+R)     ELECTROSTATIC ENERGY =          -16.60601879 A.U.
+ (S)                           ESELF =           17.95240190 A.U.
+ (R)                             ESR =             .88061418 A.U.
+ (L)    LOCAL PSEUDOPOTENTIAL ENERGY =          -19.47858183 A.U.
+ (N)      N-L PSEUDOPOTENTIAL ENERGY =            2.39243110 A.U.
+ (X)     EXCHANGE-CORRELATION ENERGY =           -5.86706308 A.U.
+          GRADIENT CORRECTION ENERGY =            -.12568367 A.U.
+ (E)       EXCITATION ENERGY(TDDFT) =                .000000 e.V.
+ 
+ NFI      GEMAX       CNORM           ETOT        DETOT      TCPU
+   1  6.951E-07   5.680E-08     -22.803902    0.000E+00       .56
+ ================================================================
+ ==            DAVIDSON DIAGONALISATION OF TDDFT MATRIX        ==
+ ================================================================
+  ITER      STATES      SUBSPACE             RESIDUAL        TCPU
+     1           0             1        .13885550E-02         .60
+     2           0             2        .18956618E-04         .58
+     3           0             3        .44217645E-05         .59
+     4           0             4        .66973089E-06         .58
+     5           0             5        .13185510E-06         .59
+     6           1             6        .20805770E-07         .58
+
+ CALCULATION OF TDDFT FORCES
+
+ CPU TIME FOR INITIALIZATION OF LINEAR RESPONSE:      .00 SECONDS
+   NFI      GEMAX     CNORM         ETOT(2)        DETOT     TCPU
+     1    .013600   .000838      -.05981315    .0000E+00     .733
+     2    .003207   .000205      -.08576939   -.2596E-01    1.306
+     3    .001054   .000083      -.08693428   -.1165E-02    1.879
+     4    .000548   .000063      -.08712497   -.1907E-03    2.454
+     5    .000276   .000035      -.08740415   -.2792E-03    3.028
+     6    .000179   .000015      -.08752757   -.1234E-03    3.604
+     7    .000140   .000009      -.08754632   -.1875E-04    4.180
+     8    .000054   .000004      -.08755280   -.6480E-05    4.756
+     9    .000036   .000002      -.08755387   -.1065E-05    5.333
+    10    .000032   .000001      -.08755409   -.2250E-06    5.916
+    11    .000019   .000000      -.08755415   -.5400E-07    6.495
+    12    .000010   .000000      -.08755416   -.8834E-08    7.070
+    13    .000005   .000000      -.08755416   -.5511E-08    7.643
+
+
+ ======== 2nd Order Perturbation Energy      -.08755416 =========
+ ========              Equad(2) Hartree       .02339938 =========
+ ========              Equad(2)      XC      -.00357085 =========
+ ========              Equad(2)   (H-e)       .00884020 =========
+ ========              Elin(2)               -.05733713 =========
+ ========              Eind(2)               -.05888576 =========
+
+
+
+   ATOM          COORDINATES            GRADIENTS (-FORCES)
+   1  O   .0000   .0000  2.2984    .117E-03   .326E-04   .107E+00
+   2  C   .0000   .0000   .0018    .112E-04   .548E-05  -.115E+00
+   3  H   .0000  1.7946 -1.1192    .409E-05  -.503E-02   .410E-02
+   4  H   .0000 -1.7946 -1.1192   -.960E-05   .504E-02   .409E-02
+ TIME FOR TDDFT FORCE CALCULATION [s]                       9.963
+ FILE ENERGIES EXISTS, NEW DATA WILL BE APPENDED
+ ================================================================
+ ==                END OF FORCES INITIALIZATION                ==
+ ================================================================
+
+ CPU TIME FOR INITIALIZATION:                       14.99 SECONDS
+
+
+ ================================================================
+ =                 MOLECULAR DYNAMICS SIMULATION                =
+ ================================================================
+        INFR         GEMAX            ETOT         DETOT     TCPU
+           1     2.175E-04      -22.803870     0.000E+00      .31
+           2     1.898E-04      -22.803896    -2.534E-05      .31
+           3     8.357E-05      -22.803898    -2.404E-06      .31
+           4     6.287E-05      -22.803899    -7.341E-07      .31
+           5     2.913E-05      -22.803899    -1.773E-07      .31
+           6     1.095E-05      -22.803899    -6.610E-08      .31
+           7     6.679E-06      -22.803899    -2.369E-08      .31
+           8     5.773E-06      -22.803899    -1.301E-08      .31
+           9     3.042E-06      -22.803899    -5.401E-09      .31
+          10     1.584E-06      -22.803899    -1.372E-09      .32
+          11     7.128E-07      -22.803899    -3.022E-10      .31
+ ================================================================
+ ==            DAVIDSON DIAGONALISATION OF TDDFT MATRIX        ==
+ ================================================================
+  ITER      STATES      SUBSPACE             RESIDUAL        TCPU
+     1           0             1        .13972548E-02         .57
+     2           0             2        .19241478E-04         .57
+     3           0             3        .44373686E-05         .57
+     4           0             4        .68010636E-06         .57
+     5           0             5        .13201257E-06         .57
+     6           1             6        .21276550E-07         .58
+
+ CALCULATION OF TDDFT FORCES
+
+ CPU TIME FOR INITIALIZATION OF LINEAR RESPONSE:      .00 SECONDS
+   NFI      GEMAX     CNORM         ETOT(2)        DETOT     TCPU
+     1    .013657   .000841      -.06004855    .0000E+00     .726
+     2    .003215   .000206      -.08618747   -.2614E-01    1.298
+     3    .001060   .000083      -.08736053   -.1173E-02    1.871
+     4    .000550   .000064      -.08755287   -.1923E-03    2.444
+     5    .000277   .000035      -.08783483   -.2820E-03    3.019
+     6    .000181   .000015      -.08795973   -.1249E-03    3.601
+     7    .000141   .000009      -.08797864   -.1891E-04    4.175
+     8    .000055   .000004      -.08798517   -.6529E-05    4.757
+     9    .000036   .000002      -.08798628   -.1112E-05    5.332
+    10    .000032   .000001      -.08798651   -.2262E-06    5.910
+    11    .000019   .000000      -.08798657   -.5690E-07    6.487
+    12    .000010   .000000      -.08798657   -.7612E-08    7.063
+    13    .000005   .000000      -.08798658   -.4225E-08    7.634
+
+
+ ======== 2nd Order Perturbation Energy      -.08798658 =========
+ ========              Equad(2) Hartree       .02356028 =========
+ ========              Equad(2)      XC      -.00359022 =========
+ ========              Equad(2)   (H-e)       .00887491 =========
+ ========              Elin(2)               -.05768960 =========
+ ========              Eind(2)               -.05914195 =========
+
+
+ TIME FOR TDDFT FORCE CALCULATION [s]                       9.878
+
+   ATOM          COORDINATES            GRADIENTS (-FORCES)
+   1  O   .0000   .0000  2.2991    .247E-04  -.129E-04   .105E+00
+   2  C   .0000   .0000   .0007   -.513E-05  -.544E-05  -.113E+00
+   3  H   .0000  1.7941 -1.1188   -.736E-05  -.478E-02   .396E-02
+   4  H   .0000 -1.7941 -1.1188   -.124E-04   .478E-02   .396E-02
+
+ TOTAL INTEGRATED ELECTRONIC DENSITY
+    IN G-SPACE =                                        12.000000
+    IN R-SPACE =                                        12.000000
+
+ (K+E1+L+N+X)           TOTAL ENERGY =          -22.66482924 A.U.
+ (K)                  KINETIC ENERGY =             .35212921 A.U.
+ (E1=A-S+R)     ELECTROSTATIC ENERGY =          -16.60768754 A.U.
+ (S)                           ESELF =           17.95240190 A.U.
+ (R)                             ESR =             .87903174 A.U.
+ (L)    LOCAL PSEUDOPOTENTIAL ENERGY =          -19.47538211 A.U.
+ (N)      N-L PSEUDOPOTENTIAL ENERGY =            2.39258528 A.U.
+ (X)     EXCHANGE-CORRELATION ENERGY =           -5.86676301 A.U.
+          GRADIENT CORRECTION ENERGY =            -.12569322 A.U.
+ (E)       EXCITATION ENERGY(TDDFT) =               3.784367 e.V.
+ 
+       NFI    EKINC   TEMPP           EKS      ECLASSIC          EHAM     DIS    TCPU
+         1   .00000    14.4     -22.66483     -22.66462        .00000    .000   17.41
+ FILE ./TRAJECTORY EXISTS, NEW DATA WILL BE APPENDED
+        INFR         GEMAX            ETOT         DETOT     TCPU
+           1     6.465E-04      -22.803617     0.000E+00      .31
+           2     5.744E-04      -22.803840    -2.235E-04      .31
+           3     2.486E-04      -22.803862    -2.144E-05      .31
+           4     1.865E-04      -22.803868    -6.492E-06      .31
+           5     8.617E-05      -22.803870    -1.562E-06      .31
+           6     3.236E-05      -22.803870    -5.800E-07      .32
+           7     1.966E-05      -22.803871    -2.077E-07      .31
+           8     1.709E-05      -22.803871    -1.120E-07      .31
+           9     9.085E-06      -22.803871    -4.817E-08      .41
+          10     4.774E-06      -22.803871    -1.129E-08      .31
+          11     2.082E-06      -22.803871    -1.897E-09      .31
+          12     1.425E-06      -22.803871    -7.875E-10      .31
+          13     1.093E-06      -22.803871    -3.718E-10      .31
+          14     6.722E-07      -22.803871    -2.252E-10      .31
+ ================================================================
+ ==            DAVIDSON DIAGONALISATION OF TDDFT MATRIX        ==
+ ================================================================
+  ITER      STATES      SUBSPACE             RESIDUAL        TCPU
+     1           0             1        .49067300E-02         .58
+     2           0             2        .18316246E-03         .57
+     3           0             3        .48632291E-05         .57
+     4           0             4        .17156754E-05         .57
+     5           0             5        .23089343E-06         .57
+     6           1             6        .54509766E-07         .58
+
+ CALCULATION OF TDDFT FORCES
+
+ CPU TIME FOR INITIALIZATION OF LINEAR RESPONSE:      .00 SECONDS
+   NFI      GEMAX     CNORM         ETOT(2)        DETOT     TCPU
+     1    .013815   .000849      -.06070219    .0000E+00     .728
+     2    .003239   .000207      -.08738265   -.2668E-01    1.303
+     3    .001076   .000084      -.08857868   -.1196E-02    1.878
+     4    .000558   .000064      -.08877575   -.1971E-03    2.454
+     5    .000281   .000036      -.08906544   -.2897E-03    3.030
+     6    .000184   .000015      -.08919486   -.1294E-03    3.606
+     7    .000144   .000009      -.08921411   -.1925E-04    4.183
+     8    .000054   .000004      -.08922086   -.6745E-05    4.760
+     9    .000037   .000002      -.08922200   -.1141E-05    5.345
+    10    .000032   .000001      -.08922223   -.2357E-06    5.928
+    11    .000019   .000000      -.08922229   -.5586E-07    6.507
+    12    .000011   .000000      -.08922230   -.9151E-08    7.085
+    13    .000005   .000000      -.08922230   -.3036E-08    7.658
+
+
+ ======== 2nd Order Perturbation Energy      -.08922230 =========
+ ========              Equad(2) Hartree       .02402964 =========
+ ========              Equad(2)      XC      -.00364618 =========
+ ========              Equad(2)   (H-e)       .00897457 =========
+ ========              Elin(2)               -.05871570 =========
+ ========              Eind(2)               -.05986463 =========
+
+
+ TIME FOR TDDFT FORCE CALCULATION [s]                       9.903
+         2   .00000    55.8     -22.66542     -22.66463        .00000    .000   18.45
+        INFR         GEMAX            ETOT         DETOT     TCPU
+           1     1.057E-03      -22.803089     0.000E+00      .31
+           2     9.418E-04      -22.803684    -5.958E-04      .31
+           3     4.006E-04      -22.803742    -5.771E-05      .31
+           4     3.085E-04      -22.803760    -1.738E-05      .31
+           5     1.457E-04      -22.803764    -4.184E-06      .31
+           6     5.658E-05      -22.803765    -1.539E-06      .31
+           7     3.466E-05      -22.803766    -5.517E-07      .31
+           8     2.774E-05      -22.803766    -2.957E-07      .31
+           9     1.487E-05      -22.803766    -1.284E-07      .31
+          10     7.772E-06      -22.803766    -2.863E-08      .31
+          11     3.392E-06      -22.803766    -5.735E-09      .31
+          12     2.262E-06      -22.803766    -2.017E-09      .31
+          13     1.644E-06      -22.803766    -7.107E-10      .31
+          14     9.291E-07      -22.803766    -1.032E-09      .31
+ ================================================================
+ ==            DAVIDSON DIAGONALISATION OF TDDFT MATRIX        ==
+ ================================================================
+  ITER      STATES      SUBSPACE             RESIDUAL        TCPU
+     1           0             1        .34274530E-02         .57
+     2           0             2        .12372720E-03         .57
+     3           0             3        .29691490E-05         .58
+     4           0             4        .19238124E-06         .58
+     5           1             5        .87139162E-07         .58
+
+ CALCULATION OF TDDFT FORCES
+
+ CPU TIME FOR INITIALIZATION OF LINEAR RESPONSE:      .00 SECONDS
+   NFI      GEMAX     CNORM         ETOT(2)        DETOT     TCPU
+     1    .014090   .000862      -.06182646    .0000E+00     .728
+     2    .003280   .000210      -.08942729   -.2760E-01    1.303
+     3    .001093   .000085      -.09066151   -.1234E-02    1.877
+     4    .000572   .000066      -.09086671   -.2052E-03    2.460
+     5    .000289   .000036      -.09117076   -.3040E-03    3.035
+     6    .000189   .000016      -.09130665   -.1359E-03    3.611
+     7    .000146   .000009      -.09132667   -.2002E-04    4.188
+     8    .000055   .000004      -.09133380   -.7133E-05    4.766
+     9    .000037   .000002      -.09133499   -.1189E-05    5.345
+    10    .000033   .000001      -.09133524   -.2530E-06    5.922
+    11    .000020   .000000      -.09133530   -.5767E-07    6.502
+    12    .000011   .000000      -.09133531   -.1189E-07    7.080
+    13    .000005   .000000      -.09133531    .1901E-09    7.660
+
+
+ ======== 2nd Order Perturbation Energy      -.09133531 =========
+ ========              Equad(2) Hartree       .02483048 =========
+ ========              Equad(2)      XC      -.00374146 =========
+ ========              Equad(2)   (H-e)       .00914621 =========
+ ========              Elin(2)               -.06047015 =========
+ ========              Eind(2)               -.06110040 =========
+
+
+ TIME FOR TDDFT FORCE CALCULATION [s]                       9.911
+         3   .00000   119.5     -22.66634     -22.66464        .00000    .000   17.80
+        INFR         GEMAX            ETOT         DETOT     TCPU
+           1     1.439E-03      -22.802260     0.000E+00      .31
+           2     1.267E-03      -22.803361    -1.101E-03      .31
+           3     5.322E-04      -22.803468    -1.076E-04      .31
+           4     4.245E-04      -22.803500    -3.228E-05      .31
+           5     2.007E-04      -22.803508    -7.745E-06      .31
+           6     7.365E-05      -22.803511    -2.830E-06      .31
+           7     4.468E-05      -22.803512    -1.019E-06      .31
+           8     3.935E-05      -22.803513    -5.426E-07      .31
+           9     2.155E-05      -22.803513    -2.369E-07      .31
+          10     1.116E-05      -22.803513    -5.320E-08      .31
+          11     4.812E-06      -22.803513    -1.056E-08      .31
+          12     3.129E-06      -22.803513    -2.962E-09      .31
+          13     2.248E-06      -22.803513    -1.730E-09      .31
+          14     1.395E-06      -22.803513    -1.392E-09      .31
+          15     6.294E-07      -22.803513    -4.830E-10      .32
+ ================================================================
+ ==            DAVIDSON DIAGONALISATION OF TDDFT MATRIX        ==
+ ================================================================
+  ITER      STATES      SUBSPACE             RESIDUAL        TCPU
+     1           0             1        .27189762E-02         .57
+     2           0             2        .48850170E-04         .57
+     3           0             3        .53663852E-05         .58
+     4           0             4        .12846182E-05         .58
+     5           0             5        .21073607E-06         .58
+     6           1             6        .38765187E-07         .58
+
+ CALCULATION OF TDDFT FORCES
+
+ CPU TIME FOR INITIALIZATION OF LINEAR RESPONSE:      .00 SECONDS
+   NFI      GEMAX     CNORM         ETOT(2)        DETOT     TCPU
+     1    .014431   .000880      -.06336806    .0000E+00     .728
+     2    .003332   .000215      -.09220808   -.2884E-01    1.302
+     3    .001118   .000088      -.09349409   -.1286E-02    1.877
+     4    .000580   .000068      -.09371048   -.2164E-03    2.452
+     5    .000299   .000038      -.09403313   -.3227E-03    3.028
+     6    .000194   .000016      -.09417826   -.1451E-03    3.610
+     7    .000147   .000010      -.09420038   -.2213E-04    4.185
+     8    .000056   .000005      -.09420807   -.7690E-05    4.763
+     9    .000039   .000002      -.09420939   -.1320E-05    5.339
+    10    .000034   .000001      -.09420966   -.2720E-06    5.916
+    11    .000020   .000000      -.09420973   -.6559E-07    6.494
+    12    .000011   .000000      -.09420974   -.8448E-08    7.073
+    13    .000005   .000000      -.09420974   -.2647E-08    7.646
+
+
+ ======== 2nd Order Perturbation Energy      -.09420974 =========
+ ========              Equad(2) Hartree       .02591715 =========
+ ========              Equad(2)      XC      -.00387199 =========
+ ========              Equad(2)   (H-e)       .00938469 =========
+ ========              Elin(2)               -.06285936 =========
+ ========              Eind(2)               -.06278022 =========
+
+
+ TIME FOR TDDFT FORCE CALCULATION [s]                       9.902
+         4   .00000   198.5     -22.66747     -22.66464        .00000    .000   18.67
+        INFR         GEMAX            ETOT         DETOT     TCPU
+           1     1.782E-03      -22.801116     0.000E+00      .31
+           2     1.564E-03      -22.802797    -1.681E-03      .31
+           3     6.368E-04      -22.802963    -1.659E-04      .31
+           4     5.098E-04      -22.803012    -4.931E-05      .31
+           5     2.423E-04      -22.803024    -1.184E-05      .31
+           6     9.089E-05      -22.803029    -4.225E-06      .31
+           7     5.411E-05      -22.803030    -1.522E-06      .31
+           8     4.671E-05      -22.803031    -8.082E-07      .31
+           9     2.504E-05      -22.803031    -3.605E-07      .31
+          10     1.270E-05      -22.803031    -8.118E-08      .31
+          11     5.505E-06      -22.803031    -1.532E-08      .31
+          12     3.588E-06      -22.803031    -4.936E-09      .31
+          13     2.643E-06      -22.803031    -2.731E-09      .31
+          14     1.629E-06      -22.803031    -1.262E-09      .31
+          15     7.768E-07      -22.803031    -1.151E-09      .31
+ ================================================================
+ ==            DAVIDSON DIAGONALISATION OF TDDFT MATRIX        ==
+ ================================================================
+  ITER      STATES      SUBSPACE             RESIDUAL        TCPU
+     1           0             1        .37486278E-02         .58
+     2           0             2        .13491639E-03         .57
+     3           0             3        .30400215E-05         .57
+     4           0             4        .37238202E-06         .57
+     5           0             5        .15064083E-06         .63
+     6           1             6        .24952219E-07         .67
+
+ CALCULATION OF TDDFT FORCES
+
+ CPU TIME FOR INITIALIZATION OF LINEAR RESPONSE:      .00 SECONDS
+   NFI      GEMAX     CNORM         ETOT(2)        DETOT     TCPU
+     1    .014864   .000902      -.06527912    .0000E+00     .731
+     2    .003395   .000220      -.09566259   -.3038E-01    1.303
+     3    .001161   .000090      -.09701344   -.1351E-02    1.876
+     4    .000602   .000070      -.09724379   -.2303E-03    2.448
+     5    .000309   .000039      -.09759212   -.3483E-03    3.021
+     6    .000204   .000017      -.09774766   -.1555E-03    3.595
+     7    .000154   .000010      -.09777143   -.2378E-04    4.169
+     8    .000056   .000005      -.09777982   -.8386E-05    4.751
+     9    .000041   .000002      -.09778127   -.1448E-05    5.325
+    10    .000035   .000001      -.09778158   -.3075E-06    5.899
+    11    .000021   .000000      -.09778165   -.6918E-07    6.475
+    12    .000012   .000000      -.09778166   -.1267E-07    7.050
+    13    .000005   .000000      -.09778165    .3869E-08    7.619
+
+
+ ======== 2nd Order Perturbation Energy      -.09778165 =========
+ ========              Equad(2) Hartree       .02728515 =========
+ ========              Equad(2)      XC      -.00403625 =========
+ ========              Equad(2)   (H-e)       .00966908 =========
+ ========              Elin(2)               -.06583565 =========
+ ========              Eind(2)               -.06486398 =========
+
+
+ TIME FOR TDDFT FORCE CALCULATION [s]                       9.860
+         5   .00000   284.6     -22.66871     -22.66465        .00000    .000   18.75
+        INFR         GEMAX            ETOT         DETOT     TCPU
+           1     2.078E-03      -22.799650     0.000E+00      .31
+           2     1.823E-03      -22.801929    -2.279E-03      .30
+           3     7.206E-04      -22.802156    -2.271E-04      .30
+           4     5.876E-04      -22.802223    -6.678E-05      .31
+           5     2.729E-04      -22.802239    -1.600E-05      .30
+           6     1.023E-04      -22.802244    -5.627E-06      .31
+           7     5.765E-05      -22.802246    -2.021E-06      .31
+           8     5.554E-05      -22.802247    -1.054E-06      .31
+           9     2.974E-05      -22.802248    -4.709E-07      .31
+          10     1.522E-05      -22.802248    -1.074E-07      .31
+          11     6.479E-06      -22.802248    -1.975E-08      .31
+          12     4.107E-06      -22.802248    -6.362E-09      .31
+          13     3.066E-06      -22.802248    -3.239E-09      .31
+          14     1.936E-06      -22.802248    -2.095E-09      .31
+          15     7.599E-07      -22.802248    -8.576E-10      .31
+ ================================================================
+ ==            DAVIDSON DIAGONALISATION OF TDDFT MATRIX        ==
+ ================================================================
+  ITER      STATES      SUBSPACE             RESIDUAL        TCPU
+     1           0             1        .20274056E-02         .57
+     2           0             2        .70675753E-04         .57
+     3           0             3        .16066208E-05         .57
+     4           0             4        .60346507E-06         .58
+     5           1             5        .98622061E-07         .57
+
+ CALCULATION OF TDDFT FORCES
+
+ CPU TIME FOR INITIALIZATION OF LINEAR RESPONSE:      .00 SECONDS
+   NFI      GEMAX     CNORM         ETOT(2)        DETOT     TCPU
+     1    .015336   .000926      -.06748234    .0000E+00     .725
+     2    .003466   .000225      -.09967182   -.3219E-01    1.296
+     3    .001195   .000093      -.10109813   -.1426E-02    1.874
+     4    .000619   .000073      -.10134499   -.2469E-03    2.446
+     5    .000323   .000040      -.10172175   -.3768E-03    3.026
+     6    .000213   .000018      -.10189217   -.1704E-03    3.599
+     7    .000158   .000011      -.10191827   -.2610E-04    4.173
+     8    .000058   .000005      -.10192758   -.9313E-05    4.747
+     9    .000042   .000002      -.10192918   -.1599E-05    5.323
+    10    .000037   .000001      -.10192953   -.3483E-06    5.897
+    11    .000022   .000000      -.10192960   -.7823E-07    6.472
+    12    .000012   .000000      -.10192962   -.1146E-07    7.053
+    13    .000006   .000000      -.10192962   -.1738E-08    7.623
+
+
+ ======== 2nd Order Perturbation Energy      -.10192962 =========
+ ========              Equad(2) Hartree       .02889735 =========
+ ========              Equad(2)      XC      -.00423038 =========
+ ========              Equad(2)   (H-e)       .00999259 =========
+ ========              Elin(2)               -.06931882 =========
+ ========              Eind(2)               -.06727036 =========
+
+
+ TIME FOR TDDFT FORCE CALCULATION [s]                       9.857
+         6   .00000   369.5     -22.66993     -22.66466        .00000    .001   18.00
+        INFR         GEMAX            ETOT         DETOT     TCPU
+           1     2.322E-03      -22.797875     0.000E+00      .31
+           2     2.046E-03      -22.800714    -2.839E-03      .31
+           3     7.932E-04      -22.801000    -2.863E-04      .30
+           4     6.506E-04      -22.801084    -8.346E-05      .31
+           5     2.992E-04      -22.801104    -2.013E-05      .30
+           6     1.139E-04      -22.801111    -6.894E-06      .31
+           7     6.321E-05      -22.801113    -2.476E-06      .31
+           8     5.553E-05      -22.801114    -1.272E-06      .31
+           9     2.981E-05      -22.801115    -5.765E-07      .31
+          10     1.617E-05      -22.801115    -1.289E-07      .31
+          11     7.263E-06      -22.801115    -2.315E-08      .31
+          12     4.621E-06      -22.801115    -6.823E-09      .31
+          13     3.405E-06      -22.801115    -3.966E-09      .31
+          14     2.196E-06      -22.801115    -2.060E-09      .31
+          15     8.767E-07      -22.801115    -9.618E-10      .31
+ ================================================================
+ ==            DAVIDSON DIAGONALISATION OF TDDFT MATRIX        ==
+ ================================================================
+  ITER      STATES      SUBSPACE             RESIDUAL        TCPU
+     1           0             1        .22345433E-02         .57
+     2           0             2        .75365558E-04         .57
+     3           0             3        .16307938E-05         .57
+     4           0             4        .76385656E-06         .57
+     5           1             5        .99298704E-07         .57
+
+ CALCULATION OF TDDFT FORCES
+
+ CPU TIME FOR INITIALIZATION OF LINEAR RESPONSE:      .00 SECONDS
+   NFI      GEMAX     CNORM         ETOT(2)        DETOT     TCPU
+     1    .015852   .000952      -.06992119    .0000E+00     .725
+     2    .003538   .000231      -.10410646   -.3419E-01    1.298
+     3    .001235   .000097      -.10561572   -.1509E-02    1.871
+     4    .000639   .000075      -.10588127   -.2655E-03    2.443
+     5    .000339   .000042      -.10629118   -.4099E-03    3.018
+     6    .000223   .000019      -.10647745   -.1863E-03    3.591
+     7    .000163   .000011      -.10650640   -.2895E-04    4.174
+     8    .000061   .000005      -.10651685   -.1045E-04    4.756
+     9    .000044   .000002      -.10651866   -.1809E-05    5.331
+    10    .000039   .000001      -.10651907   -.4080E-06    5.906
+    11    .000023   .000001      -.10651914   -.7665E-07    6.482
+    12    .000013   .000000      -.10651916   -.1330E-07    7.058
+    13    .000006   .000000      -.10651916   -.3638E-08    7.629
+
+
+ ======== 2nd Order Perturbation Energy      -.10651916 =========
+ ========              Equad(2) Hartree       .03069464 =========
+ ========              Equad(2)      XC      -.00444706 =========
+ ========              Equad(2)   (H-e)       .01034634 =========
+ ========              Elin(2)               -.07318752 =========
+ ========              Eind(2)               -.06992556 =========
+
+
+ TIME FOR TDDFT FORCE CALCULATION [s]                       9.871
+         7   .00000   446.2     -22.67102     -22.66467        .00000    .001   18.01
+        INFR         GEMAX            ETOT         DETOT     TCPU
+           1     2.510E-03      -22.795828     0.000E+00      .31
+           2     2.194E-03      -22.799148    -3.320E-03      .30
+           3     8.259E-04      -22.799486    -3.380E-04      .31
+           4     7.010E-04      -22.799584    -9.776E-05      .31
+           5     3.280E-04      -22.799607    -2.356E-05      .31
+           6     1.243E-04      -22.799615    -7.920E-06      .31
+           7     6.929E-05      -22.799618    -2.864E-06      .31
+           8     6.190E-05      -22.799620    -1.467E-06      .31
+           9     3.298E-05      -22.799620    -6.681E-07      .31
+          10     1.685E-05      -22.799621    -1.506E-07      .31
+          11     7.194E-06      -22.799621    -2.738E-08      .31
+          12     4.576E-06      -22.799621    -7.546E-09      .31
+          13     3.267E-06      -22.799621    -4.138E-09      .31
+          14     1.956E-06      -22.799621    -2.445E-09      .31
+          15     1.246E-06      -22.799621    -7.568E-10      .31
+          16     9.334E-07      -22.799621    -6.295E-10      .31
+ ================================================================
+ ==            DAVIDSON DIAGONALISATION OF TDDFT MATRIX        ==
+ ================================================================
+  ITER      STATES      SUBSPACE             RESIDUAL        TCPU
+     1           0             1        .65743138E-02         .58
+     2           0             2        .26853349E-03         .57
+     3           0             3        .56010977E-05         .58
+     4           0             4        .24084053E-05         .57
+     5           0             5        .21820131E-06         .58
+     6           1             6        .50388353E-07         .58
+
+ CALCULATION OF TDDFT FORCES
+
+ CPU TIME FOR INITIALIZATION OF LINEAR RESPONSE:      .00 SECONDS
+   NFI      GEMAX     CNORM         ETOT(2)        DETOT     TCPU
+     1    .016394   .000979      -.07251085    .0000E+00     .726
+     2    .003611   .000237      -.10882397   -.3631E-01    1.299
+     3    .001277   .000100      -.11042130   -.1597E-02    1.873
+     4    .000659   .000078      -.11070654   -.2852E-03    2.476
+     5    .000350   .000044      -.11115152   -.4450E-03    3.165
+     6    .000234   .000020      -.11135555   -.2040E-03    3.740
+     7    .000168   .000012      -.11138802   -.3247E-04    4.315
+     8    .000064   .000006      -.11139978   -.1176E-04    4.890
+     9    .000046   .000002      -.11140186   -.2077E-05    5.471
+    10    .000041   .000001      -.11140232   -.4655E-06    6.052
+    11    .000024   .000001      -.11140241   -.8603E-07    6.629
+    12    .000013   .000000      -.11140242   -.1439E-07    7.206
+    13    .000006   .000000      -.11140242   -.8356E-10    7.777
+
+
+ ======== 2nd Order Perturbation Energy      -.11140242 =========
+ ========              Equad(2) Hartree       .03263447 =========
+ ========              Equad(2)      XC      -.00468094 =========
+ ========              Equad(2)   (H-e)       .01071171 =========
+ ========              Elin(2)               -.07733016 =========
+ ========              Eind(2)               -.07273751 =========
+
+
+ TIME FOR TDDFT FORCE CALCULATION [s]                      10.023
+         8   .00000   509.6     -22.67193     -22.66467        .00000    .002   19.09
+        INFR         GEMAX            ETOT         DETOT     TCPU
+           1     2.641E-03      -22.793564     0.000E+00      .31
+           2     2.292E-03      -22.797257    -3.693E-03      .31
+           3     8.311E-04      -22.797638    -3.805E-04      .31
+           4     7.176E-04      -22.797747    -1.090E-04      .31
+           5     3.331E-04      -22.797773    -2.643E-05      .31
+           6     1.277E-04      -22.797782    -8.626E-06      .31
+           7     6.876E-05      -22.797785    -3.091E-06      .31
+           8     6.518E-05      -22.797787    -1.579E-06      .31
+           9     3.644E-05      -22.797787    -7.335E-07      .31
+          10     1.777E-05      -22.797788    -1.634E-07      .31
+          11     7.298E-06      -22.797788    -2.870E-08      .31
+          12     4.400E-06      -22.797788    -8.097E-09      .31
+          13     3.015E-06      -22.797788    -3.847E-09      .31
+          14     1.895E-06      -22.797788    -2.312E-09      .31
+          15     8.982E-07      -22.797788    -1.123E-09      .31
+ ================================================================
+ ==            DAVIDSON DIAGONALISATION OF TDDFT MATRIX        ==
+ ================================================================
+  ITER      STATES      SUBSPACE             RESIDUAL        TCPU
+     1           0             1        .59103918E-02         .56
+     2           0             2        .18154901E-03         .57
+     3           0             3        .69764943E-05         .57
+     4           0             4        .22502231E-05         .57
+     5           0             5        .27857393E-06         .57
+     6           1             6        .75273608E-07         .57
+
+ CALCULATION OF TDDFT FORCES
+
+ CPU TIME FOR INITIALIZATION OF LINEAR RESPONSE:      .00 SECONDS
+   NFI      GEMAX     CNORM         ETOT(2)        DETOT     TCPU
+     1    .016939   .001007      -.07511537    .0000E+00     .716
+     2    .003681   .000243      -.11363734   -.3852E-01    1.290
+     3    .001329   .000103      -.11532440   -.1687E-02    1.855
+     4    .000686   .000081      -.11563060   -.3062E-03    2.423
+     5    .000366   .000045      -.11611418   -.4836E-03    2.990
+     6    .000245   .000021      -.11633730   -.2231E-03    3.559
+     7    .000173   .000013      -.11637266   -.3536E-04    4.127
+     8    .000068   .000006      -.11638595   -.1329E-04    4.695
+     9    .000048   .000003      -.11638832   -.2371E-05    5.265
+    10    .000042   .000001      -.11638885   -.5310E-06    5.833
+    11    .000025   .000001      -.11638896   -.1019E-06    6.408
+    12    .000014   .000000      -.11638897   -.1616E-07    6.977
+    13    .000007   .000000      -.11638897    .1293E-09    7.549
+
+
+ ======== 2nd Order Perturbation Energy      -.11638897 =========
+ ========              Equad(2) Hartree       .03465960 =========
+ ========              Equad(2)      XC      -.00492550 =========
+ ========              Equad(2)   (H-e)       .01107371 =========
+ ========              Elin(2)               -.08161526 =========
+ ========              Eind(2)               -.07558151 =========
+
+
+ TIME FOR TDDFT FORCE CALCULATION [s]                       9.760
+         9   .00000   557.4     -22.67261     -22.66467        .00000    .003   18.46
+        INFR         GEMAX            ETOT         DETOT     TCPU
+           1     2.716E-03      -22.791151     0.000E+00      .30
+           2     2.374E-03      -22.795098    -3.947E-03      .30
+           3     8.466E-04      -22.795509    -4.114E-04      .30
+           4     7.365E-04      -22.795626    -1.166E-04      .30
+           5     3.408E-04      -22.795654    -2.854E-05      .30
+           6     1.310E-04      -22.795663    -9.038E-06      .30
+           7     6.445E-05      -22.795666    -3.261E-06      .30
+           8     6.440E-05      -22.795668    -1.649E-06      .30
+           9     3.609E-05      -22.795669    -7.974E-07      .30
+          10     1.868E-05      -22.795669    -1.761E-07      .30
+          11     7.444E-06      -22.795669    -2.975E-08      .31
+          12     4.591E-06      -22.795669    -7.921E-09      .31
+          13     3.289E-06      -22.795669    -3.815E-09      .30
+          14     2.039E-06      -22.795669    -2.319E-09      .31
+          15     8.756E-07      -22.795669    -1.082E-09      .30
+ ================================================================
+ ==            DAVIDSON DIAGONALISATION OF TDDFT MATRIX        ==
+ ================================================================
+  ITER      STATES      SUBSPACE             RESIDUAL        TCPU
+     1           0             1        .30504236E-02         .57
+     2           0             2        .97992271E-04         .57
+     3           0             3        .18220079E-05         .57
+     4           0             4        .44432936E-06         .57
+     5           0             5        .13074290E-06         .57
+     6           1             6        .24184449E-07         .58
+
+ CALCULATION OF TDDFT FORCES
+
+ CPU TIME FOR INITIALIZATION OF LINEAR RESPONSE:      .00 SECONDS
+   NFI      GEMAX     CNORM         ETOT(2)        DETOT     TCPU
+     1    .017481   .001033      -.07776954    .0000E+00     .717
+     2    .003749   .000249      -.11855111   -.4078E-01    1.284
+     3    .001371   .000107      -.12033052   -.1779E-02    1.851
+     4    .000706   .000084      -.12065826   -.3277E-03    2.418
+     5    .000383   .000047      -.12118036   -.5221E-03    2.993
+     6    .000254   .000022      -.12142385   -.2435E-03    3.560
+     7    .000178   .000013      -.12146327   -.3942E-04    4.128
+     8    .000070   .000006      -.12147829   -.1502E-04    4.697
+     9    .000051   .000003      -.12148101   -.2724E-05    5.265
+    10    .000045   .000001      -.12148163   -.6182E-06    5.835
+    11    .000026   .000001      -.12148175   -.1194E-06    6.405
+    12    .000014   .000000      -.12148176   -.1463E-07    6.975
+    13    .000007   .000000      -.12148177   -.4831E-08    7.540
+
+
+ ======== 2nd Order Perturbation Energy      -.12148177 =========
+ ========              Equad(2) Hartree       .03675982 =========
+ ========              Equad(2)      XC      -.00517931 =========
+ ========              Equad(2)   (H-e)       .01142010 =========
+ ========              Elin(2)               -.08600091 =========
+ ========              Eind(2)               -.07848147 =========
+
+
+ TIME FOR TDDFT FORCE CALCULATION [s]                       9.757
+        10   .00000   589.3     -22.67306     -22.66467        .00000    .004   18.40
+
+ RESTART INFORMATION WRITTEN ON FILE                  ./RESTART.1
+ ================================================================
+ =              END OF MOLECULAR DYNAMICS SIMULATION            =
+ ================================================================
+
+
+
+ ****************************************************************
+ *                      AVERAGED QUANTITES                      *
+ ****************************************************************
+                           MEAN VALUE <x>   DEVIATION <x^2>-<x>^2
+ IONIC TEMPERATURE                314.49                   200.58
+ DENSITY FUNCTIONAL ENERGY    -22.669133              .287401E-02
+ CLASSICAL ENERGY             -22.664651              .161212E-04
+ NOSE ENERGY ELECTRONS           .000000              .000000E+00
+ NOSE ENERGY IONS                .000000              .000000E+00
+ ENERGY OF CONSTRAINTS           .000000              .000000E+00
+ BOGOLIUBOV CORRECTION           .000000              .000000E+00
+ ION DISPLACEMENT            .111453E-02              .126918E-02
+ CPU TIME                        18.3036
+
+ ****************************************************************
+ *                                                              *
+ *                        FINAL RESULTS                         *
+ *                                                              *
+ ****************************************************************
+
+   ATOM          COORDINATES            GRADIENTS (-FORCES)
+   1  O   .0000   .0000  2.3585    .877E-04  -.674E-04   .173E-01
+   2  C   .0000   .0000  -.0826    .124E-04   .232E-05  -.933E-02
+   3  H   .0000  1.7784 -1.0965    .113E-06   .977E-02  -.460E-02
+   4  H   .0000 -1.7785 -1.0965   -.353E-05  -.979E-02  -.461E-02
+ 
+ ****************************************************************
+
+ 
+ ELECTRONIC GRADIENT:
+    MAX. COMPONENT =    6.84952E-06         NORM =    1.65783E-07
+ NUCLEAR GRADIENT: 
+    MAX. COMPONENT =    1.73096E-02         NORM =    7.19029E-03
+ 
+
+ TOTAL INTEGRATED ELECTRONIC DENSITY
+    IN G-SPACE =                                        12.000000
+    IN R-SPACE =                                        12.000000
+
+ (K+E1+L+N+X)           TOTAL ENERGY =          -22.67306471 A.U.
+ (K)                  KINETIC ENERGY =             .34225539 A.U.
+ (E1=A-S+R)     ELECTROSTATIC ENERGY =          -16.73278811 A.U.
+ (S)                           ESELF =           17.95240190 A.U.
+ (R)                             ESR =             .76070450 A.U.
+ (L)    LOCAL PSEUDOPOTENTIAL ENERGY =          -19.21677935 A.U.
+ (N)      N-L PSEUDOPOTENTIAL ENERGY =            2.40920197 A.U.
+ (X)     EXCHANGE-CORRELATION ENERGY =           -5.83507911 A.U.
+          GRADIENT CORRECTION ENERGY =            -.12626192 A.U.
+ (E)       EXCITATION ENERGY(TDDFT) =               3.336312 e.V.
+ 
+ ****************************************************************
+
+
+ ================================================================
+                      BIG MEMORY ALLOCATIONS 
+ CB                743400                CS                743400
+ CB                743400                CB                743400
+ CS                743400                CS                743400
+ CS                743400                CB                743400
+ CS                743400                CB                743400
+ ----------------------------------------------------------------
+ [PEAK NUMBER  101]      PEAK MEMORY      3342245 =   26.7 MBytes
+ ================================================================
+
+
+ ****************************************************************
+ *                                                              *
+ *                            TIMING                            *
+ *                                                              *
+ ****************************************************************
+ SUBROUTINE            CALLS         CPU TIME        ELAPSED TIME
+     FFTCOM            11491            67.69               67.70
+    FFT-G/S            28895            26.41               26.44
+     GCENER              679            22.65               22.65
+      FWFFT             3145            15.67               15.65
+   S_INVFFT             4008            13.61               13.59
+     INVFFT             2433            12.69               12.68
+    S_FWFFT             1905             5.81                5.80
+     GRADEN              679             5.68                5.68
+     XCENER              679             4.49                4.49
+       VPSI              635             4.47                4.47
+      PHASE             5578             3.53                3.53
+    RHO1OFR              239             3.15                3.15
+     GLOSUM             3785             2.41                2.41
+      DD_XC              228             1.63                1.63
+     RHOOFR              179             1.43                1.43
+       NLIN                3             1.02                1.02
+     LOADPA                1              .98                 .98
+    V1OFRHO              154              .96                 .96
+      ODIIS              278              .82                 .82
+ ----------------------------------------------------------------
+ TOTAL TIME                            195.10              195.10
+ ****************************************************************
+
+       CPU TIME :    0 HOURS  3 MINUTES 22.00 SECONDS     
+   ELAPSED TIME :    0 HOURS  3 MINUTES 22.00 SECONDS     
+
+ PROGRAM CPMD ENDED AT:   Fri Jul 18 16:43:19 2003
+ 
+
+ ================================================================
+ = COMMUNICATION TASK  AVERAGE MESSAGE LENGTH  NUMBER OF CALLS  =
+ = SEND/RECEIVE               12361. BYTES               2232.  =
+ = BROADCAST                   6313. BYTES                731.  =
+ = GLOBAL SUMMATION             108. BYTES               5653.  =
+ = GLOBAL MULTIPLICATION          0. BYTES                  1.  =
+ = ALL TO ALL COMM           352131. BYTES              11491.  =
+ =                             PERFORMANCE          TOTAL TIME  =
+ = SEND/RECEIVE              468.281  MB/S            .059 SEC  =
+ = BROADCAST                  33.293  MB/S            .139 SEC  =
+ = GLOBAL SUMMATION            1.208  MB/S           2.534 SEC  =
+ = GLOBAL MULTIPLICATION        .000  MB/S            .001 SEC  =
+ = ALL TO ALL COMM            59.839  MB/S          67.620 SEC  =
+ = SYNCHRONISATION                                    .046 SEC  =
+ ================================================================

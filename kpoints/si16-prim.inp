@@ -1,0 +1,57 @@
+&INFO
+ Bulk Silicon.
+ Gamma point calculation with 16 atoms (primitive cell).
+&END
+
+&CPMD
+  OPTIMIZE WAVEFUNCTION
+  CONVERGENCE ORBITALS
+   1.0e-7
+  PRINT FORCES ON
+  MAXSTEP
+  1000
+&END
+
+
+&DFT
+  FUNCTIONAL LDA
+&END
+
+&SYSTEM
+  SYMMETRY
+  FCC
+  SCALE S=2
+  CELL
+  20.526204 1.0  1.0  0  0  0
+  CUTOFF
+  30.0
+&END
+
+&ATOMS
+*SI_MT_LDA  KLEINMAN-BYLANDER 
+   LMAX=P
+   16
+   0.00 0.00 0.00
+   0.25 0.25 0.25
+   1.00 0.00 0.00
+   1.25 0.25 0.25
+   0.00 1.00 0.00
+   0.25 1.25 0.25
+   1.00 1.00 0.00
+   1.25 1.25 0.25
+   0.00 0.00 1.00
+   0.25 0.25 1.25
+   1.00 0.00 1.00
+   1.25 0.25 1.25
+   0.00 1.00 1.00
+   0.25 1.25 1.25
+   1.00 1.00 1.00
+   1.25 1.25 1.25
+&END
+
+&BASIS
+  PSEUDO AO 2
+  0 1
+&END
+
+

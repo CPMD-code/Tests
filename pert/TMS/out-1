@@ -1,0 +1,948 @@
+ PROGRAM CPMD STARTED AT: Fri Jul 18 12:07:53 2003
+ 
+
+
+               ******  ******    ****  ****  ******   
+              *******  *******   **********  *******  
+             ***       **   ***  ** **** **  **   *** 
+             **        **   ***  **  **  **  **    ** 
+             **        *******   **      **  **    ** 
+             ***       ******    **      **  **   *** 
+              *******  **        **      **  *******  
+               ******  **        **      **  ******   
+
+                          VERSION 3.7.1
+
+                            COPYRIGHT               
+                      IBM RESEARCH DIVISION         
+                MPI FESTKOERPERFORSCHUNG STUTTGART  
+
+                       The CPMD consortium      
+                    WWW:   http://www.cpmd.org
+                 Mailinglist:   cpmd-list@cpmd.org
+                     E-mail:   cpmd@cpmd.org
+
+
+                  ***  Jul 18 2003 -- 11:48:39  ***
+
+ THE INPUT FILE IS:                                         inp-1
+ THIS JOB RUNS ON:              flying-dutchman-02.zurich.ibm.com
+ THE CURRENT DIRECTORY IS: 
+                                  /tmpfd02/cur/cpmd-test/pert/TMS
+ THE TEMPORARY DIRECTORY IS: 
+                                  /tmpfd02/cur/cpmd-test/pert/TMS
+ THE PROCESS ID IS:                                       2179180
+ THE JOB WAS SUBMITTED BY:                                    cur
+ 
+
+ SINGLE POINT DENSITY OPTIMIZATION
+
+ WITH LINEAR RESPONSE CALCULATION 
+
+ PATH TO THE RESTART FILES:                                    ./
+ GRAM-SCHMIDT ORTHOGONALIZATION
+ MAXIMUM NUMBER OF STEPS:                             10000 STEPS
+ PRINT INTERMEDIATE RESULTS EVERY                     10001 STEPS
+ STORE INTERMEDIATE RESULTS EVERY                     10001 STEPS
+ NUMBER OF DISTINCT RESTART FILES:                              1
+ TEMPERATURE IS CALCULATED ASSUMING EXTENDED BULK BEHAVIOR 
+ FICTITIOUS ELECTRON MASS:                               400.0000
+ TIME STEP FOR ELECTRONS:                                  5.0000
+ TIME STEP FOR IONS:                                       5.0000
+ CONVERGENCE CRITERIA FOR WAVEFUNCTION OPTIMIZATION:   1.0000E-05
+ WAVEFUNCTION OPTIMIZATION BY PRECONDITIONED DIIS
+ THRESHOLD FOR THE WF-HESSIAN IS                            .5000
+ MAXIMUM NUMBER OF VECTORS RETAINED FOR DIIS:                  10
+ STEPS UNTIL DIIS RESET ON POOR PROGRESS:                      10
+ FULL ELECTRONIC GRADIENT IS USED 
+ SPLINE INTERPOLATION IN G-SPACE FOR PSEUDOPOTENTIAL FUNCTIONS
+    NUMBER OF SPLINE POINTS:                                 5000
+ 
+ EXCHANGE CORRELATION FUNCTIONALS 
+    LDA EXCHANGE:                        SLATER (ALPHA =  .66667)
+    LDA CORRELATION:                             LEE, YANG & PARR
+       [C.L. LEE, W. YANG, AND R.G. PARR, PRB 37 785 (1988)]
+    GRADIENT CORRECTED FUNCTIONAL
+    DENSITY THRESHOLD:                                1.00000E-08
+    EXCHANGE ENERGY
+       [A.D. BECKE, PHYS. REV. A 38, 3098 (1988)]
+       PARAMETER BETA:                                    .004200
+    CORRELATION ENERGY
+       [LYP: C.L. LEE ET AL. PHYS. REV. B 37, 785 (1988)]
+ 
+ ***     DETSP| THE NEW SIZE OF THE PROGRAM IS  3512 KBytes ***
+
+ ***************************** ATOMS ****************************
+   NR   TYPE        X(bohr)        Y(bohr)        Z(bohr)     MBL
+    1     Si       -.001475       -.000047       -.001259       3
+    2      C       -.002162        .000235       3.606631       3
+    3      C       3.398728       -.000328      -1.204557       3
+    4      C      -1.698256       2.947331      -1.202319       3
+    5      C      -1.698219      -2.947345      -1.202532       3
+    6      H      -1.974515        .000035       4.355839       3
+    7      H        .982563       1.708327       4.357313       3
+    8      H        .983179      -1.707300       4.357749       3
+    9      H       3.447619       -.000744      -3.313727       3
+   10      H       4.435220      -1.708002       -.526085       3
+   11      H       4.435429       1.707441       -.526669       3
+   12      H      -1.723581       2.992521      -3.311267       3
+   13      H       -.734140       4.696019       -.522055       3
+   14      H      -3.694585       2.994378       -.522072       3
+   15      H      -1.724944      -2.991425      -3.311494       3
+   16      H      -3.694074      -2.995368       -.520990       3
+   17      H       -.733045      -4.696094       -.523932       3
+ ****************************************************************
+
+ NUMBER OF STATES:                                             16
+ NUMBER OF ELECTRONS:                                    32.00000
+ CHARGE:                                                   .00000
+ ELECTRON TEMPERATURE(KELVIN):                             .00000
+ OCCUPATION
+  2.0  2.0  2.0  2.0  2.0  2.0  2.0  2.0  2.0  2.0  2.0  2.0  2.0
+  2.0  2.0  2.0
+ 
+    >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>  
+    >    SILICON BLYP-PSEUDOPOTENTIAL (GOEDECKER TYPE)       >    
+    >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>  
+ 
+    >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>  
+    >    CARBON BLYP-PSEUDOPOTENTIAL (GOEDECKER TYPE)          >  
+    >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>  
+ 
+    >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>  
+    >    HYDROGEN BLYP-PSEUDOPOTENTIAL (GOEDECKER TYPE)        >  
+    >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>  
+ 
+ ****************************************************************
+ *   ATOM       MASS   RAGGIO NLCC              PSEUDOPOTENTIAL *
+ *     Si    28.0860   1.2000   NO   GOEDECKER      S  NONLOCAL *
+ *                                                  P  NONLOCAL *
+ *                                                  D     LOCAL *
+ *      C    12.0112   1.2000   NO   GOEDECKER      S  NONLOCAL *
+ *                                                  P     LOCAL *
+ *      H     1.0080   1.2000   NO                  S     LOCAL *
+ ****************************************************************
+ 
+RESPONSE SUPERPARALLEL: Initializing 1 parallel threads.
+PROCESSOR   0 (GROUP 0 with  32 procs): I am the superparent. 
+
+ PARAPARAPARAPARAPARAPARAPARAPARAPARAPARAPARAPARAPARAPARAPARAPARA
+  NCPU     NGW     NHG  PLANES  GXRAYS  HXRAYS ORBITALS Z-PLANES
+     0    2429   19313       4     110     434       0       1
+     1    2425   19305       5     110     434       1       1
+     2    2421   19309       4     110     434       0       1
+     3    2419   19307       4     110     434       1       1
+     4    2418   19255       5     109     433       0       1
+     5    2419   19309       4     110     434       1       1
+     6    2419   19309       5     110     434       0       1
+     7    2417   19313       4     110     434       1       1
+     8    2419   19313       4     110     434       0       1
+     9    2419   19313       5     110     434       1       1
+    10    2413   19311       4     110     434       0       1
+    11    2413   19307       4     110     434       1       1
+    12    2413   19313       5     110     434       0       1
+    13    2413   19310       4     110     436       1       1
+    14    2413   19312       5     110     436       0       1
+    15    2417   19314       4     110     436       1       1
+    16    2417   19304       4     110     436       0       1
+    17    2413   19316       5     110     436       1       1
+    18    2413   19324       4     110     436       0       1
+    19    2411   19312       4     110     436       1       1
+    20    2411   19314       5     110     436       0       1
+    21    2410   19312       4     108     436       1       1
+    22    2408   19316       5     108     436       0       1
+    23    2412   19322       4     108     436       1       1
+    24    2410   19312       4     108     436       0       1
+    25    2412   19314       5     108     436       1       1
+    26    2414   19312       4     108     436       0       1
+    27    2410   19306       4     108     436       1       1
+    28    2410   19316       5     108     436       0       1
+    29    2412   19318       4     108     436       1       1
+    30    2410   19312       5     108     436       0       1
+    31    2410   19314       4     108     436       1       1
+                G=0 COMPONENT ON PROCESSOR :     4
+ PARAPARAPARAPARAPARAPARAPARAPARAPARAPARAPARAPARAPARAPARAPARAPARA
+
+ ***    LOADPA| THE NEW SIZE OF THE PROGRAM IS  6256 KBytes ***
+ ***     RGGEN| THE NEW SIZE OF THE PROGRAM IS  6636 KBytes ***
+
+ ************************** SUPERCELL ***************************
+ SYMMETRY:                                           SIMPLE CUBIC
+ LATTICE CONSTANT(a.u.):                                 25.00000
+ CELL DIMENSION:  25.0000  1.0000  1.0000   .0000   .0000   .0000
+ VOLUME(OMEGA IN BOHR^3):                             15625.00000
+ LATTICE VECTOR A1(BOHR):           25.0000      .0000      .0000
+ LATTICE VECTOR A2(BOHR):             .0000    25.0000      .0000
+ LATTICE VECTOR A3(BOHR):             .0000      .0000    25.0000
+ RECIP. LAT. VEC. B1(2Pi/BOHR):       .0400      .0000      .0000
+ RECIP. LAT. VEC. B2(2Pi/BOHR):       .0000      .0400      .0000
+ RECIP. LAT. VEC. B3(2Pi/BOHR):       .0000      .0000      .0400
+ REAL SPACE MESH:                   140          140          140
+ WAVEFUNCTION CUTOFF(RYDBERG):                           70.00000
+ DENSITY CUTOFF(RYDBERG):          (DUAL= 4.00)         280.00000
+ NUMBER OF PLANE WAVES FOR WAVEFUNCTION CUTOFF:             77270
+ NUMBER OF PLANE WAVES FOR DENSITY CUTOFF:                 617937
+ NUMBER OF PLANE WAVES FOR BROYDEN MIXING:                  19313
+ ****************************************************************
+ 
+ ***  RINFORCE| THE NEW SIZE OF THE PROGRAM IS  9984 KBytes ***
+ ***    FFTPRP| THE NEW SIZE OF THE PROGRAM IS 13092 KBytes ***
+
+ GENERATE ATOMIC BASIS SET
+     Si        SLATER ORBITALS
+        3S        ALPHA=   1.6344      OCCUPATION= 2.00
+        3P        ALPHA=   1.4284      OCCUPATION= 2.00
+      C        SLATER ORBITALS
+        2S        ALPHA=   1.6083      OCCUPATION= 2.00
+        2P        ALPHA=   1.5679      OCCUPATION= 2.00
+      H        SLATER ORBITALS
+        1S        ALPHA=   1.0000      OCCUPATION= 1.00
+ 
+
+ INITIALIZATION TIME:                                3.89 SECONDS
+
+ ***    WFOPTS| THE NEW SIZE OF THE PROGRAM IS 15552 KBytes ***
+ ***     PHFAC| THE NEW SIZE OF THE PROGRAM IS 15580 KBytes ***
+ ***    ATOMWF| THE NEW SIZE OF THE PROGRAM IS 16224 KBytes ***
+  ATRHO| CHARGE(R-SPACE):   32.000000      (G-SPACE):   32.000000
+
+ ****************************************************************
+ *                      ATOMIC COORDINATES                      *
+ ****************************************************************
+       1      Si           -.001475       -.000047       -.001259
+       2       C           -.002162        .000235       3.606631
+       3       C           3.398728       -.000328      -1.204557
+       4       C          -1.698256       2.947331      -1.202319
+       5       C          -1.698219      -2.947345      -1.202532
+       6       H          -1.974515        .000035       4.355839
+       7       H            .982563       1.708327       4.357313
+       8       H            .983179      -1.707300       4.357749
+       9       H           3.447619       -.000744      -3.313727
+      10       H           4.435220      -1.708002       -.526085
+      11       H           4.435429       1.707441       -.526669
+      12       H          -1.723581       2.992521      -3.311267
+      13       H           -.734140       4.696019       -.522055
+      14       H          -3.694585       2.994378       -.522072
+      15       H          -1.724944      -2.991425      -3.311494
+      16       H          -3.694074      -2.995368       -.520990
+      17       H           -.733045      -4.696094       -.523932
+ ****************************************************************
+
+ CPU TIME FOR WAVEFUNCTION INITIALIZATION:           5.02 SECONDS
+ ***    RWFOPT| THE NEW SIZE OF THE PROGRAM IS 24596 KBytes ***
+ EWALD SUM IN REAL SPACE OVER  1* 1* 1 CELLS
+
+ TOTAL INTEGRATED ELECTRONIC DENSITY
+    IN G-SPACE =                                        32.000000
+    IN R-SPACE =                                        32.000000
+
+ (K+E1+L+N+X)           TOTAL ENERGY =          -32.85152843 A.U.
+ (K)                  KINETIC ENERGY =           22.66376862 A.U.
+ (E1=A-S+R)     ELECTROSTATIC ENERGY =          -27.31908388 A.U.
+ (S)                           ESELF =           30.58557362 A.U.
+ (R)                             ESR =            1.85481660 A.U.
+ (L)    LOCAL PSEUDOPOTENTIAL ENERGY =          -20.34986075 A.U.
+ (N)      N-L PSEUDOPOTENTIAL ENERGY =            4.12315592 A.U.
+ (X)     EXCHANGE-CORRELATION ENERGY =          -11.96950833 A.U.
+          GRADIENT CORRECTION ENERGY =            -.62288622 A.U.
+ 
+ NFI      GEMAX       CNORM           ETOT        DETOT      TCPU
+   1  1.999E-02   2.609E-03     -32.851528    0.000E+00      1.00
+   2  1.093E-02   8.615E-04     -33.582357   -7.308E-01       .97
+   3  2.516E-03   4.097E-04     -33.659481   -7.712E-02       .98
+   4  1.284E-03   1.530E-04     -33.674998   -1.552E-02       .98
+   5  9.187E-04   6.072E-05     -33.677459   -2.461E-03      1.04
+   6  6.858E-04   3.355E-05     -33.677878   -4.188E-04      1.05
+   7  4.470E-04   1.938E-05     -33.678025   -1.476E-04      1.05
+   8  2.588E-04   1.016E-05     -33.678089   -6.347E-05      1.06
+   9  1.605E-04   5.416E-06     -33.678107   -1.819E-05      1.02
+  10  8.296E-05   3.087E-06     -33.678111   -4.466E-06      1.12
+  11  3.562E-05   1.905E-06     -33.678113   -1.278E-06      1.06
+  12  2.297E-05   1.074E-06     -33.678113   -5.989E-07      1.05
+  13  1.265E-05   5.196E-07     -33.678114   -2.479E-07      1.11
+  14  5.216E-06   2.632E-07     -33.678114   -4.818E-08      1.04
+
+ RESTART INFORMATION WRITTEN ON FILE                  ./RESTART.1
+ ***    RWFOPT| THE NEW SIZE OF THE PROGRAM IS 30184 KBytes ***
+
+ ****************************************************************
+ *                                                              *
+ *                        FINAL RESULTS                         *
+ *                                                              *
+ ****************************************************************
+
+   ATOM          COORDINATES            GRADIENTS (-FORCES)
+   1 Si  -.0015   .0000  -.0013    .120E-03   .189E-05   .904E-04
+   2  C  -.0022   .0002  3.6066   -.507E-04  -.280E-05  -.894E-03
+   3  C  3.3987  -.0003 -1.2046    .602E-03  -.704E-07  -.447E-03
+   4  C -1.6983  2.9473 -1.2023   -.322E-03   .325E-03   .186E-04
+   5  C -1.6982 -2.9473 -1.2025   -.323E-03  -.325E-03   .183E-04
+   6  H -1.9745   .0000  4.3558    .877E-02  -.801E-06  -.210E-02
+   7  H   .9826  1.7083  4.3573   -.433E-02  -.757E-02  -.210E-02
+   8  H   .9832 -1.7073  4.3577   -.434E-02   .757E-02  -.211E-02
+   9  H  3.4476  -.0007 -3.3137    .916E-03   .385E-05   .889E-02
+  10  H  4.4352 -1.7080  -.5261   -.343E-02   .757E-02  -.338E-02
+  11  H  4.4354  1.7074  -.5267   -.343E-02  -.757E-02  -.338E-02
+  12  H -1.7236  2.9925 -3.3113   -.475E-03   .776E-03   .894E-02
+  13  H  -.7341  4.6960  -.5221   -.479E-02  -.670E-02  -.339E-02
+  14  H -3.6946  2.9944  -.5221    .823E-02   .774E-03  -.342E-02
+  15  H -1.7249 -2.9914 -3.3115   -.468E-03  -.780E-03   .894E-02
+  16  H -3.6941 -2.9954  -.5210    .822E-02  -.771E-03  -.342E-02
+  17  H  -.7330 -4.6961  -.5239   -.480E-02   .670E-02  -.338E-02
+ 
+ ****************************************************************
+
+ 
+ ELECTRONIC GRADIENT:
+    MAX. COMPONENT =    2.30773E-06         NORM =    1.27372E-07
+ NUCLEAR GRADIENT: 
+    MAX. COMPONENT =    8.94470E-03         NORM =    4.35048E-03
+ 
+
+ TOTAL INTEGRATED ELECTRONIC DENSITY
+    IN G-SPACE =                                        32.000000
+    IN R-SPACE =                                        32.000000
+
+ (K+E1+L+N+X)           TOTAL ENERGY =          -33.67811360 A.U.
+ (K)                  KINETIC ENERGY =           25.71886658 A.U.
+ (E1=A-S+R)     ELECTROSTATIC ENERGY =          -27.48358081 A.U.
+ (S)                           ESELF =           30.58557362 A.U.
+ (R)                             ESR =            1.85481660 A.U.
+ (L)    LOCAL PSEUDOPOTENTIAL ENERGY =          -22.11712128 A.U.
+ (N)      N-L PSEUDOPOTENTIAL ENERGY =            2.51960038 A.U.
+ (X)     EXCHANGE-CORRELATION ENERGY =          -12.31587848 A.U.
+          GRADIENT CORRECTION ENERGY =            -.70507974 A.U.
+ 
+ ****************************************************************
+
+
+ ****************************************************************
+ *                    RESPONSE CALCULATIONS                     *
+ ****************************************************************
+
+ 
+********************************************************RESPONSE*
+* RESPONSE TYPE:           NMR chemical shifts                  *
+* PRECONDITIONER TYPE:     smooth (ds)                          *
+* PRECONDITIONER CUTOFF:    .50000                              *
+* WFN CONVERGENCE:          .100E-04                            *
+* GND STATE WFN:                      reciprocal space only     *
+* ALGORITHM:               preconditioned conj gradient         *
+*                          Fletcher-Reeves variant              *
+* CG: ANALYTIC STEPS:      3                                    *
+* CG: LENGTH PREFACTOR:     .80000                              *
+********************************************************RESPONSE*
+ ***  DO_PERTU| THE NEW SIZE OF THE PROGRAM IS 30476 KBytes ***
+ ***NMR       | THE NEW SIZE OF THE PROGRAM IS 31092 KBytes ***
+****************************************************NMR*RESPONSE*
+* RESPONSE TYPE:           NMR chemical shifts                  *
+*                          magnetic susceptibility tensor       *
+* CALCULATION METHOD:      CSGT                                 *
+* OUTPUT:                  standard                             *
+* ELECTRONIC CURRENT:      not computed                         *
+* ORBITAL PLOTS:           not done                             *
+* FFT[R->G] - LOSSES:      warnings issued                      *
+* LOCALIZATION:            wannier functions                    *
+* VIRTUAL CELL MODE:       borders at minimum density           *
+* GAUSSIAN SPREAD:               .100                           *
+*                          OVERLAP OPTIMIZATION                 *
+* OVL THREASHOLD:                .001                           *
+* SMOOTHING MODE:          at +-10% of virtual cells            *
+****************************************************NMR*RESPONSE*
+
+ ****************************************************************
+ LOCALIZATION OF WAVEFUNCTION 
+         FUNCTIONAL: VANDERBILT |M|^2
+         OPTIMISATION: JACOBI ROTATION
+         CONVERGENCE CRITERIA:                         1.0000E-04
+         MAXIMUM # OF STEPS:                                 2000
+         RANDOMIZATION AMPLITUDE:                      0.0000E+00
+         STEP SIZE:                                    1.0000E-01
+         OPERATOR:  1         X         WEIGHT/L^2=        1.0000
+         OPERATOR:  2         Y         WEIGHT/L^2=        1.0000
+         OPERATOR:  3         Z         WEIGHT/L^2=        1.0000
+
+ ****************************************************************
+ ****      CENTERS AND SPREAD BEFORE THE OPTIMIZATION      ****
+
+ FILE ./WANNIER_CENTER EXISTS, NEW DATA WILL BE APPENDED
+ FILE ./IONS+CENTERS.xyz EXISTS, NEW DATA WILL BE APPENDED
+
+ ****************************************************************
+ *             WANNIER CENTERS                    <X^2> - <X>^2 *
+ ****************************************************************
+      -.0713       .0001      -.1057                       3.6566
+     -1.7690       .0560     -1.2511                       3.3338
+      2.5455      -.0714      -.8535                       3.2372
+      -.6097       .0319      2.1531                       3.4701
+      -.0694       .0000      -.1000                       3.3961
+       .9096       .1775       .4947                       3.9238
+      -.6685      -.1699     -1.0950                       3.8836
+      -.4465      -.0129       .3337                       3.9777
+      -.0924       .0000      -.1142                       4.1013
+      -.0732      -.0005      -.1136                       4.0830
+      -.3675       .0665       .2226                       4.1340
+      -.4469      -.0424      -.7730                       4.0006
+       .5959      -.0278       .3763                       4.0824
+     -1.1353       .0203      -.8098                       3.2315
+      1.4902      -.0317      -.0682                       3.2544
+      -.3967       .0169       .6733                       3.4421
+
+   TOTAL SPREAD OF THE SYSTEM      59.2083
+ ****************************************************************
+
+ WANNIER CODE WARNING: GRADIENT FOR RESTA FUNCTIONAL IS 
+ GMAX=    .207E-02
+
+ ****************************************************************
+ *             WANNIER CENTERS                    <X^2> - <X>^2 *
+ ****************************************************************
+     -1.7012      2.9540     -2.6037                       1.6322
+     -1.3211       .0001      4.0761                       1.6315
+      4.0630     -1.1411      -.7435                       1.6307
+     -1.7021     -2.9532     -2.6040                       1.6322
+      -.0026       .0001      2.2824                       1.8286
+     -1.0794      1.8651      -.7648                       1.8224
+     -3.0209      2.9554      -.7419                       1.6314
+     -1.0429     -4.0949      -.7420                       1.6294
+       .6534     -1.1406      4.0786                       1.6311
+     -1.0437      4.0948      -.7407                       1.6294
+      4.0631      1.1405      -.7439                       1.6307
+     -3.0206     -2.9560      -.7412                       1.6314
+      3.4047      -.0006     -2.6063                       1.6323
+      2.1505      -.0002      -.7677                       1.8256
+     -1.0794     -1.8652      -.7649                       1.8224
+       .6530      1.1414      4.0783                       1.6311
+
+   TOTAL SPREAD OF THE SYSTEM      26.8723
+ ****************************************************************
+
+
+ RESTART INFORMATION WRITTEN ON FILE                  ./RESTART.1
+*  TCPU =     1.4 sec: localization.                            *
+*  TCPU =     1.1 sec: lagrange multipliers.                    *
+State group      1: Joining state      1
+State group      1: Joining state      2
+State group      1: Joining state      3
+State group      1: Joining state      4
+State group      1: Joining state      5
+State group      1: Joining state      6
+State group      1: Joining state      7
+State group      1: Joining state      8
+State group      1: Joining state      9
+State group      1: Joining state     10
+State group      1: Joining state     11
+State group      1: Joining state     12
+State group      1: Joining state     13
+State group      1: Joining state     14
+State group      1: Joining state     15
+State group      1: Joining state     16
+** VIRTUAL CELLS ***********************************NMR*RESPONSE*
+** STATE ** LLC_x  LLC_y  LLC_z  ***  CTR_x  CTR_y  CTR_z *******
+* [   1]:   13.04  12.50  13.04         .54    .00    .54       *
+* [   2]:   13.04  12.50  13.04         .54    .00    .54       *
+* [   3]:   13.04  12.50  13.04         .54    .00    .54       *
+* [   4]:   13.04  12.50  13.04         .54    .00    .54       *
+* [   5]:   13.04  12.50  13.04         .54    .00    .54       *
+* [   6]:   13.04  12.50  13.04         .54    .00    .54       *
+* [   7]:   13.04  12.50  13.04         .54    .00    .54       *
+* [   8]:   13.04  12.50  13.04         .54    .00    .54       *
+* [   9]:   13.04  12.50  13.04         .54    .00    .54       *
+* [  10]:   13.04  12.50  13.04         .54    .00    .54       *
+* [  11]:   13.04  12.50  13.04         .54    .00    .54       *
+* [  12]:   13.04  12.50  13.04         .54    .00    .54       *
+* [  13]:   13.04  12.50  13.04         .54    .00    .54       *
+* [  14]:   13.04  12.50  13.04         .54    .00    .54       *
+* [  15]:   13.04  12.50  13.04         .54    .00    .54       *
+* [  16]:   13.04  12.50  13.04         .54    .00    .54       *
+****************************************************NMR*RESPONSE*
+*  TCPU =      .8 sec: LLC initialization.                      *
+****************************************************NMR*RESPONSE*
+*  PERTURBATION: L_1 |PSI>                                      *
+*  TCPU =      .8 sec: preparation.                             *
+****************************************************NMR*RESPONSE*
+*  scaling  input with       .346                               *
+
+ TOTAL INTEGRATED ELECTRONIC DENSITY
+    IN G-SPACE =                                        32.000000
+    IN R-SPACE =                                        32.000000
+
+   TOTAL SECOND ORDER  ENERGY =                  -4.16020581 A.U.
+ZERO ORDER HAMILTONIAN ENERGY =                   1.59939524 A.U.
+     BARE PERTURBATION ENERGY =                    .00000000 A.U.
+ N-L BARE PERTURBATION ENERGY =                  -6.93367635 A.U.
+ HARTREE  PERTURBATION ENERGY =                    .00000000 A.U.
+   X-C    PERTURBATION ENERGY =                    .00000000 A.U.
+ZERO ORDER LAGR-MULT.  ENERGY =                   1.17407530 A.U.
+
+ NFI      GEMAX       CNORM           ETOT        DETOT      TCPU
+   1  2.255E-02   1.607E-03      -4.160206    0.000E+00       .69
+   2  1.083E-02   6.357E-04      -4.882510   -7.223E-01       .64
+   3  3.497E-03   2.741E-04      -5.065762   -1.833E-01       .37
+   4  1.441E-03   1.080E-04      -5.094205   -2.844E-02       .34
+   5  7.490E-04   5.146E-05      -5.099716   -5.511E-03       .33
+   6  3.588E-04   2.378E-05      -5.100654   -9.371E-04       .38
+   7  2.069E-04   9.596E-06      -5.100862   -2.083E-04       .33
+   8  9.297E-05   4.196E-06      -5.100907   -4.461E-05       .33
+   9  3.563E-05   2.159E-06      -5.100915   -8.097E-06       .33
+  10  2.659E-05   8.875E-07      -5.100916   -1.605E-06       .33
+  11  1.456E-05   3.593E-07      -5.100917   -3.148E-07       .33
+  12  5.918E-06   1.560E-07      -5.100917   -6.267E-08       .33
+
+ TOTAL INTEGRATED ELECTRONIC DENSITY
+    IN G-SPACE =                                        32.000000
+    IN R-SPACE =                                        32.000000
+
+   TOTAL SECOND ORDER  ENERGY =                  -5.10091663 A.U.
+ZERO ORDER HAMILTONIAN ENERGY =                   2.15886321 A.U.
+     BARE PERTURBATION ENERGY =                    .00000000 A.U.
+ N-L BARE PERTURBATION ENERGY =                 -10.20180794 A.U.
+ HARTREE  PERTURBATION ENERGY =                    .00000000 A.U.
+   X-C    PERTURBATION ENERGY =                    .00000000 A.U.
+ZERO ORDER LAGR-MULT.  ENERGY =                   2.94202810 A.U.
+
+*  scaling output with      2.894                               *
+*  TCPU =     5.1 sec: calculation of psi^1.                    *
+****************************************************NMR*RESPONSE*
+*  TCPU =     1.5 sec: shift contribution.                      *
+*  TCPU =     1.2 sec: susceptibility contribution.             *
+****************************************************NMR*RESPONSE*
+*  PERTURBATION: L_2 |PSI>                                      *
+*  TCPU =      .8 sec: preparation.                             *
+****************************************************NMR*RESPONSE*
+*  scaling  input with       .352                               *
+
+ TOTAL INTEGRATED ELECTRONIC DENSITY
+    IN G-SPACE =                                        32.000000
+    IN R-SPACE =                                        32.000000
+
+   TOTAL SECOND ORDER  ENERGY =                  -4.43776108 A.U.
+ZERO ORDER HAMILTONIAN ENERGY =                   1.70676840 A.U.
+     BARE PERTURBATION ENERGY =                    .00000000 A.U.
+ N-L BARE PERTURBATION ENERGY =                  -7.39626847 A.U.
+ HARTREE  PERTURBATION ENERGY =                    .00000000 A.U.
+   X-C    PERTURBATION ENERGY =                    .00000000 A.U.
+ZERO ORDER LAGR-MULT.  ENERGY =                   1.25173899 A.U.
+
+ NFI      GEMAX       CNORM           ETOT        DETOT      TCPU
+   1  2.258E-02   1.655E-03      -4.437761    0.000E+00       .64
+   2  1.091E-02   6.579E-04      -5.209902   -7.721E-01       .65
+   3  3.391E-03   2.841E-04      -5.405895   -1.960E-01       .33
+   4  1.629E-03   1.116E-04      -5.436425   -3.053E-02       .33
+   5  8.388E-04   5.349E-05      -5.442333   -5.908E-03       .33
+   6  3.811E-04   2.490E-05      -5.443350   -1.017E-03       .33
+   7  2.337E-04   1.004E-05      -5.443578   -2.280E-04       .33
+   8  1.044E-04   4.437E-06      -5.443627   -4.889E-05       .33
+   9  4.031E-05   2.299E-06      -5.443635   -8.897E-06       .33
+  10  2.799E-05   9.411E-07      -5.443637   -1.788E-06       .33
+  11  1.455E-05   3.885E-07      -5.443638   -3.564E-07       .33
+  12  6.010E-06   1.752E-07      -5.443638   -7.243E-08       .34
+
+ TOTAL INTEGRATED ELECTRONIC DENSITY
+    IN G-SPACE =                                        32.000000
+    IN R-SPACE =                                        32.000000
+
+   TOTAL SECOND ORDER  ENERGY =                  -5.44363768 A.U.
+ZERO ORDER HAMILTONIAN ENERGY =                   2.30388632 A.U.
+     BARE PERTURBATION ENERGY =                    .00000000 A.U.
+ N-L BARE PERTURBATION ENERGY =                 -10.88724477 A.U.
+ HARTREE  PERTURBATION ENERGY =                    .00000000 A.U.
+   X-C    PERTURBATION ENERGY =                    .00000000 A.U.
+ZERO ORDER LAGR-MULT.  ENERGY =                   3.13972076 A.U.
+
+*  scaling output with      2.839                               *
+*  TCPU =     4.9 sec: calculation of psi^1.                    *
+****************************************************NMR*RESPONSE*
+*  TCPU =     1.5 sec: shift contribution.                      *
+*  TCPU =     1.1 sec: susceptibility contribution.             *
+****************************************************NMR*RESPONSE*
+*  PERTURBATION: L_3 |PSI>                                      *
+*  TCPU =      .8 sec: preparation.                             *
+****************************************************NMR*RESPONSE*
+*  scaling  input with       .327                               *
+
+ TOTAL INTEGRATED ELECTRONIC DENSITY
+    IN G-SPACE =                                        32.000000
+    IN R-SPACE =                                        32.000000
+
+   TOTAL SECOND ORDER  ENERGY =                  -3.71068940 A.U.
+ZERO ORDER HAMILTONIAN ENERGY =                   1.42709227 A.U.
+     BARE PERTURBATION ENERGY =                    .00000000 A.U.
+ N-L BARE PERTURBATION ENERGY =                  -6.18448233 A.U.
+ HARTREE  PERTURBATION ENERGY =                    .00000000 A.U.
+   X-C    PERTURBATION ENERGY =                    .00000000 A.U.
+ZERO ORDER LAGR-MULT.  ENERGY =                   1.04670066 A.U.
+
+ NFI      GEMAX       CNORM           ETOT        DETOT      TCPU
+   1  2.288E-02   1.523E-03      -3.710689    0.000E+00       .64
+   2  1.114E-02   6.003E-04      -4.355791   -6.451E-01       .63
+   3  3.841E-03   2.587E-04      -4.520032   -1.642E-01       .33
+   4  1.285E-03   1.024E-04      -4.545471   -2.544E-02       .32
+   5  6.568E-04   4.879E-05      -4.550420   -4.949E-03       .32
+   6  3.153E-04   2.250E-05      -4.551262   -8.426E-04       .33
+   7  1.853E-04   9.088E-06      -4.551450   -1.874E-04       .33
+   8  8.676E-05   3.953E-06      -4.551490   -4.013E-05       .32
+   9  3.715E-05   2.043E-06      -4.551497   -7.297E-06       .32
+  10  2.290E-05   8.465E-07      -4.551499   -1.455E-06       .32
+  11  1.261E-05   3.407E-07      -4.551499   -2.863E-07       .32
+  12  5.201E-06   1.468E-07      -4.551499   -5.682E-08       .33
+
+ TOTAL INTEGRATED ELECTRONIC DENSITY
+    IN G-SPACE =                                        32.000000
+    IN R-SPACE =                                        32.000000
+
+   TOTAL SECOND ORDER  ENERGY =                  -4.55149898 A.U.
+ZERO ORDER HAMILTONIAN ENERGY =                   1.92637255 A.U.
+     BARE PERTURBATION ENERGY =                    .00000000 A.U.
+ N-L BARE PERTURBATION ENERGY =                  -9.10297533 A.U.
+ HARTREE  PERTURBATION ENERGY =                    .00000000 A.U.
+   X-C    PERTURBATION ENERGY =                    .00000000 A.U.
+ZERO ORDER LAGR-MULT.  ENERGY =                   2.62510380 A.U.
+
+*  scaling output with      3.062                               *
+*  TCPU =     4.9 sec: calculation of psi^1.                    *
+****************************************************NMR*RESPONSE*
+*  TCPU =     1.5 sec: shift contribution.                      *
+*  TCPU =     1.1 sec: susceptibility contribution.             *
+****************************************************NMR*RESPONSE*
+*  PERTURBATION: p_1 |PSI>                                      *
+*  TCPU =      .0 sec: preparation.                             *
+****************************************************NMR*RESPONSE*
+*  scaling  input with      1.347                               *
+
+ TOTAL INTEGRATED ELECTRONIC DENSITY
+    IN G-SPACE =                                        32.000000
+    IN R-SPACE =                                        32.000000
+
+   TOTAL SECOND ORDER  ENERGY =                  -6.04788365 A.U.
+ZERO ORDER HAMILTONIAN ENERGY =                   2.39167319 A.U.
+     BARE PERTURBATION ENERGY =                    .00000000 A.U.
+ N-L BARE PERTURBATION ENERGY =                 -10.07980609 A.U.
+ HARTREE  PERTURBATION ENERGY =                    .00000000 A.U.
+   X-C    PERTURBATION ENERGY =                    .00000000 A.U.
+ZERO ORDER LAGR-MULT.  ENERGY =                   1.64024925 A.U.
+
+ NFI      GEMAX       CNORM           ETOT        DETOT      TCPU
+   1  3.215E-02   2.062E-03      -6.047884    0.000E+00       .64
+   2  2.166E-02   8.241E-04      -7.235816   -1.188E+00       .64
+   3  1.182E-02   3.710E-04      -7.574185   -3.384E-01       .32
+   4  5.698E-03   1.533E-04      -7.627486   -5.330E-02       .33
+   5  1.776E-03   8.033E-05      -7.638077   -1.059E-02       .32
+   6  6.107E-04   3.908E-05      -7.640247   -2.170E-03       .32
+   7  2.354E-04   1.514E-05      -7.640749   -5.018E-04       .33
+   8  2.301E-04   6.263E-06      -7.640840   -9.165E-05       .32
+   9  1.256E-04   3.403E-06      -7.640856   -1.590E-05       .32
+  10  5.183E-05   1.512E-06      -7.640860   -3.978E-06       .33
+  11  1.335E-05   6.383E-07      -7.640861   -8.406E-07       .32
+  12  4.286E-06   2.835E-07      -7.640861   -1.544E-07       .32
+
+ TOTAL INTEGRATED ELECTRONIC DENSITY
+    IN G-SPACE =                                        32.000000
+    IN R-SPACE =                                        32.000000
+
+   TOTAL SECOND ORDER  ENERGY =                  -7.64086130 A.U.
+ZERO ORDER HAMILTONIAN ENERGY =                   3.23666232 A.U.
+     BARE PERTURBATION ENERGY =                    .00000000 A.U.
+ N-L BARE PERTURBATION ENERGY =                 -15.28163436 A.U.
+ HARTREE  PERTURBATION ENERGY =                    .00000000 A.U.
+   X-C    PERTURBATION ENERGY =                    .00000000 A.U.
+ZERO ORDER LAGR-MULT.  ENERGY =                   4.40411073 A.U.
+
+*  scaling output with       .743                               *
+****************************************************NMR*RESPONSE*
+*  TCPU =     4.9 sec: calculation of psi^1.                    *
+*  TCPU =     3.0 sec: shift contribution.                      *
+*  TCPU =     3.0 sec: susceptibility contribution.             *
+RESPONSE wavefunction written to RESTART file RESTART.p_x.
+****************************************************NMR*RESPONSE*
+*  PERTURBATION: p_2 |PSI>                                      *
+*  TCPU =      .5 sec: preparation.                             *
+****************************************************NMR*RESPONSE*
+*  scaling  input with      1.387                               *
+
+ TOTAL INTEGRATED ELECTRONIC DENSITY
+    IN G-SPACE =                                        32.000000
+    IN R-SPACE =                                        32.000000
+
+   TOTAL SECOND ORDER  ENERGY =                  -6.41825172 A.U.
+ZERO ORDER HAMILTONIAN ENERGY =                   2.53824291 A.U.
+     BARE PERTURBATION ENERGY =                    .00000000 A.U.
+ N-L BARE PERTURBATION ENERGY =                 -10.69708620 A.U.
+ HARTREE  PERTURBATION ENERGY =                    .00000000 A.U.
+   X-C    PERTURBATION ENERGY =                    .00000000 A.U.
+ZERO ORDER LAGR-MULT.  ENERGY =                   1.74059157 A.U.
+
+ NFI      GEMAX       CNORM           ETOT        DETOT      TCPU
+   1  2.875E-02   2.124E-03      -6.418252    0.000E+00       .63
+   2  1.926E-02   8.486E-04      -7.679323   -1.261E+00       .63
+   3  1.058E-02   3.825E-04      -8.038822   -3.595E-01       .34
+   4  5.044E-03   1.570E-04      -8.095376   -5.655E-02       .33
+   5  1.585E-03   8.283E-05      -8.106609   -1.123E-02       .33
+   6  5.958E-04   4.042E-05      -8.108919   -2.310E-03       .33
+   7  2.319E-04   1.550E-05      -8.109453   -5.343E-04       .32
+   8  2.038E-04   6.317E-06      -8.109550   -9.713E-05       .32
+   9  1.127E-04   3.473E-06      -8.109567   -1.679E-05       .33
+  10  4.549E-05   1.566E-06      -8.109571   -4.226E-06       .32
+  11  1.162E-05   6.482E-07      -8.109572   -8.969E-07       .33
+  12  4.992E-06   2.820E-07      -8.109572   -1.631E-07       .33
+
+ TOTAL INTEGRATED ELECTRONIC DENSITY
+    IN G-SPACE =                                        32.000000
+    IN R-SPACE =                                        32.000000
+
+   TOTAL SECOND ORDER  ENERGY =                  -8.10957203 A.U.
+ZERO ORDER HAMILTONIAN ENERGY =                   3.43427341 A.U.
+     BARE PERTURBATION ENERGY =                    .00000000 A.U.
+ N-L BARE PERTURBATION ENERGY =                 -16.21905106 A.U.
+ HARTREE  PERTURBATION ENERGY =                    .00000000 A.U.
+   X-C    PERTURBATION ENERGY =                    .00000000 A.U.
+ZERO ORDER LAGR-MULT.  ENERGY =                   4.67520562 A.U.
+
+*  scaling output with       .721                               *
+****************************************************NMR*RESPONSE*
+*  TCPU =     4.9 sec: calculation of psi^1.                    *
+*  TCPU =     2.9 sec: shift contribution.                      *
+*  TCPU =     3.0 sec: susceptibility contribution.             *
+RESPONSE wavefunction written to RESTART file RESTART.p_y.
+****************************************************NMR*RESPONSE*
+*  PERTURBATION: p_3 |PSI>                                      *
+*  TCPU =      .2 sec: preparation.                             *
+****************************************************NMR*RESPONSE*
+*  scaling  input with      1.314                               *
+
+ TOTAL INTEGRATED ELECTRONIC DENSITY
+    IN G-SPACE =                                        32.000000
+    IN R-SPACE =                                        32.000000
+
+   TOTAL SECOND ORDER  ENERGY =                  -5.75561674 A.U.
+ZERO ORDER HAMILTONIAN ENERGY =                   2.27598820 A.U.
+     BARE PERTURBATION ENERGY =                    .00000000 A.U.
+ N-L BARE PERTURBATION ENERGY =                  -9.59269457 A.U.
+ HARTREE  PERTURBATION ENERGY =                    .00000000 A.U.
+   X-C    PERTURBATION ENERGY =                    .00000000 A.U.
+ZERO ORDER LAGR-MULT.  ENERGY =                   1.56108963 A.U.
+
+ NFI      GEMAX       CNORM           ETOT        DETOT      TCPU
+   1  3.328E-02   2.011E-03      -5.755617    0.000E+00       .64
+   2  2.248E-02   8.043E-04      -6.885982   -1.130E+00       .63
+   3  1.224E-02   3.618E-04      -7.208132   -3.221E-01       .33
+   4  5.926E-03   1.502E-04      -7.258968   -5.084E-02       .32
+   5  1.845E-03   7.843E-05      -7.269076   -1.011E-02       .32
+   6  6.655E-04   3.808E-05      -7.271146   -2.070E-03       .33
+   7  2.178E-04   1.487E-05      -7.271624   -4.788E-04       .32
+   8  2.391E-04   6.202E-06      -7.271712   -8.769E-05       .34
+   9  1.300E-04   3.337E-06      -7.271727   -1.523E-05       .32
+  10  5.423E-05   1.473E-06      -7.271731   -3.796E-06       .32
+  11  1.448E-05   6.327E-07      -7.271732   -8.014E-07       .32
+  12  4.057E-06   2.835E-07      -7.271732   -1.482E-07       .33
+
+ TOTAL INTEGRATED ELECTRONIC DENSITY
+    IN G-SPACE =                                        32.000000
+    IN R-SPACE =                                        32.000000
+
+   TOTAL SECOND ORDER  ENERGY =                  -7.27173213 A.U.
+ZERO ORDER HAMILTONIAN ENERGY =                   3.07990116 A.U.
+     BARE PERTURBATION ENERGY =                    .00000000 A.U.
+ N-L BARE PERTURBATION ENERGY =                 -14.54338001 A.U.
+ HARTREE  PERTURBATION ENERGY =                    .00000000 A.U.
+   X-C    PERTURBATION ENERGY =                    .00000000 A.U.
+ZERO ORDER LAGR-MULT.  ENERGY =                   4.19174671 A.U.
+
+*  scaling output with       .761                               *
+****************************************************NMR*RESPONSE*
+*  TCPU =     4.9 sec: calculation of psi^1.                    *
+*  TCPU =     2.9 sec: shift contribution.                      *
+*  TCPU =     3.0 sec: susceptibility contribution.             *
+RESPONSE wavefunction written to RESTART file RESTART.p_z.
+****************************************************NMR*RESPONSE*
+****************************************************NMR*RESPONSE*
+*  Calculation of responses DONE.                               *
+*  TOTAL TIME:    61.7                                          *
+****************************************************NMR*RESPONSE*
+****************************************************NMR*RESPONSE*
+=============== MAGNETIC SUSCEPTIBILITY TENSOR ==================
+  XX=    -1268.56062  XY=        -.01098  XZ=        -.16269
+  YX=        -.01130  YY=    -1268.32628  YZ=         .01619
+  ZX=        -.16716  ZY=         .01588  ZZ=    -1268.46052
+ PV1=    -1268.68292 PV2=    -1268.35266 PV3=    -1268.31185
+ iso=    -1268.44914                   aniso=         .20595
+=============== (units = 10^-30 J/T^2) ==========================
+  XX=      -76.39329  XY=        -.00067  XZ=        -.00993
+  YX=        -.00067  YY=      -76.37918  YZ=         .00097
+  ZX=        -.00993  ZY=         .00097  ZZ=      -76.38726
+ PV1=      -76.40066 PV2=      -76.38077 PV3=      -76.37831
+ iso=      -76.38658                   aniso=         .01240
+=============== (units = ppm-cgs)      ==========================
+========= ATOM Si  1,  RAW SHIFT MATRIX *ALL* STATES ======(PV)==
+Si  1 [all] S_x* =     -6.63      .00      .01             -6.64
+Si  1 [all] S_y* =       .00    -6.60      .00             -6.62
+Si  1 [all] S_z* =       .01      .00    -6.63             -6.60
+========= ATOM  C  1,  RAW SHIFT MATRIX *ALL* STATES ======(PV)==
+ C  1 [all] S_x* =      7.02      .00      .02              7.02
+ C  1 [all] S_y* =       .00     7.04      .00              7.05
+ C  1 [all] S_z* =       .04      .00     9.99              9.99
+========= ATOM  C  2,  RAW SHIFT MATRIX *ALL* STATES ======(PV)==
+ C  2 [all] S_x* =      9.68      .00     -.87              6.96
+ C  2 [all] S_y* =       .00     7.02      .00              7.03
+ C  2 [all] S_z* =      -.90      .00     7.25              9.97
+========= ATOM  C  3,  RAW SHIFT MATRIX *ALL* STATES ======(PV)==
+ C  3 [all] S_x* =      7.61    -1.09      .48              6.94
+ C  3 [all] S_y* =     -1.14     8.88     -.80              6.99
+ C  3 [all] S_z* =       .48     -.76     7.29              9.85
+========= ATOM  C  4,  RAW SHIFT MATRIX *ALL* STATES ======(PV)==
+ C  4 [all] S_x* =      7.62     1.09      .48              6.95
+ C  4 [all] S_y* =      1.15     8.88      .79              6.98
+ C  4 [all] S_z* =       .48      .77     7.28              9.85
+========= ATOM  H  1,  RAW SHIFT MATRIX *ALL* STATES ======(PV)==
+ H  1 [all] S_x* =     32.85      .00    -3.85             25.61
+ H  1 [all] S_y* =       .00    25.61      .00             27.11
+ H  1 [all] S_z* =     -4.12      .00    29.88             35.62
+========= ATOM  H  2,  RAW SHIFT MATRIX *ALL* STATES ======(PV)==
+ H  2 [all] S_x* =     27.42     3.12     1.93             25.62
+ H  2 [all] S_y* =      3.12    31.05     3.34             27.11
+ H  2 [all] S_z* =      2.06     3.58    29.89             35.62
+========= ATOM  H  3,  RAW SHIFT MATRIX *ALL* STATES ======(PV)==
+ H  3 [all] S_x* =     27.42    -3.12     1.93             25.62
+ H  3 [all] S_y* =     -3.12    31.04    -3.34             27.11
+ H  3 [all] S_z* =      2.07    -3.58    29.89             35.62
+========= ATOM  H  4,  RAW SHIFT MATRIX *ALL* STATES ======(PV)==
+ H  4 [all] S_x* =     27.66      .00    -2.26             25.62
+ H  4 [all] S_y* =       .00    25.62      .00             27.10
+ H  4 [all] S_z* =     -1.99      .00    35.08             35.65
+========= ATOM  H  5,  RAW SHIFT MATRIX *ALL* STATES ======(PV)==
+ H  5 [all] S_x* =     30.89    -4.42      .89             25.64
+ H  5 [all] S_y* =     -4.19    31.05    -1.82             27.08
+ H  5 [all] S_z* =       .76    -1.75    26.42             35.65
+========= ATOM  H  6,  RAW SHIFT MATRIX *ALL* STATES ======(PV)==
+ H  6 [all] S_x* =     30.90     4.42      .89             25.63
+ H  6 [all] S_y* =      4.19    31.05     1.82             27.08
+ H  6 [all] S_z* =       .76     1.75    26.42             35.65
+========= ATOM  H  7,  RAW SHIFT MATRIX *ALL* STATES ======(PV)==
+ H  7 [all] S_x* =     26.12     -.85     1.14             25.64
+ H  7 [all] S_y* =      -.85    27.15    -1.97             27.06
+ H  7 [all] S_z* =      1.00    -1.74    35.08             35.66
+========= ATOM  H  8,  RAW SHIFT MATRIX *ALL* STATES ======(PV)==
+ H  8 [all] S_x* =     27.24     2.18     1.14             25.62
+ H  8 [all] S_y* =      2.39    34.70     1.68             27.03
+ H  8 [all] S_z* =      1.14     1.54    26.43             35.72
+========= ATOM  H  9,  RAW SHIFT MATRIX *ALL* STATES ======(PV)==
+ H  9 [all] S_x* =     34.79    -1.93    -2.03             25.64
+ H  9 [all] S_y* =     -2.15    27.15     -.14             27.05
+ H  9 [all] S_z* =     -1.90     -.22    26.42             35.67
+========= ATOM  H 10,  RAW SHIFT MATRIX *ALL* STATES ======(PV)==
+ H 10 [all] S_x* =     26.12      .85     1.15             25.64
+ H 10 [all] S_y* =       .85    27.15     1.97             27.06
+ H 10 [all] S_z* =      1.01     1.73    35.08             35.65
+========= ATOM  H 11,  RAW SHIFT MATRIX *ALL* STATES ======(PV)==
+ H 11 [all] S_x* =     34.78     1.93    -2.04             25.64
+ H 11 [all] S_y* =      2.16    27.15      .14             27.05
+ H 11 [all] S_z* =     -1.90      .22    26.42             35.68
+========= ATOM  H 12,  RAW SHIFT MATRIX *ALL* STATES ======(PV)==
+ H 12 [all] S_x* =     27.25    -2.18     1.14             25.62
+ H 12 [all] S_y* =     -2.39    34.70    -1.68             27.03
+ H 12 [all] S_z* =      1.14    -1.53    26.42             35.72
+========= RAW SHIFT MATRICES END ================================
+===== NET SHIFTS ====(PV 1)===(PV 2)===(PV 3)====(iso)==(aniso)==
+Si  1/  1   SHIFTS :    -6.18    -6.16    -6.14    -6.16      .03
+ C  1/  2   SHIFTS :     7.48     7.50    10.45     8.48     2.95
+ C  2/  3   SHIFTS :     7.42     7.48    10.43     8.44     2.97
+ C  3/  4   SHIFTS :     7.40     7.44    10.31     8.39     2.89
+ C  4/  5   SHIFTS :     7.40     7.44    10.31     8.39     2.89
+ H  1/  6   SHIFTS :    26.07    27.57    36.08    29.91     9.26
+ H  2/  7   SHIFTS :    26.08    27.57    36.08    29.91     9.26
+ H  3/  8   SHIFTS :    26.08    27.56    36.08    29.91     9.26
+ H  4/  9   SHIFTS :    26.08    27.55    36.11    29.91     9.29
+ H  5/ 10   SHIFTS :    26.09    27.54    36.10    29.91     9.29
+ H  6/ 11   SHIFTS :    26.09    27.54    36.11    29.91     9.29
+ H  7/ 12   SHIFTS :    26.10    27.52    36.11    29.91     9.30
+ H  8/ 13   SHIFTS :    26.08    27.49    36.18    29.92     9.39
+ H  9/ 14   SHIFTS :    26.10    27.51    36.13    29.91     9.33
+ H 10/ 15   SHIFTS :    26.10    27.52    36.11    29.91     9.30
+ H 11/ 16   SHIFTS :    26.10    27.51    36.13    29.91     9.33
+ H 12/ 17   SHIFTS :    26.08    27.49    36.18    29.92     9.39
+===== NET SHIFTS ================================================
+===== NET SHIFTS, susceptibility correction =   .459=============
+@ TIME:     61.7 sec for             the whole calculation.      
+
+ ================================================================
+                      BIG MEMORY ALLOCATIONS 
+ scr              1192860                SCR               535851
+ PME               388720                ATWFR             301200
+ PSI               198810                PSI               198810
+ psi               198810                YF                198810
+ XF                198810                SC0/tmp           155456
+ ----------------------------------------------------------------
+ [PEAK NUMBER   94]      PEAK MEMORY      4095899 =   32.8 MBytes
+ ================================================================
+
+
+ ****************************************************************
+ *                                                              *
+ *                            TIMING                            *
+ *                                                              *
+ ****************************************************************
+ SUBROUTINE            CALLS         CPU TIME        ELAPSED TIME
+    FFT-G/S             8816            16.17               16.17
+   S_INVFFT             1502            12.10               12.09
+    S_FWFFT             1318            10.99               10.99
+     FFTCOM             2998             8.96                8.96
+     V0PSI1               72             3.31                3.31
+      r_psi             1680             3.14                3.15
+      ATRHO                1             3.10                3.10
+ FFT^2 -> R              432             2.59                2.59
+ FFT^2 -> G              348             2.51                2.51
+   shift(p)                3             2.12                2.12
+     LOADPA                1             2.06                2.06
+       VPSI               51             1.69                1.69
+      FWFFT              105             1.35                1.35
+     GCENER               18             1.30                1.30
+   LOCALIZE                1             1.05                1.05
+      ODIIS               15              .92                 .92
+     INVFFT               73              .89                 .89
+     RHOOFR               17              .83                 .83
+     GLOSUM             2444              .75                 .75
+   FFT -> G              115              .70                 .70
+     EICALC               20              .67                 .67
+   pcgrad_p               78              .67                 .67
+   shift(L)                3              .66                 .65
+     GRADEN               18              .60                 .60
+      NUMPW                1              .58                 .58
+    FNONLOC              123              .55                 .55
+    WR30WFN                3              .53                 .53
+      PHASE              194              .51                 .51
+     XCENER               18              .43                 .43
+ ortho_p                 240              .43                 .43
+     GORDER                1              .41                 .41
+        NMR                1              .40                 .40
+    W_WFNIO                2              .39                 .39
+      OVLAP              257              .37                 .37
+     RNLSM1              123              .33                 .33
+   FFT -> R               64              .30                 .30
+ ENERGY                  336              .24                 .23
+     ROTATE               88              .17                 .17
+ EIGR_DOT                459              .16                 .16
+ ----------------------------------------------------------------
+ TOTAL TIME                             84.93               84.93
+ ****************************************************************
+
+       CPU TIME :    0 HOURS  1 MINUTES 27.88 SECONDS     
+   ELAPSED TIME :    0 HOURS  1 MINUTES 27.88 SECONDS     
+
+ PROGRAM CPMD ENDED AT:   Fri Jul 18 12:09:21 2003
+ 
+
+ ================================================================
+ = COMMUNICATION TASK  AVERAGE MESSAGE LENGTH  NUMBER OF CALLS  =
+ = SEND/RECEIVE               24142. BYTES               4960.  =
+ = BROADCAST                  19115. BYTES                230.  =
+ = GLOBAL SUMMATION             276. BYTES               2875.  =
+ = GLOBAL MULTIPLICATION          0. BYTES                  1.  =
+ = ALL TO ALL COMM           334788. BYTES               3010.  =
+ =                             PERFORMANCE          TOTAL TIME  =
+ = SEND/RECEIVE              654.520  MB/S            .183 SEC  =
+ = BROADCAST                  36.164  MB/S            .122 SEC  =
+ = GLOBAL SUMMATION            4.863  MB/S            .817 SEC  =
+ = GLOBAL MULTIPLICATION        .000  MB/S            .001 SEC  =
+ = ALL TO ALL COMM           108.051  MB/S           9.326 SEC  =
+ = SYNCHRONISATION                                    .012 SEC  =
+ ================================================================

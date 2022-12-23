@@ -1,0 +1,102 @@
+#!/usr/local/bin/vmd
+# VMD version: 1.8.2
+set viewplist {}
+# Display settings
+display projection   Orthographic
+display nearclip set 0.000000
+display depthcue   off
+mol new {b2h6-elpot.cube} type cube waitfor all
+mol delrep 0 top
+mol representation VDW 0.200000 32.000000
+mol color Name
+mol selection {not name X}
+mol material Opaque
+mol addrep top
+mol selupdate 0 top 0
+mol colupdate 0 top 0
+mol scaleminmax top 0 0.000000 0.000000
+mol smoothrep top 0 0
+mol drawframes top 0 {now}
+mol representation DynamicBonds 1.600000 0.100000 20.000000
+mol color Name
+mol selection {not name X}
+mol material Opaque
+mol addrep top
+mol selupdate 1 top 0
+mol colupdate 1 top 0
+mol scaleminmax top 1 0.000000 0.000000
+mol smoothrep top 1 0
+mol drawframes top 1 {now}
+mol representation VDW 0.100000 30.000000
+mol color ColorID 15
+mol selection {name X}
+mol material Opaque
+mol addrep top
+mol selupdate 2 top 0
+mol colupdate 2 top 0
+mol scaleminmax top 2 0.000000 0.000000
+mol smoothrep top 2 0
+mol drawframes top 2 {now}
+mol representation Isosurface -0.150000 0.000000 0.000000 0.000000
+mol color ColorID 1
+mol selection {all}
+mol material Transparent
+mol addrep top
+mol selupdate 3 top 0
+mol colupdate 3 top 0
+mol scaleminmax top 3 0.000000 0.000000
+mol smoothrep top 3 0
+mol drawframes top 3 {now}
+mol representation Isosurface 0.050000 0.000000 0.000000 0.000000
+mol color ColorID 0
+mol selection {all}
+mol material Transparent
+mol addrep top
+mol selupdate 4 top 0
+mol colupdate 4 top 0
+mol scaleminmax top 4 0.000000 0.000000
+mol smoothrep top 4 0
+mol drawframes top 4 {now}
+mol rename top {b2h6-elpot.cube}
+set viewpoints([molinfo top]) {{{1.000000 0.000000 0.000000 -5.000000} {0.000000 1.000000 0.000000 -5.000000} {0.000000 0.000000 1.000000 -6.000008} {0.000000 0.000000 0.000000 1.000000}} {{-0.158073 0.056051 -0.985835 0.000000} {-0.536720 0.833144 0.133429 0.000000} {0.828822 0.550209 -0.101613 0.000000} {0.000000 0.000000 0.000000 1.000000}} {{0.512046 0.000000 0.000000 0.000000} {0.000000 0.512046 0.000000 0.000000} {0.000000 0.000000 0.512046 0.000000} {0.000000 0.000000 0.000000 1.000000}} {{1.000000 0.000000 0.000000 0.000000} {0.000000 1.000000 0.000000 0.000000} {0.000000 0.000000 1.000000 0.000000} {0.000000 0.000000 0.000000 1.000000}}}
+lappend viewplist [molinfo top]
+set topmol [molinfo top]
+# done with molecule 0
+foreach v $viewplist {
+  molinfo $v set {center_matrix rotate_matrix scale_matrix global_matrix} $viewpoints($v)
+}
+unset viewplist
+mol top $topmol
+unset topmol
+proc vmdrestoremycolors {} {
+  color Display {Background} silver
+  color Name {C} green
+  color Name {B} pink
+  color Name {X} white
+  color Type {B} green
+  color Type {X} white
+  color Resname {} gray
+  color Chain {X} blue
+  color Segname {} blue
+  color Molecule {0} blue
+  color Surface {Grasp} gray
+  color Labels {Springs} orange
+  color change rgb 0 0.0 0.0 1.0
+  color change rgb 2 0.34999999404 0.34999999404 0.34999999404
+  color change rgb 3 1.0 0.5 0.0
+  color change rgb 4 1.0 1.0 0.0
+  color change rgb 5 0.5 0.5 0.20000000298
+  color change rgb 6 0.600000023842 0.600000023842 0.600000023842
+  color change rgb 7 0.0 1.0 0.0
+  color change rgb 9 1.0 0.600000023842 0.600000023842
+  color change rgb 11 0.649999976158 0.0 0.649999976158
+  color change rgb 12 0.5 0.899999976158 0.40000000596
+  color change rgb 13 0.899999976158 0.40000000596 0.699999988079
+  color change rgb 14 0.5 0.300000011921 0.0
+  color change rgb 15 0.5 0.5 0.75
+}
+vmdrestoremycolors
+
+render TachyonInternal b2h6-elpot.tga
+quit
+

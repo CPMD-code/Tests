@@ -1,0 +1,3 @@
+comparison of various methods for wavefunction optimization.
+the shell script compare.sh is used to extract results.
+see the .ref files for reference values.

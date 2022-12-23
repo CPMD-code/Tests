@@ -1,0 +1,34 @@
+
+test to illustrate the use of an external potential file.
+
+first run the wavefunction optimization for the normal case
+(single water molecule in gasphase) and create a cubefile
+from the file DENSITY with cpmd2cube.
+
+then compile the file mkextpot.f and run the program to create
+the external potential. you'll need to specify the cell dimensions,
+the origin and the real space mesh.
+
+now run the wavefunction optimization for the external potential
+case and create another cube file from DENSITY file.
+
+create a difference cube file from the two density cubefiles,
+e.g. using the cubman utility from the gaussian software package.
+
+this cubefile now contains the response of the electron density
+to the external potential and can be visualize with standard
+tools. see e.g. http://www.theochem.ruhr-uni-bochum.de/go/cpmd-vmd.html
+for some examples.
+
+the script runme.sh performs all the commands described above,
+h2o-dens-diff.vmd contains an example visualization of the 
+density difference and h2o-dens-diff.png a sample snapshot image 
+of that visualization.
+
+both runs together take less than 20 minutes on an 
+600MHz alpha workstation or and 1.3GHz amd athlon pc
+and need about 220MB RAM.
+
+01/2004  axel.kohlmeyer@theochem.ruhr-uni-bochum.de
+tested with cpmd v3.8.4, cpmd2cube-0.1.2-cvs (+ bochum patches)
+and vmd v1.8.2

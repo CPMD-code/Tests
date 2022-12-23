@@ -1,0 +1,13 @@
+
+properties diborane example
+
+see the file 'runme-b2h6.sh' on how to run the jobs.
+memory ca. 500MB
+
+b2h6-wf,    10' on 1 AMD Athlon XP 2500+,  6' on 1 AMD Athlon 64 3000+
+b2h6-prop,   2' on 1 AMD Athlon XP 2500+,  1' on 1 AMD Athlon 64 3000+
+b2h6-ks,    20' on 1 AMD Athlon XP 2500+, 15' on 1 AMD Athlon 64 3000+
+b2h6-ksorb, 30" on 1 AMD Athlon XP 2500+, 30" on 1 AMD Athlon 64 3000+
+
+last checked 12/2004 with cpmd v3.9.2 and vmd-1.8.2
+by axel.kohlmeyer@theochem.ruhr-uni-bochum.de

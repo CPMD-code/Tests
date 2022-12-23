@@ -1,0 +1,433 @@
+ PROGRAM CPMD STARTED AT: Sat Jul 26 16:05:43 2003
+ 
+
+
+               ******  ******    ****  ****  ******   
+              *******  *******   **********  *******  
+             ***       **   ***  ** **** **  **   *** 
+             **        **   ***  **  **  **  **    ** 
+             **        *******   **      **  **    ** 
+             ***       ******    **      **  **   *** 
+              *******  **        **      **  *******  
+               ******  **        **      **  ******   
+
+                          VERSION 3.7.1
+
+                            COPYRIGHT               
+                      IBM RESEARCH DIVISION         
+                MPI FESTKOERPERFORSCHUNG STUTTGART  
+
+                       The CPMD consortium      
+                    WWW:   http://www.cpmd.org
+                 Mailinglist:   cpmd-list@cpmd.org
+                     E-mail:   cpmd@cpmd.org
+
+
+                  ***  Jul 18 2003 -- 11:48:39  ***
+
+ THE INPUT FILE IS:                                         inp-3
+ THIS JOB RUNS ON:              flying-dutchman-02.zurich.ibm.com
+ THE CURRENT DIRECTORY IS: 
+                                  /tmpfd02/cur/cpmd-test/path-int
+ THE TEMPORARY DIRECTORY IS: 
+                                  /tmpfd02/cur/cpmd-test/path-int
+ THE PROCESS ID IS:                                       1507508
+ THE JOB WAS SUBMITTED BY:                                    cur
+ 
+
+ PATH INTEGRAL CALCULATION 
+
+
+ CAR-PARRINELLO MOLECULAR DYNAMICS
+
+ PATH TO THE RESTART FILES:                                    ./
+ RESTART WITH OLD ORBITALS
+ RESTART WITH OLD ION POSITIONS
+ RESTART WITH OLD VELOCITIES
+ RESTART WITH OLD ELECTRON THERMOSTAT
+ RESTART WITH OLD ION THERMOSTAT
+ RESTART WITH LATEST RESTART FILE
+ ITERATIVE ORTHOGONALIZATION
+    MAXIT:                                                     30
+    EPS:                                                 1.00E-06
+ MAXIMUM NUMBER OF STEPS:                                50 STEPS
+ PRINT INTERMEDIATE RESULTS EVERY                     10001 STEPS
+ STORE INTERMEDIATE RESULTS EVERY                     10001 STEPS
+ STORE INTERMEDIATE RESULTS EVERY        51 SELF-CONSISTENT STEPS
+ NUMBER OF DISTINCT RESTART FILES:                              1
+ TEMPERATURE IS CALCULATED ASSUMING EXTENDED BULK BEHAVIOR 
+ FICTITIOUS ELECTRON MASS:                               400.0000
+ TIME STEP FOR ELECTRONS:                                  1.0000
+ TIME STEP FOR IONS:                                       1.0000
+ TRAJECTORIES ARE SAVED ON FILE
+ ELECTRON DYNAMICS: TEMPERATURE CONTROL (NOSE-HOOVER THERMOSTATS)
+    TARGET KINETIK ENERGY(A.U.):                     2.000000E-04
+    CHARACTERISTIC FREQUENCY(CM**-1):                    15000.00
+ ION DYNAMICS:      TEMPERATURE CONTROL (NOSE-HOOVER THERMOSTATS)
+ ONE THERMOSTAT CHAIN PER DEGREE OF FREEDOM
+    TARGET TEMPERATURE(KELVIN):                      3.000000E+02
+    CHARACTERISTIC FREQUENCY(CM**-1):                     3000.00
+ NOSE PARAMETERS 
+    NUMBER OF THERMOSTATS (IONS)      :                         3
+    NUMBER OF THERMOSTATS (ELECTRONS) :                         3
+    NUMBER OF THERMOSTATS (CELL)      :                         3
+    SCALING FOR ELEC. DOF             :                      6.00
+    NUMBER OF YOSHIDA-SUZUKI STEPS    :                         7
+    NUMBER OF INTEGRATION CYCLES (NIT):                         1
+ SPLINE INTERPOLATION IN G-SPACE FOR PSEUDOPOTENTIAL FUNCTIONS
+    NUMBER OF SPLINE POINTS:                                 5000
+
+ ================================================================
+ =                       UNKNOWN KEYWORDS                       =
+ =     1                                                        =
+ ================================================================
+
+ 
+ EXCHANGE CORRELATION FUNCTIONALS 
+    LDA EXCHANGE:                        SLATER (ALPHA =  .66667)
+    LDA CORRELATION:                              PERDEW & ZUNGER
+       [J.P. PERDEW AND A ZUNGER, PRB 23 5048 (1981)]
+    GRADIENT CORRECTED FUNCTIONAL
+    DENSITY THRESHOLD:                                5.00000E-05
+    EXCHANGE ENERGY
+       [A.D. BECKE, PHYS. REV. A 38, 3098 (1988)]
+       PARAMETER BETA:                                    .004200
+ 
+ ***     DETSP| THE NEW SIZE OF THE PROGRAM IS  3432 KBytes ***
+
+ >>>>>>>> CENTER OF MASS HAS BEEN MOVED TO CENTER OF BOX <<<<<<<<
+
+
+ ***************************** ATOMS ****************************
+   NR   TYPE        X(bohr)        Y(bohr)        Z(bohr)     MBL
+    1      H       7.507088       9.621047       7.501467       3
+    2      H       9.180188       8.820147       7.524567       3
+    3      H       5.424388       7.869847       7.506167       3
+    4      H       7.901788       6.429247       5.705967       3
+    5      H       7.896288       6.409447       9.282467       3
+    6      C       7.465588       7.361447       7.498267       3
+ ****************************************************************
+
+ NUMBER OF STATES:                                              4
+ NUMBER OF ELECTRONS:                                     8.00000
+ CHARGE:                                                  1.00000
+ ELECTRON TEMPERATURE(KELVIN):                             .00000
+ OCCUPATION
+  2.0  2.0  2.0  2.0
+ 
+Hydrogen  1s1  B-Only rc=0.94                                     
+ 
+Carbon  MT 2s2 2p2  B-only rc =1.23 1.23                          
+ 
+ ****************************************************************
+ *   ATOM       MASS   RAGGIO NLCC              PSEUDOPOTENTIAL *
+ *      H     1.0078    .8000   NO                  S     LOCAL *
+ *      C    12.0000    .8000   NO    KLEINMAN      S  NONLOCAL *
+ *                                                  P     LOCAL *
+ ****************************************************************
+ 
+ TABLE FOR EXCHANGE-CORRELATION ENERGY
+    RMAX:                                              2.0000E+00
+    NARRAY:                                                 30000
+
+ ***     GENXC| THE NEW SIZE OF THE PROGRAM IS  5136 KBytes ***
+ 
+ >>>>>>>>>>>>>>>>>>> PATH-INTEGRAL PARAMETERS <<<<<<<<<<<<<<<<<<<
+ >>>> TROTTER DIMENSION :   8
+ >>>> USE NORMAL MODE VARIABLES 
+ >>>> SCALING FACTOR FACMASS :  1.00000    
+ >>>> MASS DISPARITY FACSTAGE:  1.00000    
+ >>>> PRINT LEVEL       :   1
+ >>>>
+ >>>>       PC_GROUP        PROCESSORS        TROTTER INDICES
+ >>>>           1             0 -    3              1 -   1
+ >>>>           2             4 -    7              2 -   2
+ >>>>           3             8 -   11              3 -   3
+ >>>>           4            12 -   15              4 -   4
+ >>>>           5            16 -   19              5 -   5
+ >>>>           6            20 -   23              6 -   6
+ >>>>           7            24 -   27              7 -   7
+ >>>>           8            28 -   31              8 -   8
+ >>>>
+ 
+ ****************** FINAL MASS SETTINGS IN AMU ******************
+ PRIMITIVE MASSES 
+  TYPE       REAL MASS        FICTITIOUS MASS
+   H          1.0078           1.0078
+   C         12.0000          12.0000
+ MODE TRANSFORMED MASSES 
+  TYPE       REAL MASS        FICTITIOUS MASS FOR IP
+   H          1.0078           1.0078              1
+   H          4.7230           4.7230              2
+   H          4.7230           4.7230              3
+   H         16.1252          16.1252              4
+   H         16.1252          16.1252              5
+   H         27.5274          27.5274              6
+   H         27.5274          27.5274              7
+   H         32.2504          32.2504              8
+ MODE TRANSFORMED MASSES 
+  TYPE       REAL MASS        FICTITIOUS MASS FOR IP
+   C         12.0000          12.0000              1
+   C         56.2355          56.2355              2
+   C         56.2355          56.2355              3
+   C        192.0000         192.0000              4
+   C        192.0000         192.0000              5
+   C        327.7645         327.7645              6
+   C        327.7645         327.7645              7
+   C        384.0000         384.0000              8
+ FICTITIOUS ELECTRON MASS:    .2194
+ ****************************************************************
+
+ PARAPARAPARAPARAPARAPARAPARAPARAPARAPARAPARAPARAPARAPARAPARAPARA
+  NCPU     NGW     NHG  PLANES  GXRAYS  HXRAYS ORBITALS Z-PLANES
+     0    1473   11779      15     154     626       1      30
+     1    1470   11804      15     156     628       1      30
+     2    1466   11782      15     155     627       1      30
+     3    1468   11806      15     156     628       1      30
+                G=0 COMPONENT ON PROCESSOR :     2
+ PARAPARAPARAPARAPARAPARAPARAPARAPARAPARAPARAPARAPARAPARAPARAPARA
+
+ ***    LOADPA| THE NEW SIZE OF THE PROGRAM IS  5768 KBytes ***
+ ***     RGGEN| THE NEW SIZE OF THE PROGRAM IS  5996 KBytes ***
+
+ ************************** SUPERCELL ***************************
+ THIS IS AN ISOLATED SYSTEM CALCULATION 
+ POISSON EQUATION SOLVER  :                               HOCKNEY
+ COULOMB SMOOTHING RADIUS :                                  .060
+ SYMMETRY:                                           SIMPLE CUBIC
+ LATTICE CONSTANT(a.u.):                                 15.00000
+ CELL DIMENSION:  15.0000  1.0000  1.0000   .0000   .0000   .0000
+ VOLUME(OMEGA IN BOHR^3):                              3375.00000
+ LATTICE VECTOR A1(BOHR):           15.0000      .0000      .0000
+ LATTICE VECTOR A2(BOHR):             .0000    15.0000      .0000
+ LATTICE VECTOR A3(BOHR):             .0000      .0000    15.0000
+ RECIP. LAT. VEC. B1(2Pi/BOHR):       .0667      .0000      .0000
+ RECIP. LAT. VEC. B2(2Pi/BOHR):       .0000      .0667      .0000
+ RECIP. LAT. VEC. B3(2Pi/BOHR):       .0000      .0000      .0667
+ REAL SPACE MESH:                    60           60           60
+ WAVEFUNCTION CUTOFF(RYDBERG):                           35.00000
+ DENSITY CUTOFF(RYDBERG):          (DUAL= 4.00)         140.00000
+ NUMBER OF PLANE WAVES FOR WAVEFUNCTION CUTOFF:              5877
+ NUMBER OF PLANE WAVES FOR DENSITY CUTOFF:                  47171
+ NUMBER OF PLANE WAVES FOR BROYDEN MIXING:                  11779
+ ****************************************************************
+ 
+ ***  RINFORCE| THE NEW SIZE OF THE PROGRAM IS  6920 KBytes ***
+ ***    FFTPRP| THE NEW SIZE OF THE PROGRAM IS 10356 KBytes ***
+ ***   CLUSTER| THE NEW SIZE OF THE PROGRAM IS 14888 KBytes ***
+ ***  NOSALLOC| THE NEW SIZE OF THE PROGRAM IS 14892 KBytes ***
+
+ GENERATE ATOMIC BASIS SET
+      H        SLATER ORBITALS
+        1S        ALPHA=   1.0000      OCCUPATION= 1.00
+      C        SLATER ORBITALS
+        2S        ALPHA=   1.6083      OCCUPATION= 2.00
+        2P        ALPHA=   1.5679      OCCUPATION= 2.00
+ 
+
+ INITIALIZATION TIME:                                1.68 SECONDS
+
+ ***   PI_MDPT| THE NEW SIZE OF THE PROGRAM IS 14936 KBytes ***
+ NOSEPA| TOTAL # OF ELECTRONIC DEGREES OF FREEDOM:          46996
+ NOSEPA| USED # OF ELECTRONIC DEGREES OF FREEDOM :             24
+ 
+ ****************************************************************
+ THERMOSTATS: CHANGE IONIC NOSE FREQUENCIES IN PATH INTEGRAL CASE
+ FOR STAGING OR NORMAL MODE PROPAGATOR
+    CHARACTERISTIC FREQUENCY FOR IP=1 :     3000.00 CM**-1 
+    CHARACTERISTIC FREQUENCY FOR IP>1 :     3701.26 CM**-1 
+ ****************************************************************
+ 
+ RESTART INFORMATION READ ON FILE                   ./RESTART_1.1
+
+ DEGREES OF FREEDOM FOR SYSTEM:                                18
+ 
+  QMDOF| NUMBER OF QUANTUM DEGREES OF FREEDOM FOR IP=1 :      18
+  QMDOF| NUMBER OF QUANTUM DEGREES OF FREEDOM FOR IP>1 :      18
+ ***     PHFAC| THE NEW SIZE OF THE PROGRAM IS 15184 KBytes ***
+ EWALD SUM IN REAL SPACE OVER  1* 1* 1 CELLS
+ 
+ ***************************************************************
+ *                    CHARACTERISTIC RADII                     *
+ ***************************************************************
+   SPECIES  R OF GYRATION  FREE PARTICLE  (IN ANGSTROM)
+   1   H     .17579         .20028
+   2   C     .04426         .05804
+            R OF SUSCEPTIBILITY 
+   1   H     .23509         .28323
+   2   C     .05930         .08208
+            R OF CORRELATION 
+   1   H     .31071         .34689
+   2   C     .07969         .10053
+ ***************************************************************
+ FILE ENERGIES EXISTS, NEW DATA WILL BE APPENDED
+ ***     PI_MD| THE NEW SIZE OF THE PROGRAM IS 22688 KBytes ***
+ CPU TIME FOR INITIALIZATION     .93 SECONDS
+
+ EIGENVALUES (EV) AND OCCUPATION:
+     1    -28.0281288     2.000        2    -21.6361438     2.000
+     3    -18.7204977     2.000        4    -17.8952542     2.000
+ 
+ ***************************************************************
+ *                    CHARACTERISTIC RADII                     *
+ ***************************************************************
+   SPECIES  R OF GYRATION  FREE PARTICLE  (IN ANGSTROM)
+   1   H     .17572         .20028
+   2   C     .04428         .05804
+            R OF SUSCEPTIBILITY 
+   1   H     .23494         .28323
+   2   C     .05931         .08208
+            R OF CORRELATION 
+   1   H     .31062         .34689
+   2   C     .07972         .10053
+ ***************************************************************
+
+    NFI   IP   EKINC  TEMPP     EHARM         EKS    ENOSE(E)  ENOSE(P)    ECLASSIC        EHAM     DIS
+      1    1  .00065  299.2   .000000    -8.32144      .00025    .02784    -1.00378    -1.00370     .00
+      1    2  .00047  324.5   .005858    -8.32968      .00024    .02776     -.99832     -.99826     .00
+      1    3  .00049  316.3   .008475    -8.33067      .00024    .02776     -.99605     -.99599     .00
+      1    4  .00014  322.1   .004435    -8.31186      .00022    .02775     -.99759     -.99758     .00
+      1    5  .00028  319.7   .006281    -8.32109      .00023    .02776     -.99696     -.99692     .00
+      1    6  .00007  317.4   .003991    -8.32258      .00022    .02776     -.99949     -.99949     .00
+      1    7  .00000  315.9   .007643    -8.32103      .00022    .02776     -.99569     -.99569     .00
+      1    8  .00045  312.8   .005314    -8.32199      .00024    .02777     -.99822     -.99817     .00
+
+    NFI  EKINC/P  TEMP   EKINP(PRI)  EKINP(VIR)      EKS/P      EQUANT    ECLASSIC        EHAM     TCPU
+      1  .00032  316.0      .02641      .02976    -8.32254    -8.29614    -7.98611    -7.98579      .46
+ FILE ./TRAJECTORY EXISTS, NEW DATA WILL BE APPENDED
+ FILE ./PITEMP EXISTS, NEW DATA WILL BE APPENDED
+      2  .00041  317.2      .02644      .02964    -8.32257    -8.29613    -7.98620    -7.98579      .43
+      3  .00050  318.5      .02647      .02954    -8.32260    -8.29613    -7.98629    -7.98579      .43
+      4  .00061  319.7      .02650      .02944    -8.32263    -8.29614    -7.98640    -7.98579      .44
+      5  .00071  321.0      .02653      .02934    -8.32268    -8.29615    -7.98650    -7.98579      .43
+      6  .00082  322.2      .02656      .02925    -8.32272    -8.29616    -7.98661    -7.98579      .43
+      7  .00093  323.5      .02659      .02917    -8.32277    -8.29618    -7.98672    -7.98579      .43
+      8  .00104  324.8      .02662      .02908    -8.32283    -8.29621    -7.98683    -7.98579      .43
+      9  .00114  326.1      .02665      .02900    -8.32288    -8.29623    -7.98694    -7.98579      .43
+     10  .00125  327.5      .02668      .02891    -8.32294    -8.29626    -7.98704    -7.98579      .43
+     11  .00134  328.9      .02671      .02883    -8.32300    -8.29629    -7.98713    -7.98579      .43
+     12  .00143  330.3      .02674      .02874    -8.32306    -8.29632    -7.98722    -7.98579      .43
+     13  .00151  331.8      .02677      .02866    -8.32312    -8.29635    -7.98730    -7.98579      .43
+     14  .00158  333.3      .02681      .02857    -8.32318    -8.29638    -7.98737    -7.98579      .44
+     15  .00164  334.8      .02684      .02848    -8.32324    -8.29640    -7.98743    -7.98579      .43
+     16  .00169  336.3      .02687      .02839    -8.32329    -8.29642    -7.98748    -7.98579      .44
+     17  .00173  337.9      .02690      .02829    -8.32334    -8.29644    -7.98752    -7.98579      .44
+     18  .00176  339.5      .02693      .02819    -8.32339    -8.29646    -7.98755    -7.98579      .43
+     19  .00178  341.1      .02696      .02810    -8.32343    -8.29647    -7.98757    -7.98580      .44
+     20  .00179  342.8      .02699      .02799    -8.32347    -8.29648    -7.98759    -7.98580      .43
+     21  .00180  344.5      .02702      .02789    -8.32350    -8.29649    -7.98759    -7.98580      .44
+     22  .00180  346.2      .02705      .02779    -8.32354    -8.29649    -7.98759    -7.98580      .43
+     23  .00179  347.9      .02708      .02768    -8.32356    -8.29649    -7.98758    -7.98580      .43
+     24  .00177  349.6      .02711      .02757    -8.32359    -8.29648    -7.98757    -7.98580      .44
+     25  .00176  351.4      .02714      .02746    -8.32361    -8.29647    -7.98755    -7.98580      .43
+     26  .00173  353.2      .02717      .02735    -8.32363    -8.29646    -7.98753    -7.98580      .44
+     27  .00171  354.9      .02720      .02723    -8.32364    -8.29645    -7.98751    -7.98580      .43
+     28  .00168  356.7      .02723      .02712    -8.32365    -8.29643    -7.98748    -7.98580      .43
+     29  .00165  358.5      .02725      .02701    -8.32366    -8.29641    -7.98745    -7.98580      .44
+     30  .00162  360.4      .02728      .02690    -8.32367    -8.29639    -7.98742    -7.98580      .43
+     31  .00159  362.2      .02731      .02679    -8.32367    -8.29636    -7.98739    -7.98580      .44
+     32  .00156  364.0      .02734      .02668    -8.32367    -8.29634    -7.98736    -7.98580      .43
+     33  .00153  365.8      .02737      .02658    -8.32367    -8.29631    -7.98733    -7.98580      .43
+     34  .00150  367.7      .02740      .02648    -8.32367    -8.29627    -7.98730    -7.98580      .43
+     35  .00147  369.5      .02742      .02638    -8.32366    -8.29624    -7.98727    -7.98580      .43
+     36  .00145  371.3      .02745      .02629    -8.32365    -8.29620    -7.98725    -7.98580      .43
+     37  .00142  373.1      .02748      .02620    -8.32364    -8.29617    -7.98722    -7.98580      .44
+     38  .00139  374.9      .02750      .02612    -8.32363    -8.29613    -7.98720    -7.98580      .43
+     39  .00137  376.7      .02753      .02604    -8.32361    -8.29608    -7.98717    -7.98580      .43
+     40  .00135  378.5      .02756      .02597    -8.32359    -8.29604    -7.98715    -7.98580      .43
+     41  .00133  380.3      .02758      .02591    -8.32357    -8.29599    -7.98713    -7.98580      .43
+     42  .00131  382.0      .02761      .02585    -8.32355    -8.29594    -7.98711    -7.98580      .43
+     43  .00129  383.8      .02763      .02580    -8.32352    -8.29589    -7.98709    -7.98580      .43
+     44  .00127  385.5      .02766      .02575    -8.32349    -8.29584    -7.98708    -7.98580      .44
+     45  .00126  387.2      .02768      .02571    -8.32346    -8.29578    -7.98706    -7.98580      .43
+     46  .00125  388.9      .02770      .02568    -8.32343    -8.29572    -7.98705    -7.98580      .43
+     47  .00123  390.6      .02773      .02565    -8.32339    -8.29566    -7.98704    -7.98580      .43
+     48  .00122  392.3      .02775      .02563    -8.32335    -8.29560    -7.98703    -7.98581      .44
+     49  .00121  393.9      .02777      .02561    -8.32331    -8.29554    -7.98702    -7.98581      .43
+     50  .00120  395.6      .02780      .02560    -8.32326    -8.29547    -7.98701    -7.98581      .43
+
+ RESTART INFORMATION WRITTEN ON FILE                ./RESTART_1.1
+
+ ****************************************************************
+ *                      AVERAGED QUANTITES                      *
+ ****************************************************************
+                              MEAN VALUE       +/-  RMS DEVIATION
+                                     <x>     [<x^2>-<x>^2]**(1/2)
+ ELECTRON KINETIC ENERGY     .136994E-02              .373290E-03
+ IONIC TEMPERATURE                353.61                    24.16
+ DENSITY FUNCTIONAL ENERGY     -8.323332              .353331E-03
+ QUANTUM KINETIC ENERGY(P)       .027135              .415190E-03
+ QUANTUM KINETIC ENERGY(V)       .027441              .133724E-02
+ TOTAL QUANTUM ENERGY(P)       -8.296197              .268659E-03
+ CLASSICAL ENERGY              -7.987167              .374472E-03
+ CONSERVED ENERGY              -7.985798              .455553E-05
+ ION DISPLACEMENT            .267079E-02              .236957E-02
+ CPU TIME                          .4348
+ ***     PI_MD| THE NEW SIZE OF THE PROGRAM IS 22892 KBytes ***
+
+ ================================================================
+                      BIG MEMORY ALLOCATIONS 
+ SCR               956494                SCR               468361
+ PSI               439200                XF                219600
+ YF                219600                ATWFR             200800
+ HGPOT             111630                WORK              100400
+ RHOE               55815                RS1                40160
+ ----------------------------------------------------------------
+ [PEAK NUMBER  111]      PEAK MEMORY      2677484 =   21.4 MBytes
+ ================================================================
+
+
+ ****************************************************************
+ *                                                              *
+ *                            TIMING                            *
+ *                                                              *
+ ****************************************************************
+ SUBROUTINE            CALLS         CPU TIME        ELAPSED TIME
+        HIP               51             5.43                5.43
+    FFT-G/S             2040             3.31                3.32
+     FFTCOM              867             2.90                2.90
+      FWFFT              306             2.19                2.19
+     INVFFT              255             1.88                1.87
+     GCENER               51             1.14                1.14
+   S_INVFFT              204              .91                 .91
+    VOFRHOH               51              .71                 .71
+     GRADEN               51              .70                 .70
+      PHASE              561              .67                 .67
+     RHOOFR               51              .51                 .51
+    S_FWFFT              102              .42                 .42
+       VPSI               51              .42                 .42
+     EICALC               51              .26                 .26
+    VOFRHOB               51              .24                 .24
+    HOCKNEY                1              .23                 .23
+     LOADPA                1              .21                 .21
+     FORMFN                2              .19                 .19
+       NLIN                2              .17                 .17
+     XCENER               51              .16                 .16
+     GLOSUM              761              .10                 .10
+      PHFAC               52              .09                 .09
+   RINFORCE                1              .06                 .06
+ ----------------------------------------------------------------
+ TOTAL TIME                             22.87               22.87
+ ****************************************************************
+
+       CPU TIME :    0 HOURS  0 MINUTES 24.66 SECONDS     
+   ELAPSED TIME :    0 HOURS  0 MINUTES 24.66 SECONDS     
+
+ PROGRAM CPMD ENDED AT:   Sat Jul 26 16:06:08 2003
+ 
+
+ ================================================================
+ = COMMUNICATION TASK  AVERAGE MESSAGE LENGTH  NUMBER OF CALLS  =
+ = SEND/RECEIVE               14680. BYTES                 96.  =
+ = BROADCAST                    368. BYTES              10037.  =
+ = GLOBAL SUMMATION              73. BYTES                921.  =
+ = GLOBAL MULTIPLICATION          0. BYTES                  1.  =
+ = ALL TO ALL COMM           578223. BYTES                969.  =
+ =                             PERFORMANCE          TOTAL TIME  =
+ = SEND/RECEIVE              539.402  MB/S            .003 SEC  =
+ = BROADCAST                   8.507  MB/S            .434 SEC  =
+ = GLOBAL SUMMATION            1.334  MB/S            .100 SEC  =
+ = GLOBAL MULTIPLICATION        .000  MB/S            .001 SEC  =
+ = ALL TO ALL COMM           147.983  MB/S           3.786 SEC  =
+ = SYNCHRONISATION                                    .018 SEC  =
+ ================================================================

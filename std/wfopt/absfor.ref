@@ -1,0 +1,9 @@
+# total squared force
+annealing.out:           0
+davidson.out:            0.00376322
+default.out:             0.00379008
+lanczos.out:             0.00379008
+odiis-5.out:             0.00379037
+pcg-minimize.out:        0.00379037
+pcg.out:                 0.00379037
+steepest-descend.out:    0.00379037
