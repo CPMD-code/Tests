@@ -6,7 +6,7 @@ This repository contains a series of input files that can be used for testing th
 
 ## Copyright Notice
 
-The CPMD program is © 1990-2022 by IBM Corp. and © 1994-2001 by Max Planck Institute, Stuttgart. 
+The CPMD program is © 1990-2023 by IBM Corp. and © 1994-2001 by Max Planck Institute, Stuttgart. 
 
 
 ## License
